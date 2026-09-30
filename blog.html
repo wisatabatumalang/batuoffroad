@@ -5,27 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Blog Batu Offroad: Berita & Tips Berpetualang - BATU OFFROAD</title>
-    <meta name="description" content="Baca artikel terbaru seputar dunia offroad di Batu! Tips berpetualang, rute offroad, dan informasi gathering perusahaan di Batu Offroad.">
-    <meta name="keywords" content="blog offroad, tips berpetualang, perlengkapan offroad batu, review armada, berita batuoffroad, edukasi wisata alam, team building info">
-    <meta name="author" content="BATU OFFROAD">
+    <title>Blog Batu Offroad: Berita & Tips Berpetualang - Batu Offoard Adventure</title>
+    <meta name="description"
+        content="Baca artikel terbaru seputar dunia offroad di Batu! Tips berpetualang, rute offroad, dan informasi gathering perusahaan di Batu Offroad.">
+    <meta name="keywords"
+        content="blog offroad, tips berpetualang, perlengkapan offroad batu, review armada, berita batuoffroad, edukasi wisata alam, team building info">
+    <meta name="author" content="Batu Offroad Adventure">
 
     <!-- SEO, AEO & GEO Optimization -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <link rel="canonical" href="https://batuoffroad.web.id/blog.html">
+    <link rel="canonical" href="https://batuoffroad.web.id/blog">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://batuoffroad.web.id/blog.html">
-    <meta property="og:title" content="Blog Batu Offroad: Berita & Tips Berpetualang - BATU OFFROAD">
-    <meta property="og:description" content="Baca artikel terbaru seputar dunia offroad di Batu! Tips berpetualang, rute offroad, dan informasi gathering perusahaan di Batu Offroad.">
+    <meta property="og:url" content="https://batuoffroad.web.id/blog">
+    <meta property="og:title"
+        content="Blog Batu Offroad Adventure: Berita & Tips Berpetualang - Batu Offroad Adventure">
+    <meta property="og:description"
+        content="Baca artikel terbaru seputar dunia offroad di Batu! Tips berpetualang, rute offroad, dan informasi gathering perusahaan di Batu Offroad Adventure.">
     <meta property="og:image" content="https://batuoffroad.web.id/asset/IMG_1540.webp">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://batuoffroad.web.id/blog.html">
-    <meta property="twitter:title" content="Blog Batu Offroad: Berita & Tips Berpetualang - BATU OFFROAD">
-    <meta property="twitter:description" content="Baca artikel terbaru seputar dunia offroad di Batu! Tips berpetualang, rute offroad, dan informasi gathering perusahaan di Batu Offroad.">
+    <meta property="twitter:url" content="https://batuoffroad.web.id/blog">
+    <meta property="twitter:title"
+        content="Blog Batu Offroad Adventure: Berita & Tips Berpetualang - Batu Offroad Adventure">
+    <meta property="twitter:description"
+        content="Baca artikel terbaru seputar dunia offroad di Batu! Tips berpetualang, rute offroad, dan informasi gathering perusahaan di Batu Offroad Adventure.">
     <meta property="twitter:image" content="https://batuoffroad.web.id/asset/IMG_1540.webp">
 
     <!-- Favicon -->
@@ -39,11 +45,11 @@
       "@type": "Blog",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://batuoffroad.web.id/blog.html"
+        "@id": "https://batuoffroad.web.id/blog"
       },
       "publisher": {
         "@type": "TravelAgency",
-        "name": "Batu Offroad",
+        "name": "Batu Offroad Adventure",
         "logo": {
           "@type": "ImageObject",
           "url": "https://batuoffroad.web.id/assets/img/Logo/logo-batu-offroad.webp"
@@ -79,7 +85,7 @@
 
         html,
         body {
-            /* overflow-x: hidden; */
+            overflow-x: hidden;
             max-width: 100vw;
         }
 
@@ -242,56 +248,85 @@
             color: var(--accent-blue);
         }
 
-        .breadcrumb-item + .breadcrumb-item::before {
+        .breadcrumb-item+.breadcrumb-item::before {
             color: var(--accent-blue) !important;
             font-weight: bold;
         }
 
-        /* --- BLOG LAYOUT --- */
+        /* --- 3-COLUMN BLOG GRID LAYOUT --- */
+        #blogContainer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        @media (max-width: 991px) {
+            #blogContainer {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 575px) {
+            #blogContainer {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
         .blog-card {
             background: var(--bg-panel);
             border: 1px solid var(--border-line);
             border-radius: 12px;
             overflow: hidden;
-            margin-bottom: 30px;
-            transition: 0.3s;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
             display: none;
-            /* Hidden by Default, JS will show */
+            flex-direction: column;
+            height: 100%;
         }
 
         .blog-card:hover {
             transform: translateY(-5px);
             border-color: var(--accent-blue);
+            box-shadow: 0 10px 25px rgba(229, 137, 10, 0.25);
         }
 
         .blog-thumb {
             width: 100%;
-            height: 420px;
+            height: 220px;
             object-fit: cover;
             border-bottom: 1px solid var(--border-line);
+            transition: transform 0.4s ease;
+        }
+
+        .blog-card:hover .blog-thumb {
+            transform: scale(1.04);
         }
 
         .blog-content {
-            padding: 25px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
         }
 
         .blog-meta {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: var(--text-grey);
             margin-bottom: 10px;
             display: flex;
-            gap: 15px;
+            gap: 12px;
         }
 
         .blog-meta i {
             color: var(--accent-gold);
-            margin-right: 5px;
+            margin-right: 4px;
         }
 
         .blog-title {
-            font-size: 1.8rem;
+            font-size: 1.25rem;
             font-weight: 700;
-            margin-bottom: 15px;
+            line-height: 1.35;
+            margin-bottom: 10px;
         }
 
         .blog-title a {
@@ -306,23 +341,32 @@
 
         .blog-excerpt {
             color: var(--text-light);
-            line-height: 1.6;
-            margin-bottom: 20px;
+            line-height: 1.5;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            flex-grow: 1;
         }
 
         .btn-read-more {
             color: var(--accent-blue);
             text-decoration: none;
             font-weight: 700;
+            font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 1px;
             border-bottom: 2px solid transparent;
             transition: 0.3s;
+            margin-top: auto;
+            display: inline-block;
         }
 
         .btn-read-more:hover {
             border-color: var(--accent-blue);
-            color: var(--accent-blue);
+            color: var(--accent-gold);
         }
 
         /* --- SIDEBAR WIDGETS --- */
@@ -426,12 +470,17 @@
 
         /* Sticky Sidebar */
         @media (min-width: 992px) {
+            .col-lg-4 {
+                align-self: flex-start;
+            }
+
             .sticky-sidebar {
-                position: sticky;
-                position: -webkit-sticky;
-                top: 100px;
-                height: max-content;
-                z-index: 10;
+                position: sticky !important;
+                position: -webkit-sticky !important;
+                top: 90px !important;
+                height: fit-content !important;
+                align-self: flex-start !important;
+                z-index: 10 !important;
             }
         }
 
@@ -713,19 +762,21 @@
     </style>
     <!-- SEO Update -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <link rel="canonical" href="https://batuoffroad.web.id/blog.html">
+    <link rel="canonical" href="https://batuoffroad.web.id/blog">
 
     <!-- OpenGraph Lengkap -->
-    <meta property="og:title" content="Blog Batu Offroad: Berita & Tips Berpetualang - BATU OFFROAD">
+    <meta property="og:title"
+        content="Blog Batu Offroad Adventure: Berita & Tips Berpetualang - Batu Offroad Adventure">
     <meta property="og:description"
         content="Baca artikel terbaru seputar dunia offroad di Batu! Tips berpetualang, rute offroad, dan informasi gathering perusahaan di Batu Offroad.">
     <meta property="og:image" content="https://batuoffroad.web.id/assets/img/Hero/Banner-BOA-New (1).jpg">
-    <meta property="og:url" content="https://batuoffroad.web.id/blog.html">
+    <meta property="og:url" content="https://batuoffroad.web.id/blog">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Batu Offroad">
+    <meta property="og:site_name" content="Batu Offroad Adventure">
     <meta property="og:locale" content="id_ID">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Blog Batu Offroad: Berita & Tips Berpetualang - BATU OFFROAD">
+    <meta name="twitter:title"
+        content="Blog Batu Offroad Adventure: Berita & Tips Berpetualang - Batu Offroad Adventure">
     <meta name="twitter:description"
         content="Baca artikel terbaru seputar dunia offroad di Batu! Tips berpetualang, rute offroad, dan informasi gathering perusahaan di Batu Offroad.">
     <meta name="twitter:image" content="https://batuoffroad.web.id/assets/img/Hero/Banner-BOA-New (1).jpg">
@@ -738,7 +789,7 @@
       "name": "Batu Offroad",
       "image": "https://batuoffroad.web.id/assets/img/Hero/Banner-BOA-New (1).jpg",
       "@id": "https://batuoffroad.web.id",
-      "url": "https://batuoffroad.web.id/blog.html",
+      "url": "https://batuoffroad.web.id/blog",
       "telephone": "+6281239225692",
       "address": {
         "@type": "PostalAddress",
@@ -776,7 +827,7 @@
         <a href="#" class="btn-back-top" id="backToTop" title="Kembali ke Atas" aria-label="Kembali ke atas">
             <i class="fas fa-arrow-up" aria-hidden="true"></i>
         </a>
-        <a href="https://wa.me/6285784977074" class="btn-float-wa" target="_blank" title="Chat WhatsApp"
+        <a href="https://wa.me/6281233989707" class="btn-float-wa" target="_blank" title="Chat WhatsApp"
             aria-label="Hubungi WhatsApp">
             <i class="fab fa-whatsapp" aria-hidden="true"></i>
         </a>
@@ -819,14 +870,15 @@
                                     Outbound + Paintball</a></li>
                             <li><a class="dropdown-item" href="paket/paket-bromo.html">Paket Bromo</a></li>
                             <li><a class="dropdown-item" href="paket/paket-atv.html">Paket ATV</a></li>
-                            <li style="border-top: 1px solid var(--border-color);"><a class="dropdown-item active" href="paket.html">Lihat Semua Paket</a></li>
+                            <li style="border-top: 1px solid var(--border-color);"><a class="dropdown-item active"
+                                    href="paket.html">Lihat Semua Paket</a></li>
                         </ul>
                     </li>
 
                     <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
-                        <a href="https://wa.me/6285784977074" class="btn btn-primary-custom" target="_blank"
+                        <a href="https://wa.me/6281233989707" class="btn btn-primary-custom" target="_blank"
                             aria-label="Kontak Kami">
                             <i class="fab fa-whatsapp me-2" aria-hidden="true"></i>KONTAK
                         </a>
@@ -854,38 +906,256 @@
         </div>
     </section>
 
+    <!-- CENTERED SEARCH SECTION -->
+    <section class="py-4" style="background: rgba(0,0,0,0.25); border-bottom: 1px solid var(--border-line);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 col-sm-10 text-center">
+                    <div class="search-form mx-auto" style="max-width: 550px;">
+                        <input type="text" class="search-input search-input-field text-center"
+                            placeholder="Cari artikel atau kata kunci..."
+                            style="padding-left: 20px; font-size: 0.95rem;">
+                        <button type="button" class="search-btn" aria-label="Cari"><i
+                                class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="py-5">
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-8">
-
-                    <div class="sidebar-widget d-lg-none mb-4">
-                        <h4 class="widget-title">CARI ARTIKEL</h4>
-                        <div class="search-form">
-                            <input type="text" class="search-input search-input-field"
-                                placeholder="Ketik kata kunci...">
-                            <button type="button" class="search-btn"><i class="fas fa-search"></i></button>
-                        </div>
-                    </div>
+                <div class="col-12">
 
                     <div id="blogContainer">
 
+                        <!-- CLUSTER 1: Isi Paket Fun Offroad Coban Talun -->
+                        <div class="blog-card"
+                            data-title="isi paket fun offroad coban talun yang wajib anda ketahui harga sewa jeep driver guide">
+                            <img src="assets/img/1-paket-Fun-Offroad-Coban-Talun.webp"
+                                alt="Banyak mobil jip offroad berbaris di jalur lumpur" class="blog-thumb" width="800"
+                                height="420" loading="lazy" decoding="async">
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> 30 September 2026</span>
+                                    <span><i class="fas fa-folder"></i> Harga Paket</span>
+                                </div>
+                                <h2 class="blog-title">
+                                    <a href="blog/isi-paket-fun-offroad-coban-talun.html">Isi Paket Fun Offroad Coban
+                                        Talun yang Wajib Anda Ketahui</a>
+                                </h2>
+                                <p class="blog-excerpt">Cek isi paket fun offroad Coban Talun: jeep, driver guide, titik
+                                    singgah, dan jadwal. Pelajari cara memilih paket sebelum booking.</p>
+                                <a href="blog/isi-paket-fun-offroad-coban-talun.html" class="btn-read-more">BACA
+                                    SELENGKAPNYA <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- ARTIKEL TERBARU: Fun Offroad Coban Talun (Pillar) -->
+                        <div class="blog-card"
+                            data-title="fun offroad coban talun batu panduan lengkap paket dan rute wisata jeep">
+                            <img src="assets/img/1-Fun-Offroad-Coban-Talun.webp"
+                                alt="fun offroad Coban Talun jeep melewati hutan pinus" class="blog-thumb" width="800"
+                                height="420" loading="lazy" decoding="async">
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> 30 September 2026</span>
+                                    <span><i class="fas fa-folder"></i> Wisata Offroad</span>
+                                </div>
+                                <h2 class="blog-title">
+                                    <a href="blog/fun-offroad-coban-talun-batu-panduan-lengkap-paket-dan-rute.html">Fun
+                                        Offroad Coban Talun Batu Panduan Lengkap Paket dan Rute</a>
+                                </h2>
+                                <p class="blog-excerpt">Panduan fun offroad Coban Talun Batu: isi paket, rute,
+                                    persiapan, dan cara booking. Baca dulu sebelum memesan jeep untuk liburan Anda.</p>
+                                <a href="blog/fun-offroad-coban-talun-batu-panduan-lengkap-paket-dan-rute.html"
+                                    class="btn-read-more">BACA
+                                    SELENGKAPNYA <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- ARTIKEL TERBARU: Liburan Seru Jeep Adventure (Pillar) -->
+                        <div class="blog-card"
+                            data-title="liburan seru jeep adventure untuk rombongan dan keluarga batu malang rute durasi vendor">
+                            <img src="assets/img/jeep-adventure-batu-malang-1.webp"
+                                alt="Jeep warna-warni membawa rombongan melintasi genangan air" class="blog-thumb"
+                                width="800" height="420" loading="lazy" decoding="async">
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> 30 September 2026</span>
+                                    <span><i class="fas fa-folder"></i> Wisata Offroad</span>
+                                </div>
+                                <h2 class="blog-title">
+                                    <a href="blog/jeep-adventure-batu-malang.html">Liburan Seru Jeep Adventure untuk
+                                        Rombongan dan Keluarga</a>
+                                </h2>
+                                <p class="blog-excerpt">Jeep adventure Batu Malang adalah wisata berkendara jeep 4x4 di
+                                    area pegunungan Kota Batu, cocok untuk rombongan dan keluarga dengan paket rute
+                                    fleksibel.</p>
+                                <a href="blog/jeep-adventure-batu-malang.html" class="btn-read-more">BACA
+                                    SELENGKAPNYA <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- CLUSTER 1: Isi dan Harga Jeep Adventure -->
+                        <div class="blog-card"
+                            data-title="hemat bikin senang perbandingan isi dan harga jeep adventure batu malang rincian tarif per orang">
+                            <img src="assets/img/perbandingan-jeep-adventure-batu-malang-1.webp"
+                                alt="Pria berhelm melambai dari atas jeep warna kuning" class="blog-thumb" width="800"
+                                height="420" loading="lazy" decoding="async">
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> 29 September 2026</span>
+                                    <span><i class="fas fa-folder"></i> Harga Paket</span>
+                                </div>
+                                <h2 class="blog-title">
+                                    <a href="blog/isi-dan-harga-jeep-adventure-batu-malang.html">Hemat Bikin Senang,
+                                        Perbandingan Jeep Adventure Batu Malang</a>
+                                </h2>
+                                <p class="blog-excerpt">Isi dan harga jeep adventure Batu Malang bervariasi menurut
+                                    rute, durasi, jumlah penumpang, dan fasilitas tambahan. Bandingkan penawaran secara
+                                    adil.</p>
+                                <a href="blog/isi-dan-harga-jeep-adventure-batu-malang.html" class="btn-read-more">BACA
+                                    SELENGKAPNYA <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- CLUSTER 2: Persiapan Jeep Adventure -->
+                        <div class="blog-card"
+                            data-title="persiapan lengkap pakaian dan barang wajib jeep adventure batu malang tips keselamatan">
+                            <img src="assets/img/Persiapan-Jeep-Adventure-Malang-2.webp"
+                                alt="Penumpang bersorak saat jeep hijau menerjang genangan air" class="blog-thumb"
+                                width="800" height="420" loading="lazy" decoding="async">
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> 29 September 2026</span>
+                                    <span><i class="fas fa-folder"></i> Persiapan & Tips</span>
+                                </div>
+                                <h2 class="blog-title">
+                                    <a href="blog/persiapan-jeep-adventure-batu-malang.html">Persiapan Lengkap Pakaian
+                                        dan Barang Wajib Jeep Adventure</a>
+                                </h2>
+                                <p class="blog-excerpt">Panduan persiapan pakaian berlapis, alas kaki antiselip,
+                                    perlindungan debu, serta tips keselamatan untuk trip jeep adventure aman dan nyaman.
+                                </p>
+                                <a href="blog/persiapan-jeep-adventure-batu-malang.html" class="btn-read-more">BACA
+                                    SELENGKAPNYA <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- CLUSTER 3: Pengalaman Jeep Adventure -->
+                        <div class="blog-card"
+                            data-title="pengalaman nyata menjajal jeep adventure batu malang rundown rombongan pengemudi lokal">
+                            <img src="assets/img/Pengalaman-Nyata-Jeep-Advanture-1.webp"
+                                alt="Pria bersorak semangat dari jeep di sungai berlumpur" class="blog-thumb"
+                                width="800" height="420" loading="lazy" decoding="async">
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> 29 September 2026</span>
+                                    <span><i class="fas fa-folder"></i> Pengalaman Offroad</span>
+                                </div>
+                                <h2 class="blog-title">
+                                    <a href="blog/pengalaman-jeep-adventure-batu-malang.html">Pengalaman Nyata Menjajal
+                                        Jeep Adventure Batu Malang</a>
+                                </h2>
+                                <p class="blog-excerpt">Cerita pengalaman rombongan melintasi jalur pegunungan, rundown
+                                    alur trip dari awal sampai akhir, dan pentingnya pengemudi lokal berpengalaman.</p>
+                                <a href="blog/pengalaman-jeep-adventure-batu-malang.html" class="btn-read-more">BACA
+                                    SELENGKAPNYA <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- ARTIKEL TERBARU 3: Review Pengalaman Offroad -->
+                        <div class="blog-card"
+                            data-title="review lengkap pengalaman offroad batu malang sensasi pesona alam testimoni wisatawan">
+                            <img src="assets/img/keseruan-kegiatan-offroad.webp"
+                                alt="Jeep dengan peserta sedang melintasi jalur berlumpur ekstrem dengan percikan lumpur tinggi"
+                                class="blog-thumb" width="800" height="420" loading="lazy" decoding="async">
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> 28 September 2026</span>
+                                    <span><i class="fas fa-folder"></i> Pengalaman Offroad</span>
+                                </div>
+                                <h2 class="blog-title">
+                                    <a href="blog/review-dan-pengalaman-offroad-batu-malang.html">Review dan Pengalaman
+                                        Offroad Batu Malang Pacu Adrenalin di Alam Bebas</a>
+                                </h2>
+                                <p class="blog-excerpt">Review lengkap pengalaman offroad batu malang: sensasi melewati
+                                    jalur ekstrem, pesona alam menakjubkan, cerita dan testimoni wisatawan yang sudah
+                                    mencoba, dan cara booking.</p>
+                                <a href="blog/review-dan-pengalaman-offroad-batu-malang.html" class="btn-read-more">BACA
+                                    SELENGKAPNYA <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- ARTIKEL TERBARU 2: Daftar Persiapan Offroad -->
+                        <div class="blog-card"
+                            data-title="daftar lengkap persiapan offroad batu malang pakaian barang bawaan tips keselamatan">
+                            <img src="assets/img/pria-berhelm-di-mobil-offroad-menerjang-air.webp"
+                                alt="Checklist visual perlengkapan offroad yang ditata rapi" class="blog-thumb"
+                                width="800" height="420" loading="lazy" decoding="async">
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> 28 September 2026</span>
+                                    <span><i class="fas fa-folder"></i> Persiapan & Tips</span>
+                                </div>
+                                <h2 class="blog-title">
+                                    <a href="blog/daftar-persiapan-offroad-batu-malang.html">Daftar Persiapan Offroad
+                                        Batu Malang: Barang Bawaan dan Tips Aman</a>
+                                </h2>
+                                <p class="blog-excerpt">Daftar lengkap persiapan offroad batu malang: pakaian yang pas,
+                                    barang bawaan penting, tips keselamatan, dan panduan pre-trip agar pengalaman aman
+                                    dan nyaman.</p>
+                                <a href="blog/daftar-persiapan-offroad-batu-malang.html" class="btn-read-more">BACA
+                                    SELENGKAPNYA <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- ARTIKEL TERBARU 1: Rincian Lengkap Isi dan Harga -->
+                        <div class="blog-card"
+                            data-title="rincian lengkap isi paket fasilitas harga terbaru offroad batu malang short medium long trip">
+                            <img src="assets/img/melintasi-jalur-offroad-dengan-penumpang-melambai.webp"
+                                alt="jip-suzuki-jimny-hitam-berlumpur-melintasi-jalur-offroad-dengan-penumpang-melambai"
+                                class="blog-thumb" width="800" height="420" loading="lazy" decoding="async">
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> 28 September 2026</span>
+                                    <span><i class="fas fa-folder"></i> Harga Paket</span>
+                                </div>
+                                <h2 class="blog-title">
+                                    <a href="blog/rincian-isi-dan-harga-offroad-batu-malang.html">Rincian Lengkap Isi
+                                        dan Harga Offroad Batu Malang Terbaru</a>
+                                </h2>
+                                <p class="blog-excerpt">Rincian lengkap isi paket, fasilitas, dan harga terbaru offroad
+                                    batu malang dari Rp 400 ribu hingga Rp 2.5 juta per orang. Bandingkan paket short,
+                                    medium, dan long trip di sini.</p>
+                                <a href="blog/rincian-isi-dan-harga-offroad-batu-malang.html" class="btn-read-more">BACA
+                                    SELENGKAPNYA <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+
                         <!-- ARTIKEL 1: Panduan Offroad Batu Malang (Pillar) -->
-                        <div class="blog-card" data-title="panduan lengkap wisata offroad batu malang rute harga keseruan jeep 4x4 coban talun gunung welirang">
+                        <div class="blog-card"
+                            data-title="panduan lengkap wisata offroad batu malang rute harga keseruan jeep 4x4 coban talun gunung welirang">
                             <img src="assets/img/jeep-offroad-batu-malang.webp"
                                 alt="Jeep 4x4 hardtop biru sedang melintasi jalur berlumpur offroad Batu Malang"
                                 class="blog-thumb" width="800" height="420" loading="lazy" decoding="async">
                             <div class="blog-content">
                                 <div class="blog-meta">
-                                    <span><i class="fas fa-calendar-alt"></i> 29 September 2026</span>
+                                    <span><i class="fas fa-calendar-alt"></i> 28 September 2026</span>
                                     <span><i class="fas fa-folder"></i> Wisata Offroad</span>
                                 </div>
                                 <h2 class="blog-title">
-                                    <a href="blog/panduan-wisata-offroad-batu-malang.html">Panduan Lengkap Wisata Offroad Batu Malang: Rute, Harga, dan Keseruannya</a>
+                                    <a href="blog/panduan-wisata-offroad-batu-malang.html">Panduan Lengkap Wisata
+                                        Offroad Batu Malang: Rute, Harga, dan Keseruannya</a>
                                 </h2>
-                                <p class="blog-excerpt">Panduan lengkap offroad batu malang dengan rincian paket, harga terbaru, rute menantang, tips persiapan, dan tips booking terpercaya untuk petualangan seru keluarga dan grup.</p>
-                                <a href="blog/panduan-wisata-offroad-batu-malang.html" class="btn-read-more">BACA SELENGKAPNYA <i class="fas fa-arrow-right ms-1"></i></a>
+                                <p class="blog-excerpt">Panduan lengkap offroad batu malang dengan rincian paket, harga
+                                    terbaru, rute menantang, tips persiapan, dan tips booking terpercaya untuk
+                                    petualangan seru keluarga dan grup.</p>
+                                <a href="blog/panduan-wisata-offroad-batu-malang.html" class="btn-read-more">BACA
+                                    SELENGKAPNYA <i class="fas fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
 
@@ -897,56 +1167,6 @@
                         <p class="text-grey">Coba gunakan kata kunci lain.</p>
                     </div>
 
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="sticky-sidebar">
-
-                        <div class="sidebar-widget d-none d-lg-block">
-                            <h4 class="widget-title">CARI ARTIKEL</h4>
-                            <div class="search-form">
-                                <input type="text" class="search-input search-input-field"
-                                    placeholder="Ketik kata kunci...">
-                                <button type="button" class="search-btn"><i class="fas fa-search"></i></button>
-                            </div>
-                        </div>
-
-                        <!-- <div class="sidebar-widget">
-                            <h4 class="widget-title">TERPOPULER</h4>
-
-                            <div class="recent-post-item">
-                                <img src="asset/IMG_20260218_133501_187.webp" class="recent-thumb" alt="Tips Nyaman"
-                                    loading="lazy" decoding="async">
-                                <div class="recent-info">
-                                    <h6><a href="wisata-camping-batu-malang.html">Panduan Destinasi & Spot Terbaik</a>
-                                    </h6>
-                                    <span class="recent-date">26 Februari 2026</span>
-                                </div>
-                            </div>
-
-                            <div class="recent-post-item">
-                                <img src="asset/IMG_20260218_133547_611.webp" class="recent-thumb"
-                                    alt="Manfaat Corporate" loading="lazy" decoding="async">
-                                <div class="recent-info">
-                                    <h6><a href="apakah-efektif-memilih-camping-untuk-team-building-perusahaan.html">Manfaat
-                                            Team Building di
-                                            Alam</a></h6>
-                                    <span class="recent-date">27 Februari 2026</span>
-                                </div>
-                            </div>
-
-                            <div class="recent-post-item">
-                                <img src="asset/IMG_1531.webp" class="recent-thumb" alt="Review Gear" loading="lazy"
-                                    decoding="async">
-                                <div class="recent-info">
-                                    <h6><a href="memilih-perlengkapan-batu-camping.html">Review Gear Camping Safety</a>
-                                    </h6>
-                                    <span class="recent-date">14 Maret 2026</span>
-                                </div>
-                            </div>
-
-                        </div> -->
-                    </div>
                 </div>
 
             </div>
@@ -1016,7 +1236,7 @@
                     <ul class="list-unstyled small">
                         <li class="mb-3 d-flex align-items-start text-dim">
                             <i class="fab fa-whatsapp footer-icon mt-1" aria-hidden="true"></i>
-                            <span><b>WhatsApp:</b><br>0857-8497-7074 (Booking)</span>
+                            <span><b>WhatsApp:</b><br>+62 812-3398-9707 (Booking)</span>
                         </li>
                         <li class="mb-3 d-flex align-items-start text-dim">
                             <i class="fas fa-map-marker-alt footer-icon mt-1" aria-hidden="true"></i>
@@ -1105,4 +1325,3 @@
 </body>
 
 </html>
-

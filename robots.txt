@@ -1,0 +1,42 @@
+# Mengizinkan semua AI, Crawler, dan Mesin Pencari
+User-agent: *
+Allow: /
+
+# Mengizinkan AI Search dari Google (AI Overview / SGE / Gemini / Bard)
+User-agent: Google-Extended
+Allow: /
+User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+
+# Mengizinkan OpenAI (ChatGPT, GPTBot)
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+
+# Mengizinkan Claude (Anthropic)
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# Mengizinkan Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Mengizinkan Apple Intelligence dan Bing Chat
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: bingbot
+Allow: /
+
+# Peta Situs (Sitemap) agar Crawler / AI dengan mudah memetakan isi website
+Sitemap: https://batuoffroad.web.id/sitemap.xml
