@@ -3,31 +3,37 @@
     <!-- Halaman Utama -->
     <url>
         <loc>https://batuoffroad.web.id/</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/index.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/about.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/paket.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/gallery.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/blog.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -35,89 +41,155 @@
     <!-- Halaman Paket -->
     <url>
         <loc>https://batuoffroad.web.id/paket/paket-atv.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/paket/paket-bromo.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/paket/paket-offroad-fungames.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/paket/paket-offroad-outbound-paintball.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/paket/paket-offroad-paintball-fungames.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/paket/paket-offroad-rafting-fungames.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/paket/paket-offroad-teambuilding.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
 
     <!-- Halaman Blog -->
     <url>
+        <loc>https://batuoffroad.web.id/blog/jeep-offroad-batu.html</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/jeep-terbuka-dan-tertutup.html</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/rute-fun-offroad-coban-talun.html</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/persiapan-fun-offroad-coban-talun.html</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://batuoffroad.web.id/blog/daftar-persiapan-offroad-batu-malang.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/blog/fun-offroad-coban-talun-batu-panduan-lengkap-paket-dan-rute.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/blog/isi-dan-harga-jeep-adventure-batu-malang.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/blog/isi-paket-fun-offroad-coban-talun.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/blog/jeep-adventure-batu-malang.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/blog/panduan-wisata-offroad-batu-malang.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/blog/pengalaman-jeep-adventure-batu-malang.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/blog/persiapan-jeep-adventure-batu-malang.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/blog/review-dan-pengalaman-offroad-batu-malang.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/blog/rincian-isi-dan-harga-offroad-batu-malang.html</loc>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
+    </url>
+    <!-- Artikel Baru Coban Talun -->
+    <url>
+        <loc>https://batuoffroad.web.id/blog/offroad-coban-talun-batu-pengalaman-jalur-dan-cara-booking.html</loc>
+        <lastmod>2026-10-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/keseruan-kegiatan-offroad-coban-talun-dari-datang-sampai-pulang.html</loc>
+        <lastmod>2026-10-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/cerita-seru-tamu-offroad-coban-talun-bersama-guide.html</loc>
+        <lastmod>2026-10-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/pilih-waktu-offroad-coban-talun-better-pagi-siang-atau-sore.html</loc>
+        <lastmod>2026-10-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 </urlset>
