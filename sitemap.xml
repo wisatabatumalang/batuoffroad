@@ -192,4 +192,29 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    <!-- Artikel Baru Outbound & Wisata Offroad (04 Oktober 2026) -->
+    <url>
+        <loc>https://batuoffroad.web.id/blog/outbound-coban-talun-batu-team-building-di-alam-terbuka.html</loc>
+        <lastmod>2026-10-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/manfaat-outbound-di-alam-terbuka-untuk-kerja-sama-tim.html</loc>
+        <lastmod>2026-10-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/wisata-offroad-batu-aktivitas-seru-jelajah-alam-malang-raya.html</loc>
+        <lastmod>2026-10-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/apa-itu-wisata-offroad-batu-dan-siapa-yang-cocok-ikut.html</loc>
+        <lastmod>2026-10-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
