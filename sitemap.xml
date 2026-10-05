@@ -217,4 +217,23 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    <!-- Artikel Baru Pengecekan Jeep, Paket Wisata & Operator Offroad (05 Oktober 2026) -->
+    <url>
+        <loc>https://batuoffroad.web.id/blog/perawatan-dan-pengecekan-jeep-sebelum-offroad-dimulai.html</loc>
+        <lastmod>2026-10-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/paket-wisata-offroad-batu-pilih-yang-cocok-untuk-rombongan.html</loc>
+        <lastmod>2026-10-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/cara-memilih-operator-offroad-batu-yang-terpercaya.html</loc>
+        <lastmod>2026-10-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
