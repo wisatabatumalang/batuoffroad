@@ -192,6 +192,31 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    <!-- Artikel Baru Panduan Lengkap, Isi Paket, Rencana Liburan & Cara Booking (05 Oktober 2026) -->
+    <url>
+        <loc>https://batuoffroad.web.id/blog/panduan-lengkap-wisata-offroad-batu-malang.html</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/isi-paket-offroad-batu-malang.html</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/rencana-liburan-petualangan-batu.html</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/cara-booking-offroad-batu.html</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
     <!-- Artikel Baru Outbound & Wisata Offroad (04 Oktober 2026) -->
     <url>
         <loc>https://batuoffroad.web.id/blog/outbound-coban-talun-batu-team-building-di-alam-terbuka.html</loc>
