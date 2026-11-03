@@ -333,5 +333,22 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/paintball-coban-talun</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/offroad-coban-putri-batu</loc>
+        <lastmod>2026-11-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/rute-ke-coban-putri</loc>
+        <lastmod>2026-11-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
-
