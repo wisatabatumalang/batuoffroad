@@ -161,6 +161,10 @@
             color: var(--text-white);
         }
 
+        .text-dim {
+            color: var(--text-light, #ebd5c1);
+        }
+
         .text-blue {
             color: var(--accent-blue) !important;
         }
@@ -255,49 +259,50 @@
             color: var(--text-grey);
         }
 
-        /* ARTICLE CONTAINER */
+        /* --- ARTICLE LAYOUT --- */
         .article-container {
             background: var(--bg-panel);
             border: 1px solid var(--border-line);
             border-radius: 12px;
-            padding: 40px;
-            margin-bottom: 40px;
-        }
-
-        @media (max-width: 768px) {
-            .article-container {
-                padding: 20px;
-            }
+            overflow: hidden;
+            margin-bottom: 30px;
         }
 
         .article-featured-img {
             width: 100%;
             height: auto;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            border: 1px solid var(--border-line);
+            max-height: 500px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--border-line);
+        }
+
+        .article-body {
+            padding: 35px 40px;
+        }
+
+        @media (max-width: 768px) {
+            .article-body {
+                padding: 25px 20px;
+            }
         }
 
         .article-meta {
-            display: flex;
-            gap: 20px;
-            margin-bottom: 25px;
             font-size: 0.9rem;
             color: var(--text-grey);
-            border-bottom: 1px solid var(--border-line);
-            padding-bottom: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
             flex-wrap: wrap;
         }
 
         .article-meta i {
-            color: var(--accent-blue);
+            color: var(--accent-gold);
             margin-right: 5px;
         }
 
         .article-title {
             font-size: 2.2rem;
             font-weight: 800;
-            color: var(--text-white);
             margin-bottom: 20px;
             line-height: 1.2;
             text-transform: none;
@@ -319,114 +324,78 @@
         }
 
         .article-body h2 {
-            font-size: 1.7rem;
+            font-size: 1.6rem;
             font-weight: 700;
-            margin-top: 40px;
-            margin-bottom: 20px;
+            margin-top: 35px;
+            margin-bottom: 15px;
             color: var(--accent-blue);
-            text-transform: none;
             border-left: 4px solid var(--accent-blue);
-            padding-left: 15px;
+            padding-left: 12px;
+            text-transform: none;
         }
 
         .article-body h3 {
             font-size: 1.3rem;
-            font-weight: 700;
-            margin-top: 30px;
-            margin-bottom: 15px;
+            font-weight: 600;
+            margin-top: 25px;
+            margin-bottom: 12px;
             color: var(--text-white);
             text-transform: none;
         }
 
         .article-body p {
-            color: var(--text-light);
             line-height: 1.8;
-            margin-bottom: 15px;
-            font-size: 1rem;
-        }
-
-        .article-body ul {
-            padding-left: 20px;
             margin-bottom: 20px;
-        }
-
-        .article-body ul li {
             color: var(--text-light);
-            line-height: 1.8;
-            margin-bottom: 8px;
-            position: relative;
-            padding-left: 10px;
         }
 
-        .article-body ul li::marker {
+        .article-body p a,
+        .article-body li a {
             color: var(--accent-blue);
+            text-decoration: underline;
         }
 
+        .article-body ul,
         .article-body ol {
+            margin-bottom: 25px;
             padding-left: 20px;
-            margin-bottom: 20px;
         }
 
-        .article-body ol li {
-            color: var(--text-light);
+        .article-body li {
             line-height: 1.8;
-            margin-bottom: 8px;
-            padding-left: 5px;
-        }
-
-        .article-body ol li::marker {
-            color: var(--accent-blue);
-            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text-light);
         }
 
         .article-img-inline {
             width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin: 25px 0;
+            border-radius: 8px;
+            margin: 25px 0 10px;
             border: 1px solid var(--border-line);
         }
 
         .img-caption {
-            text-align: center;
             font-size: 0.85rem;
             color: var(--text-grey);
-            margin-top: -15px;
+            text-align: center;
             margin-bottom: 25px;
             font-style: italic;
         }
 
-        /* HIGHLIGHT BOX */
         .highlight-box {
             background: rgba(229, 137, 10, 0.1);
-            border: 1px solid rgba(229, 137, 10, 0.3);
-            border-radius: 10px;
-            padding: 25px;
-            margin: 25px 0;
-        }
-
-        .highlight-box h3 {
-            color: var(--accent-blue);
-            margin-top: 0;
-        }
-
-        .highlight-box ul li {
-            margin-bottom: 6px;
-        }
-
-        /* CONCLUSION BOX */
-        .conclusion-box {
-            background: linear-gradient(135deg, rgba(229, 137, 10, 0.12), rgba(251, 191, 36, 0.08));
-            border: 1px solid rgba(229, 137, 10, 0.3);
-            border-radius: 12px;
-            padding: 30px;
+            border-left: 4px solid var(--accent-blue);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
             margin: 30px 0;
         }
 
-        .conclusion-box h2 {
-            border-left: none;
-            padding-left: 0;
-            text-align: center;
+        .conclusion-box {
+            background: rgba(86, 43, 8, 0.6);
+            border: 1px solid var(--border-line);
+            border-radius: 8px;
+            padding: 25px;
+            margin: 35px 0;
         }
 
         /* SIDEBAR WIDGETS */
@@ -672,14 +641,19 @@
             border-radius: 6px;
             font-size: 0.85rem;
             font-weight: 600;
-            text-decoration: none;
-            color: white;
+            text-decoration: none !important;
+            color: #ffffff !important;
             transition: 0.3s;
+        }
+
+        .share-btn i {
+            color: #ffffff !important;
         }
 
         .share-btn:hover {
             transform: translateY(-2px);
-            color: white;
+            color: #ffffff !important;
+            text-decoration: none !important;
         }
 
         .share-btn.wa {
@@ -1005,11 +979,9 @@
                                 <p>Kunci pengalaman yang aman adalah memakai perlengkapan proteksi, mengikuti arahan
                                     wasit, dan memilih format yang sesuai kelompok. Rombongan yang ingin acara lebih
                                     lengkap dapat menggabungkannya dengan offroad.</p>
-                                <p class="text-center mt-3 fw-bold">Ingin merasakan serunya langsung? Hubungi Batu
+                                <p class="mb-0 fw-bold">Ingin merasakan serunya langsung? Hubungi Batu
                                     Offroad Adventure di 0812-3398-9707 untuk info paket dan booking.</p>
                             </div>
-
-                            <p class="text-muted small mt-4"><em>Penulis: Sholikhatun Nikmah</em></p>
 
                             <!-- SHARE BUTTONS -->
                             <div class="share-buttons">
@@ -1060,47 +1032,48 @@
                                 }
 
                                 .related-title {
-                                    font-size: 1.2rem;
-                                    font-weight: 800;
-                                    line-height: 1.4;
+                                    font-size: 1.15rem;
+                                    font-weight: 700;
                                     margin-bottom: 0.75rem;
+                                    line-height: 1.4;
                                 }
 
                                 .related-title a {
-                                    color: var(--text-color, #ffffff);
-                                    text-decoration: none;
-                                    transition: color 0.3s;
+                                    color: #ffffff !important;
+                                    text-decoration: none !important;
+                                    transition: color 0.2s;
                                 }
 
                                 .related-title a:hover {
-                                    color: var(--accent-blue, #2563eb);
+                                    color: var(--primary-color, #e5890a) !important;
                                 }
 
                                 .related-excerpt {
-                                    color: var(--text-dim, #ebd5c1);
-                                    font-size: 0.95rem;
-                                    line-height: 1.5;
-                                    margin-bottom: 1.5rem;
+                                    font-size: 0.9rem;
+                                    color: var(--text-muted, #d1d5db);
+                                    margin-bottom: 1.25rem;
                                     flex-grow: 1;
+                                    line-height: 1.6;
                                 }
 
                                 .related-btn {
                                     display: block;
                                     width: 100%;
                                     text-align: center;
-                                    background: var(--accent-blue, #2563eb);
-                                    color: #ffffff;
+                                    background: var(--accent-blue, #e5890a);
+                                    color: #ffffff !important;
                                     padding: 0.75rem 1rem;
                                     font-weight: 700;
                                     font-size: 0.9rem;
                                     border-radius: 6px;
-                                    text-decoration: none;
+                                    text-decoration: none !important;
                                     transition: background 0.3s;
                                 }
 
                                 .related-btn:hover {
                                     background: #b46b08;
-                                    color: #ffffff;
+                                    color: #ffffff !important;
+                                    text-decoration: none !important;
                                 }
                             </style>
                             <div class="related-articles mt-5 pt-4"
@@ -1111,7 +1084,7 @@
                                 <div class="row g-4">
                                     <div class="col-md-6">
                                         <div class="related-card">
-                                            <img src="../assets/img/1-paket-Fun-Offroad-Coban-Talun.webp"
+                                            <img src="../assets/img/1-Fun-Offroad-Coban-Talun.webp"
                                                 alt="Jip offroad di Coban Talun" class="related-img" loading="lazy">
                                             <div class="related-body">
                                                 <h4 class="related-title">
@@ -1128,7 +1101,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="related-card">
-                                            <img src="../assets/img/Paket/team-building-karyawan-perusahaan-outbound-malang.webp"
+                                            <img src="../assets/img/Outbound-Coban-Talun-Batu-1.webp"
                                                 alt="Outbound team building di Batu" class="related-img" loading="lazy">
                                             <div class="related-body">
                                                 <h4 class="related-title">
@@ -1146,63 +1119,70 @@
                                 </div>
                             </div>
                         </div>
-                </article>
-            </div>
-
-            <!-- SIDEBAR -->
-            <div class="col-lg-4">
-                <div class="sticky-sidebar">
-
-                    <!-- Daftar Isi -->
-                    <div class="sidebar-widget" id="tocWidget">
-                        <div class="toc-header-toggle" id="tocToggleBtn">
-                            <h4 class="widget-title mb-0" style="border-bottom: none; padding-bottom: 0;">DAFTAR ISI
-                            </h4>
-                            <i class="fas fa-chevron-down ms-2" id="tocToggleIcon" aria-hidden="true"></i>
-                        </div>
-                        <div class="toc-collapse-content mt-3" id="tocContent">
-                            <ul class="toc-list">
-                                <li><a href="#apa-itu-paintball"><i class="fas fa-chevron-right" aria-hidden="true"></i>
-                                        Apa Itu Paintball?</a></li>
-                                <li><a href="#cara-main"><i class="fas fa-chevron-right" aria-hidden="true"></i> Cara
-                                        Main Singkat</a></li>
-                                <li><a href="#perlengkapan"><i class="fas fa-chevron-right" aria-hidden="true"></i>
-                                        Perlengkapan Pemain</a></li>
-                                <li><a href="#siapa-yang-cocok"><i class="fas fa-chevron-right" aria-hidden="true"></i>
-                                        Siapa yang Cocok?</a></li>
-                                <li><a href="#manfaat-paintball"><i class="fas fa-chevron-right" aria-hidden="true"></i>
-                                        Manfaat bagi Rombongan</a></li>
-                                <li><a href="#format-permainan"><i class="fas fa-chevron-right" aria-hidden="true"></i>
-                                        Format Permainan</a></li>
-                                <li><a href="#gabung-wisata-lain"><i class="fas fa-chevron-right"
-                                            aria-hidden="true"></i> Gabung dengan Wisata Lain</a></li>
-                                <li><a href="#persiapan"><i class="fas fa-chevron-right" aria-hidden="true"></i>
-                                        Persiapan Sebelum Datang</a></li>
-                                <li><a href="#kesalahan-pemula"><i class="fas fa-chevron-right" aria-hidden="true"></i>
-                                        Kesalahan Umum Pemula</a></li>
-                                <li><a href="#tips-seru"><i class="fas fa-chevron-right" aria-hidden="true"></i> Tips
-                                        Pengalaman Seru</a></li>
-                                <li><a href="#kesimpulan"><i class="fas fa-chevron-right" aria-hidden="true"></i>
-                                        Kesimpulan</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- CTA Widget -->
-                    <div class="sidebar-widget cta-widget">
-                        <h4 class="widget-title" style="text-align: center;">BOOKING SEKARANG</h4>
-                        <p style="font-size: 0.95rem;">Rencanakan keseruan paintball dan petualangan alam di Batu
-                            bersama tim kami.</p>
-                        <a href="https://wa.me/6281233989707?text=Halo%20Batu%20Offroad%2C%20saya%20tertarik%20dengan%20paket%20paintball%20Coban%20Talun.%20Bisa%20info%20lebih%20lanjut%3F"
-                            class="btn btn-primary-custom" target="_blank" aria-label="Booking WhatsApp">
-                            <i class="fab fa-whatsapp me-2" aria-hidden="true"></i>HUBUNGI ADMIN
-                        </a>
-                    </div>
-
+                    </article>
                 </div>
-            </div>
 
-        </div>
+                <!-- SIDEBAR -->
+                <div class="col-lg-4">
+                    <div class="sticky-sidebar">
+
+                        <!-- Daftar Isi -->
+                        <div class="sidebar-widget" id="tocWidget">
+                            <div class="toc-header-toggle" id="tocToggleBtn">
+                                <h4 class="widget-title mb-0" style="border-bottom: none; padding-bottom: 0;">DAFTAR ISI
+                                </h4>
+                                <i class="fas fa-chevron-down ms-2" id="tocToggleIcon" aria-hidden="true"></i>
+                            </div>
+                            <div class="toc-collapse-content mt-3" id="tocContent">
+                                <ul class="toc-list">
+                                    <li><a href="#apa-itu-paintball"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i>
+                                            Apa Itu Paintball?</a></li>
+                                    <li><a href="#cara-main"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Cara
+                                            Main Singkat</a></li>
+                                    <li><a href="#perlengkapan"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Perlengkapan Pemain</a></li>
+                                    <li><a href="#siapa-yang-cocok"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i>
+                                            Siapa yang Cocok?</a></li>
+                                    <li><a href="#manfaat-paintball"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i>
+                                            Manfaat bagi Rombongan</a></li>
+                                    <li><a href="#format-permainan"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i>
+                                            Format Permainan</a></li>
+                                    <li><a href="#gabung-wisata-lain"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i> Gabung dengan Wisata Lain</a></li>
+                                    <li><a href="#persiapan"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Persiapan Sebelum Datang</a></li>
+                                    <li><a href="#kesalahan-pemula"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i>
+                                            Kesalahan Umum Pemula</a></li>
+                                    <li><a href="#tips-seru"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Tips
+                                            Pengalaman Seru</a></li>
+                                    <li><a href="#kesimpulan"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Kesimpulan</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- CTA Widget -->
+                        <div class="sidebar-widget cta-widget">
+                            <h4 class="widget-title" style="text-align: center;">BOOKING SEKARANG</h4>
+                            <p style="font-size: 0.95rem;">Rencanakan keseruan paintball dan petualangan alam di Batu
+                                bersama tim kami.</p>
+                            <a href="https://wa.me/6281233989707?text=Halo%20Batu%20Offroad%2C%20saya%20tertarik%20dengan%20paket%20paintball%20Coban%20Talun.%20Bisa%20info%20lebih%20lanjut%3F"
+                                class="btn btn-primary-custom" target="_blank" aria-label="Booking WhatsApp">
+                                <i class="fab fa-whatsapp me-2" aria-hidden="true"></i>HUBUNGI ADMIN
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -1217,51 +1197,29 @@
                 <div class="col-lg-2 mb-4">
                     <h5 class="text-white mb-3 text-uppercase">Navigasi</h5>
                     <ul class="list-unstyled small">
-                        <li class="mb-2">
-                            <a href="../index.html" class="text-dim footer-link-item">
-                                <i class="fas fa-chevron-right me-2"></i>Beranda
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="../about.html" class="text-dim footer-link-item">
-                                <i class="fas fa-chevron-right me-2"></i>Tentang Kami
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="../paket.html" class="text-dim footer-link-item">
-                                <i class="fas fa-chevron-right me-2"></i>Paket
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="../gallery.html" class="text-dim footer-link-item">
-                                <i class="fas fa-chevron-right me-2"></i>Gallery
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="../blog.html" class="text-dim footer-link-item">
-                                <i class="fas fa-chevron-right me-2"></i>Blog
-                            </a>
-                        </li>
+                        <li class="mb-2"><a href="../index.html" class="text-dim footer-link-item"><i
+                                    class="fas fa-chevron-right me-2"></i>Beranda</a></li>
+                        <li class="mb-2"><a href="../about.html" class="text-dim footer-link-item"><i
+                                    class="fas fa-chevron-right me-2"></i>Tentang Kami</a></li>
+                        <li class="mb-2"><a href="../paket.html" class="text-dim footer-link-item"><i
+                                    class="fas fa-chevron-right me-2"></i>Paket</a></li>
+                        <li class="mb-2"><a href="../gallery.html" class="text-dim footer-link-item"><i
+                                    class="fas fa-chevron-right me-2"></i>Gallery</a></li>
+                        <li class="mb-2"><a href="../blog.html" class="text-dim footer-link-item"><i
+                                    class="fas fa-chevron-right me-2"></i>Blog</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 mb-4">
                     <h5 class="text-white mb-3 text-uppercase">NETWORK</h5>
                     <ul class="list-unstyled small">
-                        <li class="mb-2">
-                            <a href="https://batuoutbound.net/" class="text-dim footer-link-item">
-                                <i class="fas fa-chevron-right me-2"></i>Batu Outbound Adventure
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="https://katunoutboundadventure.com/" class="text-dim footer-link-item">
-                                <i class="fas fa-chevron-right me-2"></i>Katun Outbound Adventure
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="https://baturaftingadventure.com/" class="text-dim footer-link-item">
-                                <i class="fas fa-chevron-right me-2"></i>Batu Rafting Adventure
-                            </a>
-                        </li>
+                        <li class="mb-2"><a href="https://batuoutbound.net/" class="text-dim footer-link-item"><i
+                                    class="fas fa-chevron-right me-2"></i>Batu Outbound Adventure</a></li>
+                        <li class="mb-2"><a href="https://katunoutboundadventure.com/"
+                                class="text-dim footer-link-item"><i class="fas fa-chevron-right me-2"></i>Katun
+                                Outbound Adventure</a></li>
+                        <li class="mb-2"><a href="https://baturaftingadventure.com/"
+                                class="text-dim footer-link-item"><i class="fas fa-chevron-right me-2"></i>Batu Rafting
+                                Adventure</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 mb-4">

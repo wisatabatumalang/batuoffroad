@@ -225,6 +225,10 @@
             color: var(--text-white);
         }
 
+        .text-dim {
+            color: var(--text-light, #ebd5c1);
+        }
+
         .text-blue {
             color: var(--accent-blue) !important;
         }
@@ -785,31 +789,53 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="../index.html">BATU <span>OFFROAD</span></a>
-            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-                <i class="fas fa-bars"></i>
+            <a class="navbar-brand d-flex align-items-center" href="../index.html" style="margin-right: 0;">
+                <img src="../assets/img/Logo/logo-batu-offroad.webp" alt="Batu Offroad Logo" class="me-2"
+                    style="height: 35px; width: auto; object-fit: contain;" loading="lazy" decoding="async">
+                <span class="ms-1"
+                    style="color: #fff; font-weight: 800; font-size: 1.1rem; white-space: nowrap; font-style: normal;">BATU
+                    OFFROAD</span>
+            </a>
+            <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="fas fa-bars text-white"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">BERANDA</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../about.html">TENTANG KAMI</a></li>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+
+                    <!-- MENU PAKET DROPDOWN -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="../paket.html" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown">PAKET WISATA</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../paket.html">SEMUA PAKET</a></li>
-                            <li><a class="dropdown-item" href="../paket/paket-offroad-fungames.html">OFFROAD + FUN GAMES</a></li>
-                            <li><a class="dropdown-item" href="../paket/paket-offroad-rafting-fungames.html">OFFROAD + RAFTING</a></li>
-                            <li><a class="dropdown-item" href="../paket/paket-offroad-outbound-paintball.html">OFFROAD + PAINTBALL</a></li>
-                            <li><a class="dropdown-item" href="../paket/paket-bromo.html">TRIP BROMO</a></li>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPaket" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Paket
+                        </a>
+                        <ul class="dropdown-menu shadow" aria-labelledby="navbarDropdownPaket">
+                            <li><a class="dropdown-item" href="../paket/paket-offroad-fungames.html">Offroad + Fun
+                                    Games</a></li>
+                            <li><a class="dropdown-item" href="../paket/paket-offroad-teambuilding.html">Offroad + Team
+                                    Building</a></li>
+                            <li><a class="dropdown-item" href="../paket/paket-offroad-rafting-fungames.html">Offroad +
+                                    Rafting + Fun Games</a></li>
+                            <li><a class="dropdown-item" href="../paket/paket-offroad-paintball-fungames.html">Offroad +
+                                    Paintball + Fun Games</a></li>
+                            <li><a class="dropdown-item" href="../paket/paket-offroad-outbound-paintball.html">Offroad +
+                                    Outbound + Paintball</a></li>
+                            <li><a class="dropdown-item" href="../paket/paket-bromo.html">Paket Bromo</a></li>
+                            <li><a class="dropdown-item" href="../paket/paket-atv.html">Paket ATV</a></li>
+                            <li style="border-top: 1px solid var(--border-line);"><a class="dropdown-item"
+                                    href="../paket.html">Lihat Semua Paket</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="../gallery.html">GALERI</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="../blog.html">BLOG</a></li>
-                    <li class="nav-item ms-lg-3">
-                        <a class="btn btn-primary-custom" href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20tanya%20paket%20Offroad%20Batu" target="_blank">
-                            <i class="fab fa-whatsapp me-1"></i> HUBUNGI KAMI
+
+                    <li class="nav-item"><a class="nav-link" href="../gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../blog.html">Blog</a></li>
+                    <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
+                        <a href="https://wa.me/6281233989707" class="btn btn-primary-custom" target="_blank"
+                            aria-label="Kontak Kami">
+                            <i class="fab fa-whatsapp me-2" aria-hidden="true"></i>KONTAK
                         </a>
                     </li>
                 </ul>
@@ -1246,34 +1272,56 @@
     <!-- FOOTER -->
     <footer>
         <div class="container">
-            <div class="row g-4 mb-4">
-                <div class="col-lg-4 col-md-6">
-                    <a class="navbar-brand text-white fw-bold display-6 d-block mb-3" href="../index.html">
-                        BATU <span style="color: var(--accent-blue);">OFFROAD</span>
-                    </a>
-                    <p class="text-grey small">
-                        Provider resmi persewaan jeep offroad & paket outbound adventure terpercaya di Kota Batu Malang. Pengalaman seru, aman, dan berkesan.
-                    </p>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h3 class="text-white mb-3">BATU<span class="text-blue"> OFFROAD</span></h3>
+                    <p class="text-dim small">Penyedia jasa offroad dan outbound profesional dengan standar keamanan
+                        tinggi dan tim berpengalaman, siap menghadirkan pengalaman seru dan berkesan.</p>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <h5 class="text-white mb-3 fw-bold">LINK CEPAT</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2 footer-link-item"><i class="fas fa-chevron-right"></i><a href="../index.html">Beranda</a></li>
-                        <li class="mb-2 footer-link-item"><i class="fas fa-chevron-right"></i><a href="../about.html">Tentang Kami</a></li>
-                        <li class="mb-2 footer-link-item"><i class="fas fa-chevron-right"></i><a href="../paket.html">Paket Wisata</a></li>
-                        <li class="mb-2 footer-link-item"><i class="fas fa-chevron-right"></i><a href="../gallery.html">Galeri Foto</a></li>
-                        <li class="mb-2 footer-link-item"><i class="fas fa-chevron-right"></i><a href="../blog.html">Artikel Blog</a></li>
+                <div class="col-lg-2 mb-4">
+                    <h5 class="text-white mb-3 text-uppercase">Navigasi</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="../index.html" class="text-dim footer-link-item"><i
+                                    class="fas fa-chevron-right me-2"></i>Beranda</a></li>
+                        <li class="mb-2"><a href="../about.html" class="text-dim footer-link-item"><i
+                                    class="fas fa-chevron-right me-2"></i>Tentang Kami</a></li>
+                        <li class="mb-2"><a href="../paket.html" class="text-dim footer-link-item"><i
+                                    class="fas fa-chevron-right me-2"></i>Paket</a></li>
+                        <li class="mb-2"><a href="../gallery.html" class="text-dim footer-link-item"><i
+                                    class="fas fa-chevron-right me-2"></i>Gallery</a></li>
+                        <li class="mb-2"><a href="../blog.html" class="text-dim footer-link-item"><i
+                                    class="fas fa-chevron-right me-2"></i>Blog</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <h5 class="text-white mb-3 fw-bold">KONTAK KAMI</h5>
-                    <p class="text-grey small mb-2 d-flex align-items-center"><i class="fas fa-map-marker-alt footer-icon"></i> Kawasan Wisata Coban Talun, Bumiaji, Kota Batu, Jawa Timur</p>
-                    <p class="text-grey small mb-2 d-flex align-items-center"><i class="fab fa-whatsapp footer-icon"></i> +62 812-3456-7890</p>
-                    <p class="text-grey small mb-2 d-flex align-items-center"><i class="fas fa-envelope footer-icon"></i> info@batuoffroad.web.id</p>
+                <div class="col-lg-2 mb-4">
+                    <h5 class="text-white mb-3 text-uppercase">NETWORK</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="https://batuoutbound.net/" class="text-dim footer-link-item"><i
+                                    class="fas fa-chevron-right me-2"></i>Batu Outbound Adventure</a></li>
+                        <li class="mb-2"><a href="https://katunoutboundadventure.com/"
+                                class="text-dim footer-link-item"><i class="fas fa-chevron-right me-2"></i>Katun
+                                Outbound Adventure</a></li>
+                        <li class="mb-2"><a href="https://baturaftingadventure.com/"
+                                class="text-dim footer-link-item"><i class="fas fa-chevron-right me-2"></i>Batu Rafting
+                                Adventure</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-white mb-3 text-uppercase">KONTAK</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-3 d-flex align-items-start text-dim">
+                            <i class="fab fa-whatsapp footer-icon mt-1" aria-hidden="true"></i>
+                            <span><b>WhatsApp:</b><br>+62 812-3398-9707 (Booking)</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start text-dim">
+                            <i class="fas fa-map-marker-alt footer-icon mt-1" aria-hidden="true"></i>
+                            <span><b>Alamat:</b><br>4GFR+WC4, Temas, Kec. Batu, Kota Batu, Jawa Timur 65315</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="border-top border-secondary pt-3 text-center">
-                <p class="text-grey small mb-0">&copy; 2026 Batu Offroad Adventure. All Rights Reserved.</p>
+            <div class="border-top border-secondary pt-4 mt-4 text-center">
+                <small class="text-dim">&copy; 2026 Batu Offroad. All Rights Reserved.</small>
             </div>
         </div>
     </footer>
