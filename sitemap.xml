@@ -357,4 +357,23 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    <!-- Artikel Baru Coban Putri (5-7 November 2026) -->
+    <url>
+        <loc>https://batuoffroad.web.id/blog/rute-ke-coban-putri-batu</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/fasilitas-coban-putri-batu</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/wisata-dekat-coban-putri</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
