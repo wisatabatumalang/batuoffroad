@@ -769,11 +769,185 @@
             color: #ffffff;
         }
     </style>
+    <style id="article-page-enhancements">
+        /* --- ARTICLE PAGE ENHANCEMENTS & RESPONSIVE FIXES --- */
+        .article-featured-img {
+            width: 100% !important;
+            height: auto !important;
+            aspect-ratio: 16 / 9 !important;
+            object-fit: cover !important;
+            display: block !important;
+            border-bottom: 1px solid var(--border-line, #834510) !important;
+        }
+
+        .article-img-inline {
+            width: 100% !important;
+            height: auto !important;
+            aspect-ratio: 16 / 9 !important;
+            object-fit: cover !important;
+            display: block !important;
+            border-radius: 10px !important;
+            margin: 25px 0 !important;
+            border: 1px solid var(--border-line, #834510) !important;
+        }
+
+        .related-card {
+            background: var(--bg-deep, #361b05) !important;
+            border: 1px solid var(--border-line, #834510) !important;
+            border-radius: 10px !important;
+            overflow: hidden !important;
+            display: flex !important;
+            flex-direction: column !important;
+            height: 100% !important;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+        }
+
+        .related-card:hover {
+            transform: translateY(-5px) !important;
+            border-color: var(--accent-blue, #E5890A) !important;
+            box-shadow: 0 10px 25px rgba(229, 137, 10, 0.25) !important;
+        }
+
+        .related-img {
+            width: 100% !important;
+            height: auto !important;
+            aspect-ratio: 16 / 9 !important;
+            object-fit: cover !important;
+            display: block !important;
+            border-bottom: 1px solid var(--border-line, #834510) !important;
+        }
+
+        .related-body {
+            padding: 1.5rem !important;
+            display: flex !important;
+            flex-direction: column !important;
+            flex-grow: 1 !important;
+        }
+
+        .related-title {
+            font-size: 1.2rem !important;
+            font-weight: 800 !important;
+            line-height: 1.35 !important;
+            margin-bottom: 0.75rem !important;
+        }
+
+        .related-title a {
+            color: var(--text-white, #f8fafc) !important;
+            text-decoration: none !important;
+            transition: color 0.3s ease !important;
+        }
+
+        .related-title a:hover {
+            color: var(--accent-blue, #E5890A) !important;
+        }
+
+        .related-excerpt {
+            color: var(--text-light, #ebd5c1) !important;
+            font-size: 0.95rem !important;
+            line-height: 1.6 !important;
+            margin-bottom: 1.5rem !important;
+            flex-grow: 1 !important;
+        }
+
+        .related-btn {
+            display: block !important;
+            width: 100% !important;
+            text-align: center !important;
+            background: var(--accent-blue, #E5890A) !important;
+            color: #ffffff !important;
+            padding: 0.75rem 1rem !important;
+            font-weight: 700 !important;
+            font-size: 0.9rem !important;
+            border-radius: 6px !important;
+            text-decoration: none !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
+            transition: background 0.3s ease, transform 0.3s ease !important;
+        }
+
+        .related-btn:hover {
+            background: #c47508 !important;
+            color: #ffffff !important;
+            transform: translateY(-2px) !important;
+        }
+
+        /* Footer styling alignment */
+        footer {
+            background: #241103 !important;
+            padding: 60px 0 30px !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+        }
+
+        .footer-icon {
+            color: var(--accent-blue, #E5890A) !important;
+            margin-right: 12px !important;
+            width: 20px !important;
+            text-align: center !important;
+            flex-shrink: 0 !important;
+        }
+
+        footer a {
+            color: #94A3B8 !important;
+            text-decoration: none !important;
+            transition: 0.3s !important;
+        }
+
+        footer a:hover {
+            color: var(--accent-blue, #E5890A) !important;
+        }
+
+        .footer-link-item {
+            display: flex !important;
+            align-items: center !important;
+        }
+
+        .footer-link-item i {
+            font-size: 0.65rem !important;
+            color: var(--accent-blue, #E5890A) !important;
+            width: 18px !important;
+            transition: 0.3s !important;
+            margin-right: 0.5rem !important;
+        }
+
+        .footer-link-item:hover i {
+            transform: translateX(3px) !important;
+            color: var(--accent-gold, #F59E0B) !important;
+        }
+
+        .text-dim {
+            color: #94A3B8 !important;
+        }
+
+        @media (max-width: 768px) {
+            .article-body {
+                padding: 25px 20px !important;
+            }
+
+            .article-title {
+                font-size: 1.6rem !important;
+                line-height: 1.3 !important;
+            }
+
+            .related-body {
+                padding: 1.25rem 1rem !important;
+            }
+
+            .article-featured-img,
+            .related-img,
+            .article-img-inline {
+                width: 100% !important;
+                height: auto !important;
+                aspect-ratio: 16 / 9 !important;
+                object-fit: cover !important;
+                display: block !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+        <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="../index.html" style="margin-right: 0;"><img
@@ -791,22 +965,30 @@
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Beranda</a></li>
                     <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+
+                    <!-- MENU PAKET DROPDOWN -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPaket" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Paket
                         </a>
                         <ul class="dropdown-menu shadow" aria-labelledby="navbarDropdownPaket">
-                            <li><a class="dropdown-item" href="../paket/paket-offroad-fungames.html">Offroad + Fun Games</a></li>
-                            <li><a class="dropdown-item" href="../paket/paket-offroad-teambuilding.html">Offroad + Team Building</a></li>
-                            <li><a class="dropdown-item" href="../paket/paket-offroad-rafting-fungames.html">Offroad + Rafting + Fun Games</a></li>
-                            <li><a class="dropdown-item" href="../paket/paket-offroad-paintball-fungames.html">Offroad + Paintball + Fun Games</a></li>
-                            <li><a class="dropdown-item" href="../paket/paket-offroad-outbound-paintball.html">Offroad + Outbound + Paintball</a></li>
+                            <li><a class="dropdown-item" href="../paket/paket-offroad-fungames.html">Offroad + Fun
+                                    Games</a></li>
+                            <li><a class="dropdown-item" href="../paket/paket-offroad-teambuilding.html">Offroad + Team
+                                    Building</a></li>
+                            <li><a class="dropdown-item" href="../paket/paket-offroad-rafting-fungames.html">Offroad +
+                                    Rafting + Fun Games</a></li>
+                            <li><a class="dropdown-item" href="../paket/paket-offroad-paintball-fungames.html">Offroad +
+                                    Paintball + Fun Games</a></li>
+                            <li><a class="dropdown-item" href="../paket/paket-offroad-outbound-paintball.html">Offroad +
+                                    Outbound + Paintball</a></li>
                             <li><a class="dropdown-item" href="../paket/paket-bromo.html">Paket Bromo</a></li>
                             <li><a class="dropdown-item" href="../paket/paket-atv.html">Paket ATV</a></li>
-                            <li style="border-top: 1px solid var(--border-line);"><a class="dropdown-item" href="../paket.html">Lihat Semua Paket</a></li>
+                            <li><a class="dropdown-item" href="../paket.html">Lihat Semua Paket</a></li>
                         </ul>
                     </li>
+
                     <li class="nav-item"><a class="nav-link" href="../gallery.html">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link active" href="../blog.html">Blog</a></li>
                     <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
@@ -857,6 +1039,23 @@
                             </div>
 
                             <h1 class="article-title text-white">Perawatan dan Pengecekan Jeep Sebelum Offroad Dimulai</h1>
+
+                            <!-- DAFTAR ISI (MOBILE ONLY) -->
+                            <div class="sidebar-widget toc-mobile d-lg-none">
+                                <div class="toc-header-toggle">
+                                    <h4 class="widget-title mb-0" style="border-bottom: none; padding-bottom: 0;">DAFTAR ISI</h4>
+                                    <i class="fas fa-chevron-down ms-2" aria-hidden="true"></i>
+                                </div>
+                                <div class="toc-collapse-content mt-3" style="display: none;">
+                                    <ul class="toc-list">
+                                        <li><a href="#kenapa-pengecekan-penting"><i class="fas fa-chevron-right"></i> Kenapa Pengecekan Penting?</a></li>
+                            <li><a href="#bagian-yang-diperiksa"><i class="fas fa-chevron-right"></i> Bagian yang Diperiksa</a></li>
+                            <li><a href="#peran-driver-mekanik"><i class="fas fa-chevron-right"></i> Peran Driver & Mekanik</a></li>
+                            <li><a href="#pertanyaan-tamu"><i class="fas fa-chevron-right"></i> Pertanyaan Tamu</a></li>
+                            <li><a href="#faq"><i class="fas fa-chevron-right"></i> Pertanyaan Umum (FAQ)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
 
                             <p class="article-intro">
                                 Sebelum jeep offroad berangkat di Batu, operator umumnya memeriksa rem, ban, mesin, sistem kemudi, suspensi, lampu, serta tempat duduk dan pegangan penumpang. Pengecekan jeep offroad ini penting karena jalur tanah dan tanjakan memberi beban besar pada kendaraan.
@@ -995,7 +1194,109 @@
                                     font-size: 1.05rem;
                                     display: inline;
                                 }
-                            </style>
+                            
+        /* MOBILE TOC STYLING */
+        .toc-mobile .toc-collapse-content {
+            display: none;
+        }
+
+        .toc-mobile {
+            background: rgba(54, 27, 5, 0.7) !important;
+            border: 1px solid var(--border-line) !important;
+            border-radius: 10px !important;
+            padding: 20px !important;
+            margin: 25px 0 !important;
+        }
+
+        .toc-mobile .widget-title {
+            font-size: 1.15rem !important;
+            color: var(--text-white) !important;
+            margin-bottom: 0 !important;
+        }
+
+        .toc-mobile .toc-list {
+            list-style: none !important;
+            padding-left: 0 !important;
+            margin-bottom: 0 !important;
+        }
+
+        .toc-mobile .toc-list li {
+            margin-bottom: 8px !important;
+        }
+
+        .toc-mobile .toc-list a {
+            color: var(--text-light) !important;
+            text-decoration: none !important;
+            font-size: 0.95rem !important;
+            display: flex !important;
+            align-items: center !important;
+            transition: color 0.2s ease !important;
+        }
+
+        .toc-mobile .toc-list a:hover {
+            color: var(--accent-blue, #E5890A) !important;
+        }
+
+        .toc-mobile .toc-list i {
+            color: var(--accent-blue, #E5890A) !important;
+            font-size: 0.75rem !important;
+            margin-right: 8px !important;
+        }
+
+        .toc-header-toggle {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* TABLE STYLING - THEME MATCHING & MOBILE RESPONSIVE SCROLL */
+        .table-responsive {
+            border-radius: 8px;
+            overflow-x: auto !important;
+            -webkit-overflow-scrolling: touch !important;
+            border: 1px solid var(--border-line);
+            margin: 25px 0;
+            display: block;
+            width: 100%;
+        }
+
+        .table-responsive .table {
+            margin-bottom: 0;
+            color: var(--text-light) !important;
+            border-color: var(--border-line) !important;
+            width: 100%;
+            min-width: 700px;
+        }
+
+        .table-responsive .table thead th {
+            background-color: var(--bg-panel) !important;
+            color: var(--accent-blue, #E5890A) !important;
+            border-color: var(--border-line) !important;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            padding: 12px 15px;
+            white-space: nowrap;
+        }
+
+        .table-responsive .table tbody td {
+            background-color: rgba(54, 27, 5, 0.7) !important;
+            color: var(--text-light) !important;
+            border-color: var(--border-line) !important;
+            padding: 12px 15px;
+            vertical-align: middle;
+            line-height: 1.6;
+        }
+
+        .table-responsive .table tbody td:first-child {
+            white-space: nowrap;
+        }
+
+        .table-responsive .table tbody td strong {
+            color: var(--accent-blue, #E5890A) !important;
+        }
+
+    </style>
                             <h2 id="faq" class="faq-title">FAQ</h2>
                             <ol class="faq-list">
                                 <li>
@@ -1019,7 +1320,7 @@
                                     style="font-size: 1.5rem; text-transform:uppercase; color: var(--text-white);">
                                     Artikel Terkait</h3>
                                 <div class="row g-4">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <div class="related-card">
                                             <img src="../assets/img/1-Jeep-Offroad-Batu-Kenali-Jenis-Armada-dan-Pemandunya.webp"
                                                 alt="Jeep coklat menyusuri jalur berlumpur di hutan pinus."
@@ -1034,7 +1335,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <div class="related-card">
                                             <img src="../assets/img/1-Perbedaan-Jeep-Terbuka-dan-Tertutup-untuk-Offroad-di-Batu.webp"
                                                 alt="Perbedaan Jeep Terbuka dan Tertutup"
@@ -1049,21 +1350,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="related-card">
-                                            <img src="../assets/img/1-Checklist-Persiapan-Fun-Offroad-Coban-Talun-Biar-Aman.webp"
-                                                alt="Checklist Persiapan Fun Offroad Coban Talun"
-                                                class="related-img" loading="lazy">
-                                            <div class="related-body">
-                                                <h4 class="related-title">
-                                                    <a href="persiapan-fun-offroad-coban-talun.html">Checklist Persiapan Fun Offroad Coban Talun Biar Aman</a>
-                                                </h4>
-                                                <p class="related-excerpt">Daftar perlengkapan penting dan tips keselamatan sebelum memulai perjalanan offroad.</p>
-                                                <a href="persiapan-fun-offroad-coban-talun.html"
-                                                    class="related-btn">BACA SELENGKAPNYA</a>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1073,7 +1359,7 @@
                 <!-- SIDEBAR -->
                 <div class="col-lg-4 sticky-sidebar">
                     <!-- TOC WIDGET -->
-                    <div class="sidebar-widget">
+                    <div class="sidebar-widget d-none d-lg-block">
                         <h3 class="widget-title text-white">Daftar Isi Panduan</h3>
                         <ul class="toc-list">
                             <li><a href="#kenapa-pengecekan-penting"><i class="fas fa-chevron-right"></i> Kenapa Pengecekan Penting?</a></li>
@@ -1107,11 +1393,6 @@
                                     <i class="fas fa-file-alt"></i> Perbedaan Jeep Terbuka dan Tertutup untuk Offroad di Batu
                                 </a>
                             </li>
-                            <li>
-                                <a href="persiapan-fun-offroad-coban-talun.html">
-                                    <i class="fas fa-clipboard-check"></i> Checklist Persiapan Fun Offroad Coban Talun Biar Aman
-                                </a>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -1119,37 +1400,81 @@
         </div>
     </main>
 
-    <!-- FOOTER -->
+        <!-- FOOTER -->
     <footer>
         <div class="container">
-            <div class="row g-4 mb-4">
-                <div class="col-lg-4 col-md-6">
-                    <a class="navbar-brand text-white fw-bold display-6 d-block mb-3" href="../index.html">
-                        BATU <span style="color: var(--accent-blue);">OFFROAD</span>
-                    </a>
-                    <p class="text-grey small">
-                        Provider resmi persewaan jeep offroad & paket outbound adventure terpercaya di Kota Batu Malang. Pengalaman seru, aman, dan berkesan.
-                    </p>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h3 class="text-white mb-3">BATU<span class="text-blue"> OFFROAD</span></h3>
+                    <p class="text-dim small">Penyedia jasa offroad dan outbound profesional dengan standar keamanan
+                        tinggi dan tim berpengalaman, siap menghadirkan pengalaman seru dan berkesan.</p>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <h5 class="text-white mb-3 fw-bold">LINK CEPAT</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2 footer-link-item"><i class="fas fa-chevron-right"></i><a href="../index.html">Beranda</a></li>
-                        <li class="mb-2 footer-link-item"><i class="fas fa-chevron-right"></i><a href="../about.html">Tentang Kami</a></li>
-                        <li class="mb-2 footer-link-item"><i class="fas fa-chevron-right"></i><a href="../paket.html">Paket Wisata</a></li>
-                        <li class="mb-2 footer-link-item"><i class="fas fa-chevron-right"></i><a href="../gallery.html">Galeri Foto</a></li>
-                        <li class="mb-2 footer-link-item"><i class="fas fa-chevron-right"></i><a href="../blog.html">Artikel Blog</a></li>
+                <div class="col-lg-2 mb-4">
+                    <h5 class="text-white mb-3 text-uppercase">Navigasi</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">
+                            <a href="../index.html" class="text-dim footer-link-item">
+                                <i class="fas fa-chevron-right me-2"></i>Beranda
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../about.html" class="text-dim footer-link-item">
+                                <i class="fas fa-chevron-right me-2"></i>Tentang Kami
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../paket.html" class="text-dim footer-link-item">
+                                <i class="fas fa-chevron-right me-2"></i>Paket
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../gallery.html" class="text-dim footer-link-item">
+                                <i class="fas fa-chevron-right me-2"></i>Gallery
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../blog.html" class="text-dim footer-link-item">
+                                <i class="fas fa-chevron-right me-2"></i>Blog
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <h5 class="text-white mb-3 fw-bold">KONTAK KAMI</h5>
-                    <p class="text-grey small mb-2 d-flex align-items-center"><i class="fas fa-map-marker-alt footer-icon"></i> Kawasan Wisata Coban Talun, Bumiaji, Kota Batu, Jawa Timur</p>
-                    <p class="text-grey small mb-2 d-flex align-items-center"><i class="fab fa-whatsapp footer-icon"></i> +62 812-3398-9707</p>
-                    <p class="text-grey small mb-2 d-flex align-items-center"><i class="fas fa-envelope footer-icon"></i> info@batuoffroad.web.id</p>
+                <div class="col-lg-2 mb-4">
+                    <h5 class="text-white mb-3 text-uppercase">NETWORK</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">
+                            <a href="https://batuoutbound.net/" class="text-dim footer-link-item" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-chevron-right me-2"></i>Batu Outbound Adventure
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://katunoutboundadventure.com/" class="text-dim footer-link-item" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-chevron-right me-2"></i>Katun Outbound Adventure
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://baturaftingadventure.com/" class="text-dim footer-link-item" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-chevron-right me-2"></i>Batu Rafting Adventure
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-white mb-3 text-uppercase">KONTAK</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-3 d-flex align-items-start text-dim">
+                            <i class="fab fa-whatsapp footer-icon mt-1" aria-hidden="true"></i>
+                            <span><b>WhatsApp:</b><br>0812-3398-9707 (Booking)</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start text-dim">
+                            <i class="fas fa-map-marker-alt footer-icon mt-1" aria-hidden="true"></i>
+                            <span><b>Alamat:</b><br>4GFR+WC4, Temas, Kec. Batu, Kota Batu, Jawa Timur 65315</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="border-top border-secondary pt-3 text-center">
-                <p class="text-grey small mb-0">&copy; 2026 Batu Offroad Adventure. All Rights Reserved.</p>
+            <div class="border-top border-secondary pt-4 mt-4 text-center">
+                <small class="text-dim">&copy; 2026 Batu Offroad. All Rights Reserved.</small>
             </div>
         </div>
     </footer>
@@ -1175,6 +1500,37 @@
                 btnBackTop.classList.remove('show');
             }
         });
+    
+        document.querySelectorAll('.toc-header-toggle').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const content = this.nextElementSibling;
+                if (content) {
+                    const isHidden = window.getComputedStyle(content).display === 'none';
+                    content.style.display = isHidden ? 'block' : 'none';
+                    const icon = this.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-chevron-down', !isHidden);
+                        icon.classList.toggle('fa-chevron-up', isHidden);
+                    }
+                }
+            });
+        });
+
+        document.querySelectorAll('.toc-list a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const offset = 90;
+                        const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                        window.scrollTo({ top: top, behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+
     </script>
 </body>
 

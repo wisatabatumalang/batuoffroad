@@ -23,8 +23,7 @@
         content="Offroad Coban Rais Tanpa Ribet, Shuttle Bus Langsung Masuk - Batu Offroad Adventure">
     <meta property="og:description"
         content="Offroad Coban Rais untuk rombongan keluarga, kantor, sekolah, komunitas. Cek alur, akses bus, dan keamanannya, lalu booking via WhatsApp Batu Offroad.">
-    <meta property="og:image"
-        content="https://batuoffroad.web.id/assets/img/offroad-coban-rais-1.webp">
+    <meta property="og:image" content="https://batuoffroad.web.id/assets/img/offroad-coban-rais-1.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Rombongan wisatawan naik jeep offroad di kawasan Coban Rais Batu">
@@ -44,8 +43,7 @@
         content="Offroad Coban Rais Tanpa Ribet, Shuttle Bus Langsung Masuk - Batu Offroad Adventure">
     <meta name="twitter:description"
         content="Offroad Coban Rais untuk rombongan keluarga, kantor, sekolah, komunitas. Cek alur, akses bus, dan keamanannya, lalu booking via WhatsApp Batu Offroad.">
-    <meta name="twitter:image"
-        content="https://batuoffroad.web.id/assets/img/offroad-coban-rais-1.webp">
+    <meta name="twitter:image" content="https://batuoffroad.web.id/assets/img/offroad-coban-rais-1.webp">
 
     <!-- Favicon -->
     <link rel="icon" type="image/webp" href="../assets/img/Logo/logo-batu-offroad.webp">
@@ -504,6 +502,7 @@
             border-collapse: collapse;
             margin: 20px 0 25px;
         }
+
         .season-table th,
         .season-table td {
             border: 1px solid var(--border-line);
@@ -511,6 +510,7 @@
             text-align: left;
             color: var(--text-light);
         }
+
         .season-table th {
             background: rgba(229, 137, 10, 0.15);
             color: var(--accent-blue);
@@ -519,6 +519,7 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
+
         .season-table tr:nth-child(even) {
             background: rgba(86, 43, 8, 0.3);
         }
@@ -789,7 +790,7 @@
                 font-size: 18px;
             }
         }
-    
+
         /* LINK & LIST STYLING (THEME ORANGE LIKE FASILITAS COBAN PUTRI) */
         .article-body a,
         .article-body p a,
@@ -856,8 +857,8 @@
         .table tbody td strong {
             color: var(--accent-blue, #E5890A) !important;
         }
-    
-    
+
+
         /* RELATED BUTTON WHITE TEXT OVERRIDE */
         .article-body .related-btn,
         .related-card .related-btn,
@@ -876,22 +877,289 @@
             color: #ffffff !important;
             text-decoration: none !important;
         }
+    
+        /* SECTION SHARE AS IN SCREENSHOT */
+        .share-buttons {
+            display: flex !important;
+            align-items: center !important;
+            gap: 12px !important;
+            flex-wrap: wrap !important;
+            margin-top: 30px !important;
+            padding-top: 25px !important;
+            border-top: 1px solid var(--border-line, #834510) !important;
+        }
 
+        .share-buttons span,
+        .share-buttons .share-label {
+            color: var(--text-light, #ebd5c1) !important;
+            font-family: 'Inter', sans-serif !important;
+            font-weight: 700 !important;
+            font-size: 1.05rem !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            margin-right: 6px !important;
+            letter-spacing: 0.2px !important;
+        }
+
+        .share-buttons span i,
+        .share-buttons .share-label i {
+            color: var(--text-light, #ebd5c1) !important;
+            margin-right: 8px !important;
+            font-size: 1.15rem !important;
+        }
+
+        .share-btn {
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            gap: 8px !important;
+            padding: 9px 18px !important;
+            border-radius: 8px !important;
+            font-family: 'Inter', sans-serif !important;
+            font-size: 0.95rem !important;
+            font-weight: 700 !important;
+            text-decoration: none !important;
+            color: #ffffff !important;
+            transition: transform 0.2s ease, filter 0.2s ease !important;
+            border: none !important;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
+            line-height: 1.2 !important;
+        }
+
+        .share-btn:hover {
+            transform: translateY(-2px) !important;
+            color: #ffffff !important;
+            filter: brightness(1.1) !important;
+        }
+
+        .share-btn i {
+            font-size: 1.15rem !important;
+            color: #ffffff !important;
+            margin-right: 2px !important;
+        }
+
+        .share-btn.wa {
+            background-color: #25D366 !important;
+        }
+
+        .share-btn.fb {
+            background-color: #1877F2 !important;
+        }
+
+        .share-btn.tw {
+            background-color: #1DA1F2 !important;
+        }
+
+        /* CONCLUSION BOX RATA KIRI */
+        .conclusion-box {
+            text-align: left !important;
+        }
+
+        .conclusion-box h2,
+        .conclusion-box h3,
+        .conclusion-box h4 {
+            text-align: left !important;
+            border-left: none !important;
+            padding-left: 0 !important;
+            margin-top: 0 !important;
+        }
+
+        .conclusion-box p,
+        .conclusion-box ul,
+        .conclusion-box ol,
+        .conclusion-box li {
+            text-align: left !important;
+        }
+
+    </style>
+    <style id="article-page-enhancements">
+        /* --- ARTICLE PAGE ENHANCEMENTS & RESPONSIVE FIXES --- */
+        .article-featured-img {
+            width: 100% !important;
+            height: auto !important;
+            aspect-ratio: 16 / 9 !important;
+            object-fit: cover !important;
+            display: block !important;
+            border-bottom: 1px solid var(--border-line, #834510) !important;
+        }
+
+        .article-img-inline {
+            width: 100% !important;
+            height: auto !important;
+            aspect-ratio: 16 / 9 !important;
+            object-fit: cover !important;
+            display: block !important;
+            border-radius: 10px !important;
+            margin: 25px 0 !important;
+            border: 1px solid var(--border-line, #834510) !important;
+        }
+
+        .related-card {
+            background: var(--bg-deep, #361b05) !important;
+            border: 1px solid var(--border-line, #834510) !important;
+            border-radius: 10px !important;
+            overflow: hidden !important;
+            display: flex !important;
+            flex-direction: column !important;
+            height: 100% !important;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+        }
+
+        .related-card:hover {
+            transform: translateY(-5px) !important;
+            border-color: var(--accent-blue, #E5890A) !important;
+            box-shadow: 0 10px 25px rgba(229, 137, 10, 0.25) !important;
+        }
+
+        .related-img {
+            width: 100% !important;
+            height: auto !important;
+            aspect-ratio: 16 / 9 !important;
+            object-fit: cover !important;
+            display: block !important;
+            border-bottom: 1px solid var(--border-line, #834510) !important;
+        }
+
+        .related-body {
+            padding: 1.5rem !important;
+            display: flex !important;
+            flex-direction: column !important;
+            flex-grow: 1 !important;
+        }
+
+        .related-title {
+            font-size: 1.2rem !important;
+            font-weight: 800 !important;
+            line-height: 1.35 !important;
+            margin-bottom: 0.75rem !important;
+        }
+
+        .related-title a {
+            color: var(--text-white, #f8fafc) !important;
+            text-decoration: none !important;
+            transition: color 0.3s ease !important;
+        }
+
+        .related-title a:hover {
+            color: var(--accent-blue, #E5890A) !important;
+        }
+
+        .related-excerpt {
+            color: var(--text-light, #ebd5c1) !important;
+            font-size: 0.95rem !important;
+            line-height: 1.6 !important;
+            margin-bottom: 1.5rem !important;
+            flex-grow: 1 !important;
+        }
+
+        .related-btn {
+            display: block !important;
+            width: 100% !important;
+            text-align: center !important;
+            background: var(--accent-blue, #E5890A) !important;
+            color: #ffffff !important;
+            padding: 0.75rem 1rem !important;
+            font-weight: 700 !important;
+            font-size: 0.9rem !important;
+            border-radius: 6px !important;
+            text-decoration: none !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
+            transition: background 0.3s ease, transform 0.3s ease !important;
+        }
+
+        .related-btn:hover {
+            background: #c47508 !important;
+            color: #ffffff !important;
+            transform: translateY(-2px) !important;
+        }
+
+        /* Footer styling alignment */
+        footer {
+            background: #241103 !important;
+            padding: 60px 0 30px !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+        }
+
+        .footer-icon {
+            color: var(--accent-blue, #E5890A) !important;
+            margin-right: 12px !important;
+            width: 20px !important;
+            text-align: center !important;
+            flex-shrink: 0 !important;
+        }
+
+        footer a {
+            color: #94A3B8 !important;
+            text-decoration: none !important;
+            transition: 0.3s !important;
+        }
+
+        footer a:hover {
+            color: var(--accent-blue, #E5890A) !important;
+        }
+
+        .footer-link-item {
+            display: flex !important;
+            align-items: center !important;
+        }
+
+        .footer-link-item i {
+            font-size: 0.65rem !important;
+            color: var(--accent-blue, #E5890A) !important;
+            width: 18px !important;
+            transition: 0.3s !important;
+            margin-right: 0.5rem !important;
+        }
+
+        .footer-link-item:hover i {
+            transform: translateX(3px) !important;
+            color: var(--accent-gold, #F59E0B) !important;
+        }
+
+        .text-dim {
+            color: #94A3B8 !important;
+        }
+
+        @media (max-width: 768px) {
+            .article-body {
+                padding: 25px 20px !important;
+            }
+
+            .article-title {
+                font-size: 1.6rem !important;
+                line-height: 1.3 !important;
+            }
+
+            .related-body {
+                padding: 1.25rem 1rem !important;
+            }
+
+            .article-featured-img,
+            .related-img,
+            .article-img-inline {
+                width: 100% !important;
+                height: auto !important;
+                aspect-ratio: 16 / 9 !important;
+                object-fit: cover !important;
+                display: block !important;
+            }
+        }
     </style>
 </head>
 
 <body>
 
     <!-- NAVBAR -->
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="../index.html" style="margin-right: 0;">
-                <img src="../assets/img/Logo/logo-batu-offroad.webp" alt="Batu Offroad Logo" class="me-2"
-                    style="height: 35px; width: auto; object-fit: contain;" loading="lazy" decoding="async">
-                <span class="ms-1"
+            <a class="navbar-brand d-flex align-items-center" href="../index.html" style="margin-right: 0;"><img
+                    src="../assets/img/Logo/logo-batu-offroad.webp" alt="Batu Offroad Logo" class="me-2"
+                    style="height: 35px; width: auto; object-fit: contain;" loading="lazy" decoding="async"><span
+                    class="ms-1"
                     style="color: #fff; font-weight: 800; font-size: 1.1rem; white-space: nowrap; font-style: normal;">BATU
-                    OFFROAD</span>
-            </a>
+                    OFFROAD</span></a>
             <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -921,8 +1189,7 @@
                                     Outbound + Paintball</a></li>
                             <li><a class="dropdown-item" href="../paket/paket-bromo.html">Paket Bromo</a></li>
                             <li><a class="dropdown-item" href="../paket/paket-atv.html">Paket ATV</a></li>
-                            <li style="border-top: 1px solid var(--border-line);"><a class="dropdown-item"
-                                    href="../paket.html">Lihat Semua Paket</a></li>
+                            <li><a class="dropdown-item" href="../paket.html">Lihat Semua Paket</a></li>
                         </ul>
                     </li>
 
@@ -945,13 +1212,16 @@
     <header class="page-header text-center position-relative">
         <div class="bg-grid"></div>
         <div class="container position-relative" style="z-index: 2;">
-            <h1 class="display-4 fw-bold text-white mb-2" style="font-family: 'Barlow Condensed', sans-serif; text-transform: none;">Offroad Coban Rais Tanpa Ribet, Shuttle Bus Langsung Masuk</h1>
+            <h1 class="display-4 fw-bold text-white mb-2"
+                style="font-family: 'Barlow Condensed', sans-serif; text-transform: none;">Offroad Coban Rais Tanpa
+                Ribet, Shuttle Bus Langsung Masuk</h1>
             <p class="lead text-dim mb-3">Petualangan Jeep 4x4 Lereng Gunung Panderman & Transit Rapi Rombongan</p>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
                     <li class="breadcrumb-item"><a href="../blog.html">Blog</a></li>
-                    <li class="breadcrumb-item active text-white" aria-current="page">Offroad Coban Rais Tanpa Ribet, Shuttle Bus Langsung Masuk</li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Offroad Coban Rais Tanpa Ribet,
+                        Shuttle Bus Langsung Masuk</li>
                 </ol>
             </nav>
         </div>
@@ -965,8 +1235,8 @@
                     <article class="article-container" id="article-offroad-coban-rais">
 
                         <img src="../assets/img/offroad-coban-rais-1.webp"
-                            alt="Rombongan wisatawan naik jeep offroad di kawasan Coban Rais Batu" class="article-featured-img"
-                            width="800" height="450" loading="eager" decoding="async">
+                            alt="Rombongan wisatawan naik jeep offroad di kawasan Coban Rais Batu"
+                            class="article-featured-img" width="800" height="450" loading="eager" decoding="async">
 
                         <div class="article-body">
 
@@ -977,34 +1247,102 @@
 
                             <h1 class="article-title">Offroad Coban Rais Tanpa Ribet, Shuttle Bus Langsung Masuk</h1>
 
-                            <p class="article-intro">Offroad Coban Rais adalah petualangan jeep di kawasan lereng Gunung Panderman, Kota Batu, yang bisa dipesan rombongan lewat Batu Offroad dengan pendampingan driver dan guide profesional. Cek alur, akses bus, dan keamanannya sekarang.</p>
+                            <!-- DAFTAR ISI (MOBILE ONLY) -->
+                            <div class="sidebar-widget toc-mobile d-lg-none">
+                                <div class="toc-header-toggle">
+                                    <h4 class="widget-title mb-0" style="border-bottom: none; padding-bottom: 0;">DAFTAR ISI</h4>
+                                    <i class="fas fa-chevron-down ms-2" aria-hidden="true"></i>
+                                </div>
+                                <div class="toc-collapse-content mt-3" style="display: none;">
+                                    <ul class="toc-list">
+                                        <li><a href="#apa-itu"><i class="fas fa-chevron-right" aria-hidden="true"></i> Apa
+                                            Itu Offroad Coban Rais</a></li>
+                                    <li><a href="#siapa-cocok"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Siapa yang Cocok Ikut</a></li>
+                                    <li><a href="#alur-kegiatan"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Alur Kegiatan Offroad</a></li>
+                                    <li><a href="#shuttle-bus"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Akses Shuttle Bus</a></li>
+                                    <li><a href="#kondisi-kawasan"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i> Kondisi Kawasan</a></li>
+                                    <li><a href="#persiapan"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Persiapan Peserta</a></li>
+                                    <li><a href="#waktu-terbaik"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Waktu Terbaik</a></li>
+                                    <li><a href="#komparasi"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Komparasi vs Wisata Mandiri</a></li>
+                                    <li><a href="#kesalahan-umum"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i> Kesalahan Umum Panitia</a></li>
+                                    <li><a href="#paket-paduan"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Paket Tambahan & Paduan</a></li>
+                                    <li><a href="#cara-booking"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Cara Booking</a></li>
+                                    <li><a href="#faq"><i class="fas fa-chevron-right" aria-hidden="true"></i> FAQ
+                                            Offroad Coban Rais</a></li>
+                                    <li><a href="#kesimpulan"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Kesimpulan</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <p class="article-intro">Offroad Coban Rais adalah petualangan jeep di kawasan lereng Gunung
+                                Panderman, Kota Batu, yang bisa dipesan rombongan lewat Batu Offroad dengan pendampingan
+                                driver dan guide profesional. Cek alur, akses bus, dan keamanannya sekarang.</p>
 
                             <div class="highlight-box">
                                 <h3>Ringkasan Inti</h3>
                                 <ul class="mb-0">
-                                    <li>Coban Rais berada di Dusun Dresel, Desa Oro-oro Ombo, Kecamatan Batu, pada ketinggian sekitar 1.025 meter di atas permukaan laut (Orami, 23 Juli 2024).</li>
-                                    <li>Lokasinya sekitar 15-20 menit dari pusat Kota Batu dengan kendaraan pribadi (Indonesia Travel).</li>
-                                    <li>Paket Batu Offroad disusun untuk rombongan dan sudah mencakup armada jeep 4x4, driver, serta guide.</li>
-                                    <li>Rombongan yang datang dengan bus bisa berkoordinasi lebih dulu dengan tim agar titik kumpul dan perpindahan peserta berjalan rapi.</li>
-                                    <li>Kirim tanggal dan jumlah orang ke WhatsApp <a href="https://wa.me/6281233989707" target="_blank">+62 812-3398-9707</a> untuk cek jadwal dan ketersediaan armada.</li>
+                                    <li>Coban Rais berada di Dusun Dresel, Desa Oro-oro Ombo, Kecamatan Batu, pada
+                                        ketinggian sekitar 1.025 meter di atas permukaan laut (Orami, 23 Juli 2024).
+                                    </li>
+                                    <li>Lokasinya sekitar 15-20 menit dari pusat Kota Batu dengan kendaraan pribadi
+                                        (Indonesia Travel).</li>
+                                    <li>Paket Batu Offroad disusun untuk rombongan dan sudah mencakup armada jeep 4x4,
+                                        driver, serta guide.</li>
+                                    <li>Rombongan yang datang dengan bus bisa berkoordinasi lebih dulu dengan tim agar
+                                        titik kumpul dan perpindahan peserta berjalan rapi.</li>
+                                    <li>Kirim tanggal dan jumlah orang ke WhatsApp <a href="https://wa.me/6281233989707"
+                                            target="_blank">+62 812-3398-9707</a> untuk cek jadwal dan ketersediaan
+                                        armada.</li>
                                 </ul>
                             </div>
 
-                            <p>Sedang menyusun acara untuk keluarga, kantor, sekolah, atau komunitas? Hubungi Batu Offroad di WhatsApp <a href="https://wa.me/6281233989707" target="_blank">+62 812-3398-9707</a> untuk cek jadwal dan ketersediaan sebelum tanggal yang Anda inginkan terisi.</p>
+                            <p>Sedang menyusun acara untuk keluarga, kantor, sekolah, atau komunitas? Hubungi Batu
+                                Offroad di WhatsApp <a href="https://wa.me/6281233989707" target="_blank">+62
+                                    812-3398-9707</a> untuk cek jadwal dan ketersediaan sebelum tanggal yang Anda
+                                inginkan terisi.</p>
 
                             <h2 id="apa-itu">Apa itu offroad Coban Rais?</h2>
-                            <p>Offroad Coban Rais adalah kegiatan wisata berkendara jeep 4x4 di sekitar kawasan Coban Rais, Kota Batu, dengan jalur alam yang dipandu driver dan guide berpengalaman.</p>
-                            <p>Kegiatan ini bukan balapan dan bukan offroad ekstrem. Fokusnya adalah pengalaman bersama di alam terbuka: melewati jalur tanah, suasana pegunungan, dan udara sejuk khas lereng Gunung Panderman. Peserta duduk sebagai penumpang, sementara pengemudi jeep mengendalikan kendaraan.</p>
-                            <p>Coban Rais sendiri dikenal sebagai destinasi air terjun di Batu dengan hutan pinus di sekitarnya. Kawasan ini juga berdekatan dengan Batu Flower Garden yang populer untuk berfoto. Karena itu, offroad di area ini cocok dipadukan dengan kunjungan wisata lain dalam satu hari.</p>
+                            <p>Offroad Coban Rais adalah kegiatan wisata berkendara jeep 4x4 di sekitar kawasan Coban
+                                Rais, Kota Batu, dengan jalur alam yang dipandu driver dan guide berpengalaman.</p>
+                            <p>Kegiatan ini bukan balapan dan bukan offroad ekstrem. Fokusnya adalah pengalaman bersama
+                                di alam terbuka: melewati jalur tanah, suasana pegunungan, dan udara sejuk khas lereng
+                                Gunung Panderman. Peserta duduk sebagai penumpang, sementara pengemudi jeep
+                                mengendalikan kendaraan.</p>
+                            <p>Coban Rais sendiri dikenal sebagai destinasi air terjun di Batu dengan hutan pinus di
+                                sekitarnya. Kawasan ini juga berdekatan dengan Batu Flower Garden yang populer untuk
+                                berfoto. Karena itu, offroad di area ini cocok dipadukan dengan kunjungan wisata lain
+                                dalam satu hari.</p>
 
                             <h2 id="siapa-cocok">Siapa yang cocok ikut offroad Coban Rais?</h2>
-                            <p>Offroad Coban Rais cocok untuk rombongan keluarga, karyawan kantor, rombongan sekolah, dan komunitas yang ingin kegiatan seru, aman, dan mudah diatur bersama pemandu.</p>
-                            <p>Setiap jenis rombongan punya kebutuhan berbeda. Keluarga biasanya mencari suasana santai dan foto bersama. Kantor mencari kegiatan gathering yang membangun kekompakan. Sekolah mencari kegiatan luar ruang yang tertib dan terpantau. Komunitas mencari pengalaman seru yang bisa dinikmati beramai-ramai.</p>
-                            <p>Menurut informasi di situs Batu Offroad, paket disusun untuk rombongan dengan minimal 10 orang. Untuk peserta anak atau lansia, kondisi kesehatan dan batas usia perlu dikonfirmasi lebih dulu ke tim agar kegiatan tetap nyaman bagi semua peserta.</p>
-                            <p>Panduan tambahan tersedia di artikel <a href="offroad-batu-untuk-keluarga.html">offroad Batu untuk keluarga</a> dan <a href="offroad-batu-untuk-gathering-kantor.html">offroad Batu untuk gathering kantor</a>.</p>
+                            <p>Offroad Coban Rais cocok untuk rombongan keluarga, karyawan kantor, rombongan sekolah,
+                                dan komunitas yang ingin kegiatan seru, aman, dan mudah diatur bersama pemandu.</p>
+                            <p>Setiap jenis rombongan punya kebutuhan berbeda. Keluarga biasanya mencari suasana santai
+                                dan foto bersama. Kantor mencari kegiatan gathering yang membangun kekompakan. Sekolah
+                                mencari kegiatan luar ruang yang tertib dan terpantau. Komunitas mencari pengalaman seru
+                                yang bisa dinikmati beramai-ramai.</p>
+                            <p>Menurut informasi di situs Batu Offroad, paket disusun untuk rombongan dengan minimal 10
+                                orang. Untuk peserta anak atau lansia, kondisi kesehatan dan batas usia perlu
+                                dikonfirmasi lebih dulu ke tim agar kegiatan tetap nyaman bagi semua peserta.</p>
+                            <p>Panduan tambahan tersedia di artikel <a href="offroad-batu-untuk-keluarga.html">offroad
+                                    Batu untuk keluarga</a> dan <a
+                                    href="offroad-batu-untuk-gathering-kantor.html">offroad Batu untuk gathering
+                                    kantor</a>.</p>
 
                             <h2 id="alur-kegiatan">Bagaimana alur offroad Coban Rais dari datang sampai pulang?</h2>
-                            <p>Alur umumnya dimulai dari konfirmasi jadwal, kumpul di titik pertemuan, briefing keselamatan, perjalanan jeep bersama guide, lalu kembali ke titik awal. Berikut gambaran urutan yang lazim pada kegiatan offroad rombongan:</p>
+                            <p>Alur umumnya dimulai dari konfirmasi jadwal, kumpul di titik pertemuan, briefing
+                                keselamatan, perjalanan jeep bersama guide, lalu kembali ke titik awal. Berikut gambaran
+                                urutan yang lazim pada kegiatan offroad rombongan:</p>
                             <ol>
                                 <li>Rombongan mengirim tanggal dan jumlah peserta ke tim Batu Offroad.</li>
                                 <li>Tim mengecek ketersediaan armada dan menyusun rencana kegiatan.</li>
@@ -1013,23 +1351,39 @@
                                 <li>Peserta menikmati perjalanan jeep dengan pendampingan driver dan guide.</li>
                                 <li>Rombongan kembali, beristirahat, lalu melanjutkan agenda lain.</li>
                             </ol>
-                            <p>Urutan dapat berubah tergantung paket, cuaca, dan kondisi jalur pada hari kegiatan. Detail akhir selalu dikonfirmasi tim sebelum hari H.</p>
+                            <p>Urutan dapat berubah tergantung paket, cuaca, dan kondisi jalur pada hari kegiatan.
+                                Detail akhir selalu dikonfirmasi tim sebelum hari H.</p>
 
                             <h2 id="shuttle-bus">Apakah shuttle bus bisa langsung masuk ke area offroad?</h2>
-                            <p>Rombongan yang datang dengan bus sebaiknya mengonfirmasi akses sebelum berangkat, karena kemampuan bus besar melewati jalan menuju area wisata Coban Rais bergantung pada ukuran kendaraan dan kondisi jalan.</p>
-                            <p>Pertanyaan ini penting bagi panitia yang membawa 30 sampai 50 orang. Jalan menuju kawasan pegunungan umumnya menyempit dan berkelok. Karena itu, bus besar tidak selalu bisa mencapai titik terdalam.</p>
-                            <p>Solusi yang lazim adalah menurunkan peserta di titik yang aman dan memindahkan mereka dengan kendaraan yang lebih kecil (shuttle jeep). Batu Offroad membantu rombongan mengatur koordinasi ini. Kirimkan jenis kendaraan, jumlah peserta, dan jam kedatangan ke WhatsApp <a href="https://wa.me/6281233989707" target="_blank">+62 812-3398-9707</a> supaya tim dapat menyarankan titik kumpul dan alur perpindahan yang paling tepat.</p>
+                            <p>Rombongan yang datang dengan bus sebaiknya mengonfirmasi akses sebelum berangkat, karena
+                                kemampuan bus besar melewati jalan menuju area wisata Coban Rais bergantung pada ukuran
+                                kendaraan dan kondisi jalan.</p>
+                            <p>Pertanyaan ini penting bagi panitia yang membawa 30 sampai 50 orang. Jalan menuju kawasan
+                                pegunungan umumnya menyempit dan berkelok. Karena itu, bus besar tidak selalu bisa
+                                mencapai titik terdalam.</p>
+                            <p>Solusi yang lazim adalah menurunkan peserta di titik yang aman dan memindahkan mereka
+                                dengan kendaraan yang lebih kecil (shuttle jeep). Batu Offroad membantu rombongan
+                                mengatur koordinasi ini. Kirimkan jenis kendaraan, jumlah peserta, dan jam kedatangan ke
+                                WhatsApp <a href="https://wa.me/6281233989707" target="_blank">+62 812-3398-9707</a>
+                                supaya tim dapat menyarankan titik kumpul dan alur perpindahan yang paling tepat.</p>
 
                             <h2 id="kondisi-kawasan">Seperti apa kondisi kawasan Coban Rais?</h2>
-                            <p>Coban Rais berada di lereng Gunung Panderman pada ketinggian sekitar 1.025 mdpl, dengan udara sejuk, hutan pinus, dan jalur trekking menuju air terjun.</p>
+                            <p>Coban Rais berada di lereng Gunung Panderman pada ketinggian sekitar 1.025 mdpl, dengan
+                                udara sejuk, hutan pinus, dan jalur trekking menuju air terjun.</p>
                             <p>Data lapangan yang perlu diketahui rombongan:</p>
                             <ul>
-                                <li><strong>Lokasi:</strong> Dusun Dresel, Desa Oro-oro Ombo, Kecamatan Batu, Kota Batu (Orami, 23 Juli 2024).</li>
-                                <li><strong>Waktu tempuh dari pusat Kota Batu:</strong> sekitar 15-20 menit dengan kendaraan pribadi (Indonesia Travel).</li>
-                                <li><strong>Trekking dari area parkir menuju air terjun:</strong> sekitar 20-30 menit (Indonesia Travel).</li>
-                                <li><strong>Tiket masuk Coban Rais:</strong> Rp10.000 per orang, parkir motor Rp5.000, parkir mobil Rp10.000 (Orami, 23 Juli 2024).</li>
+                                <li><strong>Lokasi:</strong> Dusun Dresel, Desa Oro-oro Ombo, Kecamatan Batu, Kota Batu
+                                    (Orami, 23 Juli 2024).</li>
+                                <li><strong>Waktu tempuh dari pusat Kota Batu:</strong> sekitar 15-20 menit dengan
+                                    kendaraan pribadi (Indonesia Travel).</li>
+                                <li><strong>Trekking dari area parkir menuju air terjun:</strong> sekitar 20-30 menit
+                                    (Indonesia Travel).</li>
+                                <li><strong>Tiket masuk Coban Rais:</strong> Rp10.000 per orang, parkir motor Rp5.000,
+                                    parkir mobil Rp10.000 (Orami, 23 Juli 2024).</li>
                             </ul>
-                            <p>Tarif tiket dan jam operasional dapat berubah sewaktu-waktu sesuai kebijakan pengelola kawasan. Sumber yang berbeda juga mencatat jam buka yang berbeda, sehingga pengecekan ulang sebelum berangkat adalah langkah yang aman.</p>
+                            <p>Tarif tiket dan jam operasional dapat berubah sewaktu-waktu sesuai kebijakan pengelola
+                                kawasan. Sumber yang berbeda juga mencatat jam buka yang berbeda, sehingga pengecekan
+                                ulang sebelum berangkat adalah langkah yang aman.</p>
 
                             <img src="../assets/img/offroad-coban-rais-2.webp"
                                 alt="Jeep 4x4 melintasi jalur hutan pinus dekat Coban Rais" class="article-img-inline"
@@ -1037,8 +1391,11 @@
                             <p class="img-caption">Jeep 4x4 melintasi jalur hutan pinus yang asri dekat Coban Rais</p>
 
                             <h2 id="persiapan">Apa yang perlu disiapkan peserta offroad?</h2>
-                            <p>Peserta sebaiknya memakai pakaian nyaman, alas kaki tertutup yang tidak licin, dan membawa jaket tipis, air minum, serta perlengkapan pribadi yang aman dari percikan air dan lumpur.</p>
-                            <p>Udara di Batu cenderung sejuk, terutama pagi dan sore. Jalur tanah bisa berdebu saat kering dan licin saat basah. Beberapa persiapan yang membantu:</p>
+                            <p>Peserta sebaiknya memakai pakaian nyaman, alas kaki tertutup yang tidak licin, dan
+                                membawa jaket tipis, air minum, serta perlengkapan pribadi yang aman dari percikan air
+                                dan lumpur.</p>
+                            <p>Udara di Batu cenderung sejuk, terutama pagi dan sore. Jalur tanah bisa berdebu saat
+                                kering dan licin saat basah. Beberapa persiapan yang membantu:</p>
                             <ul>
                                 <li>Pakaian berlapis yang mudah dikeringkan.</li>
                                 <li>Sepatu atau sandal gunung dengan cengkeraman baik.</li>
@@ -1046,56 +1403,70 @@
                                 <li>Pakaian ganti untuk setelah kegiatan.</li>
                                 <li>Obat pribadi bagi peserta yang memerlukan.</li>
                             </ul>
-                            <p>Batu Offroad menyediakan armada jeep, driver, dan perlengkapan keamanan sesuai paket, sehingga peserta tidak perlu membawa peralatan khusus. Daftar lengkap dapat dibaca di <a href="daftar-persiapan-offroad-batu-malang.html">daftar persiapan offroad Batu Malang</a>.</p>
+                            <p>Batu Offroad menyediakan armada jeep, driver, dan perlengkapan keamanan sesuai paket,
+                                sehingga peserta tidak perlu membawa peralatan khusus. Daftar lengkap dapat dibaca di <a
+                                    href="daftar-persiapan-offroad-batu-malang.html">daftar persiapan offroad Batu
+                                    Malang</a>.</p>
 
                             <h2 id="waktu-terbaik">Kapan waktu terbaik offroad di Coban Rais?</h2>
-                            <p>Secara umum, bulan April sampai Oktober dinilai paling nyaman untuk wisata luar ruang di Batu karena cuaca cenderung cerah dan tidak terlalu basah (Trip.com Batu Travel Guide).</p>
-                            <p>Pagi hari biasanya lebih sejuk dan jalur lebih nyaman. Musim hujan tetap bisa dijalani, tetapi jalur menjadi lebih licin dan jadwal mungkin perlu disesuaikan. Armada Batu Offroad dilengkapi atap dan perlindungan, serta tersedia area pendopo permanen untuk berteduh saat hujan di basecamp.</p>
-                            <p>Untuk akhir pekan dan hari libur nasional, tim menyarankan pemesanan minimal 1-2 minggu sebelumnya agar jadwal dan armada tersedia.</p>
+                            <p>Secara umum, bulan April sampai Oktober dinilai paling nyaman untuk wisata luar ruang di
+                                Batu karena cuaca cenderung cerah dan tidak terlalu basah (Trip.com Batu Travel Guide).
+                            </p>
+                            <p>Pagi hari biasanya lebih sejuk dan jalur lebih nyaman. Musim hujan tetap bisa dijalani,
+                                tetapi jalur menjadi lebih licin dan jadwal mungkin perlu disesuaikan. Armada Batu
+                                Offroad dilengkapi atap dan perlindungan, serta tersedia area pendopo permanen untuk
+                                berteduh saat hujan di basecamp.</p>
+                            <p>Untuk akhir pekan dan hari libur nasional, tim menyarankan pemesanan minimal 1-2 minggu
+                                sebelumnya agar jadwal dan armada tersedia.</p>
 
                             <h2 id="komparasi">Mengapa memilih offroad dibanding wisata mandiri biasa?</h2>
-                            <p>Offroad bersama operator memberi pendampingan, armada siap pakai, dan jadwal terstruktur, sedangkan wisata mandiri memberi kebebasan penuh tetapi menuntut rombongan mengatur sendiri semua kebutuhan.</p>
+                            <p>Offroad bersama operator memberi pendampingan, armada siap pakai, dan jadwal terstruktur,
+                                sedangkan wisata mandiri memberi kebebasan penuh tetapi menuntut rombongan mengatur
+                                sendiri semua kebutuhan.</p>
 
                             <table class="season-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Aspek</th>
-                                            <th>Offroad bersama operator</th>
-                                            <th>Wisata mandiri</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><strong>Pendampingan</strong></td>
-                                            <td>Driver dan guide</td>
-                                            <td>Tidak ada</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Armada</strong></td>
-                                            <td>Jeep 4x4 disediakan</td>
-                                            <td>Kendaraan sendiri</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Pengaturan jadwal</strong></td>
-                                            <td>Disusun tim</td>
-                                            <td>Diatur panitia</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Cocok untuk</strong></td>
-                                            <td>Rombongan terorganisir</td>
-                                            <td>Wisatawan fleksibel</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Keterbatasan</strong></td>
-                                            <td>Perlu booking</td>
-                                            <td>Tanpa pemandu jalur</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            <p>Pilihan terbaik bergantung pada ukuran rombongan, tujuan kegiatan, dan pengalaman panitia. Rombongan besar umumnya terbantu oleh pengaturan terpusat.</p>
+                                <thead>
+                                    <tr>
+                                        <th>Aspek</th>
+                                        <th>Offroad bersama operator</th>
+                                        <th>Wisata mandiri</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Pendampingan</strong></td>
+                                        <td>Driver dan guide</td>
+                                        <td>Tidak ada</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Armada</strong></td>
+                                        <td>Jeep 4x4 disediakan</td>
+                                        <td>Kendaraan sendiri</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Pengaturan jadwal</strong></td>
+                                        <td>Disusun tim</td>
+                                        <td>Diatur panitia</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Cocok untuk</strong></td>
+                                        <td>Rombongan terorganisir</td>
+                                        <td>Wisatawan fleksibel</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Keterbatasan</strong></td>
+                                        <td>Perlu booking</td>
+                                        <td>Tanpa pemandu jalur</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>Pilihan terbaik bergantung pada ukuran rombongan, tujuan kegiatan, dan pengalaman
+                                panitia. Rombongan besar umumnya terbantu oleh pengaturan terpusat.</p>
 
                             <h2 id="kesalahan-umum">Apa kesalahan umum saat merencanakan offroad rombongan?</h2>
-                            <p>Kesalahan paling umum adalah memesan terlalu mepet, tidak mengonfirmasi akses bus, dan tidak menyampaikan kondisi peserta seperti anak, lansia, atau kebutuhan kesehatan khusus.</p>
+                            <p>Kesalahan paling umum adalah memesan terlalu mepet, tidak mengonfirmasi akses bus, dan
+                                tidak menyampaikan kondisi peserta seperti anak, lansia, atau kebutuhan kesehatan
+                                khusus.</p>
                             <p>Kesalahan lain yang sering terjadi:</p>
                             <ul>
                                 <li>Tidak menanyakan isi paket secara rinci sebelum membayar.</li>
@@ -1105,11 +1476,18 @@
                             </ul>
 
                             <h2 id="paket-paduan">Paket apa yang bisa dipadukan dengan offroad?</h2>
-                            <p>Offroad dapat dipadukan dengan fun games, team building, rafting, paintball, atau outbound sesuai tujuan acara dan jumlah peserta.</p>
-                            <p>Batu Offroad menyediakan beberapa pilihan, antara lain <a href="../paket/paket-offroad-fungames.html">paket offroad dan fun games</a> untuk suasana santai, serta <a href="../paket/paket-offroad-teambuilding.html">paket offroad dan team building</a> untuk acara kantor dan komunitas. Seluruh pilihan dapat dilihat di halaman <a href="../paket.html">daftar paket Batu Offroad</a>.</p>
+                            <p>Offroad dapat dipadukan dengan fun games, team building, rafting, paintball, atau
+                                outbound sesuai tujuan acara dan jumlah peserta.</p>
+                            <p>Batu Offroad menyediakan beberapa pilihan, antara lain <a
+                                    href="../paket/paket-offroad-fungames.html">paket offroad dan fun games</a> untuk
+                                suasana santai, serta <a href="../paket/paket-offroad-teambuilding.html">paket offroad
+                                    dan team building</a> untuk acara kantor dan komunitas. Seluruh pilihan dapat
+                                dilihat di halaman <a href="../paket.html">daftar paket Batu Offroad</a>.</p>
 
                             <h2 id="cara-booking">Bagaimana cara booking offroad Coban Rais?</h2>
-                            <p>Booking dilakukan lewat WhatsApp <a href="https://wa.me/6281233989707" target="_blank">+62 812-3398-9707</a> dengan mengirim tanggal, jumlah peserta, jenis rombongan, dan kebutuhan khusus, lalu tim mengecek jadwal dan ketersediaan armada.</p>
+                            <p>Booking dilakukan lewat WhatsApp <a href="https://wa.me/6281233989707"
+                                    target="_blank">+62 812-3398-9707</a> dengan mengirim tanggal, jumlah peserta, jenis
+                                rombongan, dan kebutuhan khusus, lalu tim mengecek jadwal dan ketersediaan armada.</p>
                             <p>Langkah praktisnya:</p>
                             <ol>
                                 <li>Tentukan tanggal utama dan satu tanggal cadangan.</li>
@@ -1118,46 +1496,61 @@
                                 <li>Konfirmasi paket, titik kumpul, dan akses kendaraan.</li>
                                 <li>Bagikan jadwal final kepada seluruh peserta.</li>
                             </ol>
-                            <p>Tim Batu Offroad yang menyusun kegiatannya, sehingga panitia cukup fokus pada kebutuhan rombongan.</p>
-
-                            <h2 id="faq" class="faq-title">FAQ Offroad Coban Rais</h2>
-                            <ol class="faq-list">
-                                <li>
-                                    <strong>Apakah offroad Coban Rais aman untuk keluarga?</strong><br>
-                                    Offroad Coban Rais umumnya aman untuk keluarga bila dipandu driver dan guide, mengikuti briefing keselamatan, dan peserta sesuai kondisi kesehatan. Konfirmasi usia anak ke tim sebelum booking.
-                                </li>
-                                <li>
-                                    <strong>Apakah harus membawa perlengkapan sendiri?</strong><br>
-                                    Tidak harus. Batu Offroad menyediakan armada jeep, driver, dan perlengkapan keamanan sesuai paket. Peserta cukup membawa kebutuhan pribadi seperti pakaian ganti dan air minum.
-                                </li>
-                                <li>
-                                    <strong>Berapa minimal peserta offroad Coban Rais?</strong><br>
-                                    Menurut informasi di situs Batu Offroad, paket disusun untuk rombongan minimal 10 orang. Hubungi WhatsApp +62 812-3398-9707 untuk memastikan ketentuan terbaru.
-                                </li>
-                                <li>
-                                    <strong>Apakah bus pariwisata bisa ikut ke lokasi?</strong><br>
-                                    Bus pariwisata bisa dikoordinasikan, tetapi akses bus besar ke area terdalam bergantung kondisi jalan. Konfirmasi jenis kendaraan ke tim agar titik kumpul dan perpindahan peserta bisa diatur.
-                                </li>
-                                <li>
-                                    <strong>Bagaimana jika turun hujan saat jadwal offroad?</strong><br>
-                                    Armada Batu Offroad dilengkapi atap dan perlindungan, dan basecamp memiliki pendopo permanen untuk berteduh. Keputusan melanjutkan kegiatan mengikuti kondisi cuaca dan arahan tim.
-                                </li>
-                                <li>
-                                    <strong>Berapa lama sebaiknya memesan sebelum hari kegiatan?</strong><br>
-                                    Pemesanan minimal 1-2 minggu sebelum tanggal kedatangan disarankan, terutama untuk akhir pekan dan hari libur nasional, agar jadwal dan armada masih tersedia.
-                                </li>
-                            </ol>
+                            <p>Tim Batu Offroad yang menyusun kegiatannya, sehingga panitia cukup fokus pada kebutuhan
+                                rombongan.</p>
 
                             <div class="conclusion-box">
                                 <h2 id="kesimpulan">Kesimpulan</h2>
                                 <ul>
-                                    <li>Offroad Coban Rais cocok untuk keluarga, kantor, sekolah, dan komunitas yang ingin kegiatan seru dengan pendampingan.</li>
+                                    <li>Offroad Coban Rais cocok untuk keluarga, kantor, sekolah, dan komunitas yang
+                                        ingin kegiatan seru dengan pendampingan.</li>
                                     <li>Konfirmasi akses bus dan titik kumpul sebelum hari kegiatan.</li>
                                     <li>Siapkan pakaian nyaman, alas kaki tertutup, dan cek cuaca.</li>
                                     <li>Kirim tanggal dan jumlah orang ke WhatsApp +62 812-3398-9707.</li>
                                 </ul>
-                                <p class="text-center mt-3 fw-bold mb-0">Siap mengajak rombongan Anda? Booking offroad Coban Rais bersama Batu Offroad lewat WhatsApp <a href="https://wa.me/6281233989707" target="_blank">+62 812-3398-9707</a>, lalu biarkan tim menyusun kegiatannya untuk keluarga, kantor, sekolah, atau komunitas Anda.</p>
+                                <p class="mt-3 fw-bold mb-0">Siap mengajak rombongan Anda? Booking offroad
+                                    Coban Rais bersama Batu Offroad lewat WhatsApp <a href="https://wa.me/6281233989707"
+                                        target="_blank">+62 812-3398-9707</a>, lalu biarkan tim menyusun kegiatannya
+                                    untuk keluarga, kantor, sekolah, atau komunitas Anda.</p>
                             </div>
+
+                            <h2 id="faq" class="faq-title">FAQ</h2>
+                            <ol class="faq-list">
+                                <li>
+                                    <strong>Apakah offroad Coban Rais aman untuk keluarga?</strong><br>
+                                    Offroad Coban Rais umumnya aman untuk keluarga bila dipandu driver dan guide,
+                                    mengikuti briefing keselamatan, dan peserta sesuai kondisi kesehatan. Konfirmasi
+                                    usia anak ke tim sebelum booking.
+                                </li>
+                                <li>
+                                    <strong>Apakah harus membawa perlengkapan sendiri?</strong><br>
+                                    Tidak harus. Batu Offroad menyediakan armada jeep, driver, dan perlengkapan keamanan
+                                    sesuai paket. Peserta cukup membawa kebutuhan pribadi seperti pakaian ganti dan air
+                                    minum.
+                                </li>
+                                <li>
+                                    <strong>Berapa minimal peserta offroad Coban Rais?</strong><br>
+                                    Menurut informasi di situs Batu Offroad, paket disusun untuk rombongan minimal 10
+                                    orang. Hubungi WhatsApp +62 812-3398-9707 untuk memastikan ketentuan terbaru.
+                                </li>
+                                <li>
+                                    <strong>Apakah bus pariwisata bisa ikut ke lokasi?</strong><br>
+                                    Bus pariwisata bisa dikoordinasikan, tetapi akses bus besar ke area terdalam
+                                    bergantung kondisi jalan. Konfirmasi jenis kendaraan ke tim agar titik kumpul dan
+                                    perpindahan peserta bisa diatur.
+                                </li>
+                                <li>
+                                    <strong>Bagaimana jika turun hujan saat jadwal offroad?</strong><br>
+                                    Armada Batu Offroad dilengkapi atap dan perlindungan, dan basecamp memiliki pendopo
+                                    permanen untuk berteduh. Keputusan melanjutkan kegiatan mengikuti kondisi cuaca dan
+                                    arahan tim.
+                                </li>
+                                <li>
+                                    <strong>Berapa lama sebaiknya memesan sebelum hari kegiatan?</strong><br>
+                                    Pemesanan minimal 1-2 minggu sebelum tanggal kedatangan disarankan, terutama untuk
+                                    akhir pekan dan hari libur nasional, agar jadwal dan armada masih tersedia.
+                                </li>
+                            </ol>
 
                             <div class="share-buttons">
                                 <span
@@ -1249,24 +1642,125 @@
                                     color: #ffffff !important;
                                     text-decoration: none !important;
                                 }
+
+                                /* RELATED BUTTON WHITE TEXT OVERRIDE */
+                                .article-body .related-btn,
+                                .related-card .related-btn,
+                                .related-card a.related-btn,
+                                a.related-btn {
+                                    background: var(--accent-blue, #E5890A) !important;
+                                    color: #ffffff !important;
+                                    text-decoration: none !important;
+                                }
+
+                                .article-body .related-btn:hover,
+                                .related-card .related-btn:hover,
+                                .related-card a.related-btn:hover,
+                                a.related-btn:hover {
+                                    background: #b46b08 !important;
+                                    color: #ffffff !important;
+                                    text-decoration: none !important;
+                                }
                             
-        /* RELATED BUTTON WHITE TEXT OVERRIDE */
-        .article-body .related-btn,
-        .related-card .related-btn,
-        .related-card a.related-btn,
-        a.related-btn {
-            background: var(--accent-blue, #E5890A) !important;
-            color: #ffffff !important;
-            text-decoration: none !important;
+        /* MOBILE TOC STYLING */
+        .toc-mobile .toc-collapse-content {
+            display: none;
         }
 
-        .article-body .related-btn:hover,
-        .related-card .related-btn:hover,
-        .related-card a.related-btn:hover,
-        a.related-btn:hover {
-            background: #b46b08 !important;
-            color: #ffffff !important;
+        .toc-mobile {
+            background: rgba(54, 27, 5, 0.7) !important;
+            border: 1px solid var(--border-line) !important;
+            border-radius: 10px !important;
+            padding: 20px !important;
+            margin: 25px 0 !important;
+        }
+
+        .toc-mobile .widget-title {
+            font-size: 1.15rem !important;
+            color: var(--text-white) !important;
+            margin-bottom: 0 !important;
+        }
+
+        .toc-mobile .toc-list {
+            list-style: none !important;
+            padding-left: 0 !important;
+            margin-bottom: 0 !important;
+        }
+
+        .toc-mobile .toc-list li {
+            margin-bottom: 8px !important;
+        }
+
+        .toc-mobile .toc-list a {
+            color: var(--text-light) !important;
             text-decoration: none !important;
+            font-size: 0.95rem !important;
+            display: flex !important;
+            align-items: center !important;
+            transition: color 0.2s ease !important;
+        }
+
+        .toc-mobile .toc-list a:hover {
+            color: var(--accent-blue, #E5890A) !important;
+        }
+
+        .toc-mobile .toc-list i {
+            color: var(--accent-blue, #E5890A) !important;
+            font-size: 0.75rem !important;
+            margin-right: 8px !important;
+        }
+
+        .toc-header-toggle {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* TABLE STYLING - THEME MATCHING & MOBILE RESPONSIVE SCROLL */
+        .table-responsive {
+            border-radius: 8px;
+            overflow-x: auto !important;
+            -webkit-overflow-scrolling: touch !important;
+            border: 1px solid var(--border-line);
+            margin: 25px 0;
+            display: block;
+            width: 100%;
+        }
+
+        .table-responsive .table {
+            margin-bottom: 0;
+            color: var(--text-light) !important;
+            border-color: var(--border-line) !important;
+            width: 100%;
+            min-width: 700px;
+        }
+
+        .table-responsive .table thead th {
+            background-color: var(--bg-panel) !important;
+            color: var(--accent-blue, #E5890A) !important;
+            border-color: var(--border-line) !important;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            padding: 12px 15px;
+            white-space: nowrap;
+        }
+
+        .table-responsive .table tbody td {
+            background-color: rgba(54, 27, 5, 0.7) !important;
+            color: var(--text-light) !important;
+            border-color: var(--border-line) !important;
+            padding: 12px 15px;
+            vertical-align: middle;
+            line-height: 1.6;
+        }
+
+        .table-responsive .table tbody td:first-child {
+            white-space: nowrap;
+        }
+
+        .table-responsive .table tbody td strong {
+            color: var(--accent-blue, #E5890A) !important;
         }
 
     </style>
@@ -1275,17 +1769,20 @@
                                 <h3 class="mb-4"
                                     style="font-size: 1.5rem; text-transform:uppercase; color: var(--text-color, #fff);">
                                     Artikel Terkait</h3>
-                                                                <div class="row g-4">
+                                <div class="row g-4">
                                     <div class="col-md-6">
                                         <div class="related-card">
                                             <img src="../assets/img/1-Offroad-Coban-Rondo-Jeep-4x4-untuk-Rombongan-Bus-Besar.webp"
-                                                alt="Offroad Coban Rondo Jeep 4x4 untuk Rombongan Bus Besar" class="related-img" loading="lazy">
+                                                alt="Offroad Coban Rondo Jeep 4x4 untuk Rombongan Bus Besar"
+                                                class="related-img" loading="lazy">
                                             <div class="related-body">
-                                                <h4 class="related-title"><a
-                                                        href="offroad-coban-rondo.html">Offroad Coban Rondo Jeep 4x4 untuk Rombongan Bus Besar</a></h4>
-                                                <p class="related-excerpt">Petualangan jelajah jeep 4x4 di Coban Rondo khusus rombongan bus besar dengan transit dan shuttle rapi.</p>
-                                                <a href="offroad-coban-rondo.html"
-                                                    class="related-btn" style="color: #ffffff !important; text-decoration: none !important;">BACA SELENGKAPNYA</a>
+                                                <h4 class="related-title"><a href="offroad-coban-rondo.html">Offroad
+                                                        Coban Rondo Jeep 4x4 untuk Rombongan Bus Besar</a></h4>
+                                                <p class="related-excerpt">Petualangan jelajah jeep 4x4 di Coban Rondo
+                                                    khusus rombongan bus besar dengan transit dan shuttle rapi.</p>
+                                                <a href="offroad-coban-rondo.html" class="related-btn"
+                                                    style="color: #ffffff !important; text-decoration: none !important;">BACA
+                                                    SELENGKAPNYA</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1295,10 +1792,13 @@
                                                 alt="Destinasi Coban Putri Batu" class="related-img" loading="lazy">
                                             <div class="related-body">
                                                 <h4 class="related-title"><a
-                                                        href="offroad-coban-putri-batu.html">Offroad Coban Putri Batu: Land Rover & Shuttle Siap Booking</a></h4>
-                                                <p class="related-excerpt">Jelajah Coban Putri Batu dengan Land Rover, shuttle bus, dan outbound dekat Jatim Park 2.</p>
-                                                <a href="offroad-coban-putri-batu.html"
-                                                    class="related-btn" style="color: #ffffff !important; text-decoration: none !important;">BACA SELENGKAPNYA</a>
+                                                        href="offroad-coban-putri-batu.html">Offroad Coban Putri Batu:
+                                                        Land Rover & Shuttle Siap Booking</a></h4>
+                                                <p class="related-excerpt">Jelajah Coban Putri Batu dengan Land Rover,
+                                                    shuttle bus, dan outbound dekat Jatim Park 2.</p>
+                                                <a href="offroad-coban-putri-batu.html" class="related-btn"
+                                                    style="color: #ffffff !important; text-decoration: none !important;">BACA
+                                                    SELENGKAPNYA</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1310,7 +1810,7 @@
 
                 <div class="col-lg-4">
                     <div class="sticky-sidebar">
-                        <div class="sidebar-widget" id="tocWidget">
+                        <div class="sidebar-widget d-none d-lg-block" id="tocWidget">
                             <div class="toc-header-toggle" id="tocToggleBtn">
                                 <h4 class="widget-title mb-0" style="border-bottom: none; padding-bottom: 0;">DAFTAR ISI
                                 </h4>
@@ -1318,26 +1818,40 @@
                             </div>
                             <div class="toc-collapse-content mt-3" id="tocContent">
                                 <ul class="toc-list">
-                                    <li><a href="#apa-itu"><i class="fas fa-chevron-right" aria-hidden="true"></i> Apa Itu Offroad Coban Rais</a></li>
-                                    <li><a href="#siapa-cocok"><i class="fas fa-chevron-right" aria-hidden="true"></i> Siapa yang Cocok Ikut</a></li>
-                                    <li><a href="#alur-kegiatan"><i class="fas fa-chevron-right" aria-hidden="true"></i> Alur Kegiatan Offroad</a></li>
-                                    <li><a href="#shuttle-bus"><i class="fas fa-chevron-right" aria-hidden="true"></i> Akses Shuttle Bus</a></li>
-                                    <li><a href="#kondisi-kawasan"><i class="fas fa-chevron-right" aria-hidden="true"></i> Kondisi Kawasan</a></li>
-                                    <li><a href="#persiapan"><i class="fas fa-chevron-right" aria-hidden="true"></i> Persiapan Peserta</a></li>
-                                    <li><a href="#waktu-terbaik"><i class="fas fa-chevron-right" aria-hidden="true"></i> Waktu Terbaik</a></li>
-                                    <li><a href="#komparasi"><i class="fas fa-chevron-right" aria-hidden="true"></i> Komparasi vs Wisata Mandiri</a></li>
-                                    <li><a href="#kesalahan-umum"><i class="fas fa-chevron-right" aria-hidden="true"></i> Kesalahan Umum Panitia</a></li>
-                                    <li><a href="#paket-paduan"><i class="fas fa-chevron-right" aria-hidden="true"></i> Paket Tambahan & Paduan</a></li>
-                                    <li><a href="#cara-booking"><i class="fas fa-chevron-right" aria-hidden="true"></i> Cara Booking</a></li>
-                                    <li><a href="#faq"><i class="fas fa-chevron-right" aria-hidden="true"></i> FAQ Offroad Coban Rais</a></li>
-                                    <li><a href="#kesimpulan"><i class="fas fa-chevron-right" aria-hidden="true"></i> Kesimpulan</a></li>
+                                    <li><a href="#apa-itu"><i class="fas fa-chevron-right" aria-hidden="true"></i> Apa
+                                            Itu Offroad Coban Rais</a></li>
+                                    <li><a href="#siapa-cocok"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Siapa yang Cocok Ikut</a></li>
+                                    <li><a href="#alur-kegiatan"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Alur Kegiatan Offroad</a></li>
+                                    <li><a href="#shuttle-bus"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Akses Shuttle Bus</a></li>
+                                    <li><a href="#kondisi-kawasan"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i> Kondisi Kawasan</a></li>
+                                    <li><a href="#persiapan"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Persiapan Peserta</a></li>
+                                    <li><a href="#waktu-terbaik"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Waktu Terbaik</a></li>
+                                    <li><a href="#komparasi"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Komparasi vs Wisata Mandiri</a></li>
+                                    <li><a href="#kesalahan-umum"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i> Kesalahan Umum Panitia</a></li>
+                                    <li><a href="#paket-paduan"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Paket Tambahan & Paduan</a></li>
+                                    <li><a href="#cara-booking"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Cara Booking</a></li>
+                                    <li><a href="#faq"><i class="fas fa-chevron-right" aria-hidden="true"></i> FAQ
+                                            Offroad Coban Rais</a></li>
+                                    <li><a href="#kesimpulan"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Kesimpulan</a></li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="sidebar-widget cta-widget">
                             <h4 class="widget-title" style="text-align: center;">BOOKING SEKARANG</h4>
-                            <p style="font-size: 0.95rem;">Rencanakan kegiatan offroad Coban Rais untuk rombongan keluarga, kantor, atau komunitas bersama tim profesional kami.</p>
+                            <p style="font-size: 0.95rem;">Rencanakan kegiatan offroad Coban Rais untuk rombongan
+                                keluarga, kantor, atau komunitas bersama tim profesional kami.</p>
                             <a href="https://wa.me/6281233989707?text=Halo%20Batu%20Offroad%2C%20saya%20tertarik%20dengan%20paket%20offroad%20Coban%20Rais.%20Bisa%20info%20lebih%20lanjut%3F"
                                 class="btn btn-primary-custom" target="_blank" aria-label="Booking WhatsApp">
                                 <i class="fab fa-whatsapp me-2" aria-hidden="true"></i>HUBUNGI ADMIN
@@ -1350,6 +1864,7 @@
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <div class="container">
             <div class="row">
@@ -1361,29 +1876,54 @@
                 <div class="col-lg-2 mb-4">
                     <h5 class="text-white mb-3 text-uppercase">Navigasi</h5>
                     <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="../index.html" class="text-dim footer-link-item"><i
-                                    class="fas fa-chevron-right me-2"></i>Beranda</a></li>
-                        <li class="mb-2"><a href="../about.html" class="text-dim footer-link-item"><i
-                                    class="fas fa-chevron-right me-2"></i>Tentang Kami</a></li>
-                        <li class="mb-2"><a href="../paket.html" class="text-dim footer-link-item"><i
-                                    class="fas fa-chevron-right me-2"></i>Paket</a></li>
-                        <li class="mb-2"><a href="../gallery.html" class="text-dim footer-link-item"><i
-                                    class="fas fa-chevron-right me-2"></i>Gallery</a></li>
-                        <li class="mb-2"><a href="../blog.html" class="text-dim footer-link-item"><i
-                                    class="fas fa-chevron-right me-2"></i>Blog</a></li>
+                        <li class="mb-2">
+                            <a href="../index.html" class="text-dim footer-link-item">
+                                <i class="fas fa-chevron-right me-2"></i>Beranda
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../about.html" class="text-dim footer-link-item">
+                                <i class="fas fa-chevron-right me-2"></i>Tentang Kami
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../paket.html" class="text-dim footer-link-item">
+                                <i class="fas fa-chevron-right me-2"></i>Paket
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../gallery.html" class="text-dim footer-link-item">
+                                <i class="fas fa-chevron-right me-2"></i>Gallery
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../blog.html" class="text-dim footer-link-item">
+                                <i class="fas fa-chevron-right me-2"></i>Blog
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-lg-2 mb-4">
                     <h5 class="text-white mb-3 text-uppercase">NETWORK</h5>
                     <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="https://batuoutbound.net/" class="text-dim footer-link-item"><i
-                                    class="fas fa-chevron-right me-2"></i>Batu Outbound Adventure</a></li>
-                        <li class="mb-2"><a href="https://katunoutboundadventure.com/"
-                                class="text-dim footer-link-item"><i class="fas fa-chevron-right me-2"></i>Katun
-                                Outbound Adventure</a></li>
-                        <li class="mb-2"><a href="https://baturaftingadventure.com/"
-                                class="text-dim footer-link-item"><i class="fas fa-chevron-right me-2"></i>Batu Rafting
-                                Adventure</a></li>
+                        <li class="mb-2">
+                            <a href="https://batuoutbound.net/" class="text-dim footer-link-item" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-chevron-right me-2"></i>Batu Outbound Adventure
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://katunoutboundadventure.com/" class="text-dim footer-link-item"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-chevron-right me-2"></i>Katun Outbound Adventure
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://baturaftingadventure.com/" class="text-dim footer-link-item"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-chevron-right me-2"></i>Batu Rafting Adventure
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-lg-4 mb-4">
@@ -1391,7 +1931,7 @@
                     <ul class="list-unstyled small">
                         <li class="mb-3 d-flex align-items-start text-dim">
                             <i class="fab fa-whatsapp footer-icon mt-1" aria-hidden="true"></i>
-                            <span><b>WhatsApp:</b><br>+62 812-3398-9707 (Booking)</span>
+                            <span><b>WhatsApp:</b><br>0812-3398-9707 (Booking)</span>
                         </li>
                         <li class="mb-3 d-flex align-items-start text-dim">
                             <i class="fas fa-map-marker-alt footer-icon mt-1" aria-hidden="true"></i>
@@ -1442,6 +1982,37 @@
                 tocContent.style.display = isHidden ? 'block' : 'none';
             });
         }
+    
+        document.querySelectorAll('.toc-header-toggle').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const content = this.nextElementSibling;
+                if (content) {
+                    const isHidden = window.getComputedStyle(content).display === 'none';
+                    content.style.display = isHidden ? 'block' : 'none';
+                    const icon = this.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-chevron-down', !isHidden);
+                        icon.classList.toggle('fa-chevron-up', isHidden);
+                    }
+                }
+            });
+        });
+
+        document.querySelectorAll('.toc-list a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const offset = 90;
+                        const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                        window.scrollTo({ top: top, behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+
     </script>
 </body>
 

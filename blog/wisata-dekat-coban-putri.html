@@ -829,6 +829,376 @@
                 font-size: 18px;
             }
         }
+    
+        /* SECTION SHARE AS IN SCREENSHOT */
+        .share-buttons {
+            display: flex !important;
+            align-items: center !important;
+            gap: 12px !important;
+            flex-wrap: wrap !important;
+            margin-top: 30px !important;
+            padding-top: 25px !important;
+            border-top: 1px solid var(--border-line, #834510) !important;
+        }
+
+        .share-buttons span,
+        .share-buttons .share-label {
+            color: var(--text-light, #ebd5c1) !important;
+            font-family: 'Inter', sans-serif !important;
+            font-weight: 700 !important;
+            font-size: 1.05rem !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            margin-right: 6px !important;
+            letter-spacing: 0.2px !important;
+        }
+
+        .share-buttons span i,
+        .share-buttons .share-label i {
+            color: var(--text-light, #ebd5c1) !important;
+            margin-right: 8px !important;
+            font-size: 1.15rem !important;
+        }
+
+        .share-btn {
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            gap: 8px !important;
+            padding: 9px 18px !important;
+            border-radius: 8px !important;
+            font-family: 'Inter', sans-serif !important;
+            font-size: 0.95rem !important;
+            font-weight: 700 !important;
+            text-decoration: none !important;
+            color: #ffffff !important;
+            transition: transform 0.2s ease, filter 0.2s ease !important;
+            border: none !important;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
+            line-height: 1.2 !important;
+        }
+
+        .share-btn:hover {
+            transform: translateY(-2px) !important;
+            color: #ffffff !important;
+            filter: brightness(1.1) !important;
+        }
+
+        .share-btn i {
+            font-size: 1.15rem !important;
+            color: #ffffff !important;
+            margin-right: 2px !important;
+        }
+
+        .share-btn.wa {
+            background-color: #25D366 !important;
+        }
+
+        .share-btn.fb {
+            background-color: #1877F2 !important;
+        }
+
+        .share-btn.tw {
+            background-color: #1DA1F2 !important;
+        }
+
+        /* CONCLUSION BOX RATA KIRI */
+        .conclusion-box {
+            text-align: left !important;
+        }
+
+        .conclusion-box h2,
+        .conclusion-box h3,
+        .conclusion-box h4 {
+            text-align: left !important;
+            border-left: none !important;
+            padding-left: 0 !important;
+            margin-top: 0 !important;
+        }
+
+        .conclusion-box p,
+        .conclusion-box ul,
+        .conclusion-box ol,
+        .conclusion-box li {
+            text-align: left !important;
+        }
+
+    </style>
+    <style id="article-page-enhancements">
+        /* --- ARTICLE PAGE ENHANCEMENTS & RESPONSIVE FIXES --- */
+        .article-featured-img {
+            width: 100% !important;
+            height: auto !important;
+            aspect-ratio: 16 / 9 !important;
+            object-fit: cover !important;
+            display: block !important;
+            border-bottom: 1px solid var(--border-line, #834510) !important;
+        }
+
+        .article-img-inline {
+            width: 100% !important;
+            height: auto !important;
+            aspect-ratio: 16 / 9 !important;
+            object-fit: cover !important;
+            display: block !important;
+            border-radius: 10px !important;
+            margin: 25px 0 !important;
+            border: 1px solid var(--border-line, #834510) !important;
+        }
+
+        .related-card {
+            background: var(--bg-deep, #361b05) !important;
+            border: 1px solid var(--border-line, #834510) !important;
+            border-radius: 10px !important;
+            overflow: hidden !important;
+            display: flex !important;
+            flex-direction: column !important;
+            height: 100% !important;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+        }
+
+        .related-card:hover {
+            transform: translateY(-5px) !important;
+            border-color: var(--accent-blue, #E5890A) !important;
+            box-shadow: 0 10px 25px rgba(229, 137, 10, 0.25) !important;
+        }
+
+        .related-img {
+            width: 100% !important;
+            height: auto !important;
+            aspect-ratio: 16 / 9 !important;
+            object-fit: cover !important;
+            display: block !important;
+            border-bottom: 1px solid var(--border-line, #834510) !important;
+        }
+
+        .related-body {
+            padding: 1.5rem !important;
+            display: flex !important;
+            flex-direction: column !important;
+            flex-grow: 1 !important;
+        }
+
+        .related-title {
+            font-size: 1.2rem !important;
+            font-weight: 800 !important;
+            line-height: 1.35 !important;
+            margin-bottom: 0.75rem !important;
+        }
+
+        .related-title a {
+            color: var(--text-white, #f8fafc) !important;
+            text-decoration: none !important;
+            transition: color 0.3s ease !important;
+        }
+
+        .related-title a:hover {
+            color: var(--accent-blue, #E5890A) !important;
+        }
+
+        .related-excerpt {
+            color: var(--text-light, #ebd5c1) !important;
+            font-size: 0.95rem !important;
+            line-height: 1.6 !important;
+            margin-bottom: 1.5rem !important;
+            flex-grow: 1 !important;
+        }
+
+        .related-btn {
+            display: block !important;
+            width: 100% !important;
+            text-align: center !important;
+            background: var(--accent-blue, #E5890A) !important;
+            color: #ffffff !important;
+            padding: 0.75rem 1rem !important;
+            font-weight: 700 !important;
+            font-size: 0.9rem !important;
+            border-radius: 6px !important;
+            text-decoration: none !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
+            transition: background 0.3s ease, transform 0.3s ease !important;
+        }
+
+        .related-btn:hover {
+            background: #c47508 !important;
+            color: #ffffff !important;
+            transform: translateY(-2px) !important;
+        }
+
+        /* Footer styling alignment */
+        footer {
+            background: #241103 !important;
+            padding: 60px 0 30px !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+        }
+
+        .footer-icon {
+            color: var(--accent-blue, #E5890A) !important;
+            margin-right: 12px !important;
+            width: 20px !important;
+            text-align: center !important;
+            flex-shrink: 0 !important;
+        }
+
+        footer a {
+            color: #94A3B8 !important;
+            text-decoration: none !important;
+            transition: 0.3s !important;
+        }
+
+        footer a:hover {
+            color: var(--accent-blue, #E5890A) !important;
+        }
+
+        .footer-link-item {
+            display: flex !important;
+            align-items: center !important;
+        }
+
+        .footer-link-item i {
+            font-size: 0.65rem !important;
+            color: var(--accent-blue, #E5890A) !important;
+            width: 18px !important;
+            transition: 0.3s !important;
+            margin-right: 0.5rem !important;
+        }
+
+        .footer-link-item:hover i {
+            transform: translateX(3px) !important;
+            color: var(--accent-gold, #F59E0B) !important;
+        }
+
+        .text-dim {
+            color: #94A3B8 !important;
+        }
+
+        @media (max-width: 768px) {
+            .article-body {
+                padding: 25px 20px !important;
+            }
+
+            .article-title {
+                font-size: 1.6rem !important;
+                line-height: 1.3 !important;
+            }
+
+            .related-body {
+                padding: 1.25rem 1rem !important;
+            }
+
+            .article-featured-img,
+            .related-img,
+            .article-img-inline {
+                width: 100% !important;
+                height: auto !important;
+                aspect-ratio: 16 / 9 !important;
+                object-fit: cover !important;
+                display: block !important;
+            }
+        }
+    
+        /* MOBILE TOC STYLING */
+        .toc-mobile .toc-collapse-content {
+            display: none;
+        }
+
+        .toc-mobile {
+            background: rgba(54, 27, 5, 0.7) !important;
+            border: 1px solid var(--border-line) !important;
+            border-radius: 10px !important;
+            padding: 20px !important;
+            margin: 25px 0 !important;
+        }
+
+        .toc-mobile .widget-title {
+            font-size: 1.15rem !important;
+            color: var(--text-white) !important;
+            margin-bottom: 0 !important;
+        }
+
+        .toc-mobile .toc-list {
+            list-style: none !important;
+            padding-left: 0 !important;
+            margin-bottom: 0 !important;
+        }
+
+        .toc-mobile .toc-list li {
+            margin-bottom: 8px !important;
+        }
+
+        .toc-mobile .toc-list a {
+            color: var(--text-light) !important;
+            text-decoration: none !important;
+            font-size: 0.95rem !important;
+            display: flex !important;
+            align-items: center !important;
+            transition: color 0.2s ease !important;
+        }
+
+        .toc-mobile .toc-list a:hover {
+            color: var(--accent-blue, #E5890A) !important;
+        }
+
+        .toc-mobile .toc-list i {
+            color: var(--accent-blue, #E5890A) !important;
+            font-size: 0.75rem !important;
+            margin-right: 8px !important;
+        }
+
+        .toc-header-toggle {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* TABLE STYLING - THEME MATCHING & MOBILE RESPONSIVE SCROLL */
+        .table-responsive {
+            border-radius: 8px;
+            overflow-x: auto !important;
+            -webkit-overflow-scrolling: touch !important;
+            border: 1px solid var(--border-line);
+            margin: 25px 0;
+            display: block;
+            width: 100%;
+        }
+
+        .table-responsive .table {
+            margin-bottom: 0;
+            color: var(--text-light) !important;
+            border-color: var(--border-line) !important;
+            width: 100%;
+            min-width: 700px;
+        }
+
+        .table-responsive .table thead th {
+            background-color: var(--bg-panel) !important;
+            color: var(--accent-blue, #E5890A) !important;
+            border-color: var(--border-line) !important;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            padding: 12px 15px;
+            white-space: nowrap;
+        }
+
+        .table-responsive .table tbody td {
+            background-color: rgba(54, 27, 5, 0.7) !important;
+            color: var(--text-light) !important;
+            border-color: var(--border-line) !important;
+            padding: 12px 15px;
+            vertical-align: middle;
+            line-height: 1.6;
+        }
+
+        .table-responsive .table tbody td:first-child {
+            white-space: nowrap;
+        }
+
+        .table-responsive .table tbody td strong {
+            color: var(--accent-blue, #E5890A) !important;
+        }
+
     </style>
 </head>
 
@@ -844,15 +1214,15 @@
         </a>
     </div>
 
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="../index.html" style="margin-right: 0;">
-                <img src="../assets/img/Logo/logo-batu-offroad.webp" alt="Batu Offroad Logo" class="me-2"
-                    style="height: 35px; width: auto; object-fit: contain;" loading="lazy" decoding="async">
-                <span class="ms-1"
+            <a class="navbar-brand d-flex align-items-center" href="../index.html" style="margin-right: 0;"><img
+                    src="../assets/img/Logo/logo-batu-offroad.webp" alt="Batu Offroad Logo" class="me-2"
+                    style="height: 35px; width: auto; object-fit: contain;" loading="lazy" decoding="async"><span
+                    class="ms-1"
                     style="color: #fff; font-weight: 800; font-size: 1.1rem; white-space: nowrap; font-style: normal;">BATU
-                    OFFROAD</span>
-            </a>
+                    OFFROAD</span></a>
             <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -863,21 +1233,26 @@
                     <li class="nav-item"><a class="nav-link" href="../index.html">Beranda</a></li>
                     <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
 
+                    <!-- MENU PAKET DROPDOWN -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPaket" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Paket
                         </a>
                         <ul class="dropdown-menu shadow" aria-labelledby="navbarDropdownPaket">
-                            <li><a class="dropdown-item" href="../paket/paket-offroad-fungames.html">Offroad + Fun Games</a></li>
-                            <li><a class="dropdown-item" href="../paket/paket-offroad-teambuilding.html">Offroad + Team Building</a></li>
-                            <li><a class="dropdown-item" href="../paket/paket-offroad-rafting-fungames.html">Offroad + Rafting + Fun Games</a></li>
-                            <li><a class="dropdown-item" href="../paket/paket-offroad-paintball-fungames.html">Offroad + Paintball + Fun Games</a></li>
-                            <li><a class="dropdown-item" href="../paket/paket-offroad-outbound-paintball.html">Offroad + Outbound + Paintball</a></li>
+                            <li><a class="dropdown-item" href="../paket/paket-offroad-fungames.html">Offroad + Fun
+                                    Games</a></li>
+                            <li><a class="dropdown-item" href="../paket/paket-offroad-teambuilding.html">Offroad + Team
+                                    Building</a></li>
+                            <li><a class="dropdown-item" href="../paket/paket-offroad-rafting-fungames.html">Offroad +
+                                    Rafting + Fun Games</a></li>
+                            <li><a class="dropdown-item" href="../paket/paket-offroad-paintball-fungames.html">Offroad +
+                                    Paintball + Fun Games</a></li>
+                            <li><a class="dropdown-item" href="../paket/paket-offroad-outbound-paintball.html">Offroad +
+                                    Outbound + Paintball</a></li>
                             <li><a class="dropdown-item" href="../paket/paket-bromo.html">Paket Bromo</a></li>
                             <li><a class="dropdown-item" href="../paket/paket-atv.html">Paket ATV</a></li>
-                            <li style="border-top: 1px solid var(--border-line);"><a class="dropdown-item"
-                                    href="../paket.html">Lihat Semua Paket</a></li>
+                            <li><a class="dropdown-item" href="../paket.html">Lihat Semua Paket</a></li>
                         </ul>
                     </li>
 
@@ -897,7 +1272,8 @@
     <section class="page-header position-relative text-center">
         <div class="bg-grid"></div>
         <div class="container position-relative" style="z-index: 2;">
-            <h1 class="display-4 text-white mb-2 fw-bold" style="text-transform: none;">Destinasi Wisata Dekat Coban Putri dari Jatim Park 2 sampai Eco Active</h1>
+            <h1 class="display-4 text-white mb-2 fw-bold" style="text-transform: none;">Destinasi Wisata Dekat Coban
+                Putri dari Jatim Park 2 sampai Eco Active</h1>
             <p class="text-light lead">Pilihan Wisata Populer untuk Rombongan Keluarga, Kantor, dan Komunitas</p>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center">
@@ -917,8 +1293,8 @@
                     <article class="article-container" id="article-wisata-dekat-coban-putri">
 
                         <img src="../assets/img/wisata-dekat-coban-putri-1.webp"
-                            alt="Pilihan wisata dekat Coban Putri di Kota Batu"
-                            class="article-featured-img" width="800" height="450" loading="eager" decoding="async">
+                            alt="Pilihan wisata dekat Coban Putri di Kota Batu" class="article-featured-img" width="800"
+                            height="450" loading="eager" decoding="async">
 
                         <div class="article-body">
 
@@ -927,63 +1303,156 @@
                                 <span><i class="fas fa-folder" aria-hidden="true"></i> Wisata Alam</span>
                             </div>
 
-                            <h1 class="article-title">Destinasi Wisata Dekat Coban Putri dari Jatim Park 2 sampai Eco Active</h1>
+                            <h1 class="article-title">Destinasi Wisata Dekat Coban Putri dari Jatim Park 2 sampai Eco
+                                Active</h1>
 
-                            <p class="article-intro">Wisata dekat Coban Putri yang mudah digabung dalam satu hari adalah Jatim Park 2 dan Eco Active Park, ditambah Coban Talun, Alun-alun Kota Batu, Batu Night Spectacular, dan Museum Angkut.</p>
+                            <!-- DAFTAR ISI (MOBILE ONLY) -->
+                            <div class="sidebar-widget toc-mobile d-lg-none">
+                                <div class="toc-header-toggle">
+                                    <h4 class="widget-title mb-0" style="border-bottom: none; padding-bottom: 0;">DAFTAR ISI</h4>
+                                    <i class="fas fa-chevron-down ms-2" aria-hidden="true"></i>
+                                </div>
+                                <div class="toc-collapse-content mt-3" style="display: none;">
+                                    <ul class="toc-list">
+                                        <li><a href="#destinasi-dekat"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i> Destinasi Dekat</a></li>
+                                    <li><a href="#jatim-park-2"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Jatim Park 2</a></li>
+                                    <li><a href="#eco-active-park"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i> Eco Active Park</a></li>
+                                    <li><a href="#coban-talun"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Coban Talun</a></li>
+                                    <li><a href="#alun-alun"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Alun-alun Batu</a></li>
+                                    <li><a href="#bns"><i class="fas fa-chevron-right" aria-hidden="true"></i> BNS</a>
+                                    </li>
+                                    <li><a href="#museum-angkut"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Museum Angkut</a></li>
+                                    <li><a href="#tabel-perbandingan"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i> Tabel Perbandingan</a></li>
+                                    <li><a href="#urutan-kunjungan"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i> Usulan Dua Urutan</a></li>
+                                    <li><a href="#gabung-paket"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Gabung Paket Offroad</a></li>
+                                    <li><a href="#faq"><i class="fas fa-chevron-right" aria-hidden="true"></i> FAQ</a>
+                                    </li>
+                                    <li><a href="#kesimpulan"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Kesimpulan</a></li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                            <p>Semua tujuan ini kami pilih untuk rombongan yang lebih dulu menjalani <a href="offroad-coban-putri-batu.html">offroad Coban Putri Batu dengan Land Rover dan shuttle</a>, karena urutan kegiatan di pagi hari menentukan seberapa nyaman wisata lanjutan di siang dan sore.</p>
+                            <p class="article-intro">Wisata dekat Coban Putri yang mudah digabung dalam satu hari adalah
+                                Jatim Park 2 dan Eco Active Park, ditambah Coban Talun, Alun-alun Kota Batu, Batu Night
+                                Spectacular, dan Museum Angkut.</p>
+
+                            <p>Semua tujuan ini kami pilih untuk rombongan yang lebih dulu menjalani <a
+                                    href="offroad-coban-putri-batu.html">offroad Coban Putri Batu dengan Land Rover dan
+                                    shuttle</a>, karena urutan kegiatan di pagi hari menentukan seberapa nyaman wisata
+                                lanjutan di siang dan sore.</p>
 
                             <ul>
-                                <li>Jatim Park 2 dan Eco Active Park adalah dua tujuan terdekat yang paling mudah digabung dengan offroad.</li>
-                                <li>Coban Talun, Alun-alun Kota Batu, Batu Night Spectacular, dan Museum Angkut melengkapi pilihan satu hari di Batu.</li>
-                                <li>Offroad paling nyaman dijadwalkan pagi, wisata santai pada siang, dan tujuan hiburan pada sore atau malam.</li>
-                                <li>Jam buka tiap tempat dapat berubah, sehingga perlu dicek ke pengelola sebelum berangkat.</li>
-                                <li>Rombongan keluarga, kantor, sekolah, dan komunitas bisa menyesuaikan jadwal lewat WhatsApp kami.</li>
+                                <li>Jatim Park 2 dan Eco Active Park adalah dua tujuan terdekat yang paling mudah
+                                    digabung dengan offroad.</li>
+                                <li>Coban Talun, Alun-alun Kota Batu, Batu Night Spectacular, dan Museum Angkut
+                                    melengkapi pilihan satu hari di Batu.</li>
+                                <li>Offroad paling nyaman dijadwalkan pagi, wisata santai pada siang, dan tujuan hiburan
+                                    pada sore atau malam.</li>
+                                <li>Jam buka tiap tempat dapat berubah, sehingga perlu dicek ke pengelola sebelum
+                                    berangkat.</li>
+                                <li>Rombongan keluarga, kantor, sekolah, dan komunitas bisa menyesuaikan jadwal lewat
+                                    WhatsApp kami.</li>
                             </ul>
 
                             <h2 id="destinasi-dekat">Destinasi Apa Saja yang Dekat dengan Coban Putri</h2>
-                            <p>Enam destinasi yang layak digabung adalah Jatim Park 2, Eco Active Park, Coban Talun, Alun-alun Kota Batu, Batu Night Spectacular, dan Museum Angkut, semuanya berada di wilayah Kota Batu.</p>
-                            <p>Informasi pada bagian ini bersifat umum. Jam buka, tiket, dan jadwal pertunjukan setiap tempat dapat berubah mengikuti musim dan hari libur, jadi cek langsung ke pengelola resmi sebelum berangkat. Kota Batu dikenal sebagai kawasan wisata yang beragam, dan informasi umumnya dipublikasikan oleh Pemerintah Kota Batu.</p>
+                            <p>Enam destinasi yang layak digabung adalah Jatim Park 2, Eco Active Park, Coban Talun,
+                                Alun-alun Kota Batu, Batu Night Spectacular, dan Museum Angkut, semuanya berada di
+                                wilayah Kota Batu.</p>
+                            <p>Informasi pada bagian ini bersifat umum. Jam buka, tiket, dan jadwal pertunjukan setiap
+                                tempat dapat berubah mengikuti musim dan hari libur, jadi cek langsung ke pengelola
+                                resmi sebelum berangkat. Kota Batu dikenal sebagai kawasan wisata yang beragam, dan
+                                informasi umumnya dipublikasikan oleh Pemerintah Kota Batu.</p>
 
                             <h3 id="jatim-park-2">Jatim Park 2</h3>
-                            <p>Jatim Park 2 adalah kawasan rekreasi keluarga di Kota Batu yang dikenal dengan wahana satwa dan museum satwa.</p>
-                            <p>Kedekatannya dengan lokasi offroad kami membuatnya menjadi tujuan lanjutan paling populer bagi rombongan yang membawa anak-anak, terutama keluarga yang mencari <a href="aktivitas-keluarga-di-batu.html">aktivitas keluarga di Batu selain offroad</a>.</p>
-                            <p>Tempat ini cocok untuk keluarga, sekolah, dan komunitas yang ingin kegiatan edukatif sekaligus santai. Pengunjung biasanya membutuhkan waktu setengah hari atau lebih untuk menjelajah, sehingga paling pas dijadwalkan setelah offroad pagi dan makan siang.</p>
-                            <p>Fasilitas umum yang tersedia di kawasan ini mencakup area makan dan toilet. Jam buka dan tiket sebaiknya dicek ke pengelola resmi karena dapat berubah pada hari libur.</p>
+                            <p>Jatim Park 2 adalah kawasan rekreasi keluarga di Kota Batu yang dikenal dengan wahana
+                                satwa dan museum satwa.</p>
+                            <p>Kedekatannya dengan lokasi offroad kami membuatnya menjadi tujuan lanjutan paling populer
+                                bagi rombongan yang membawa anak-anak, terutama keluarga yang mencari <a
+                                    href="aktivitas-keluarga-di-batu.html">aktivitas keluarga di Batu selain
+                                    offroad</a>.</p>
+                            <p>Tempat ini cocok untuk keluarga, sekolah, dan komunitas yang ingin kegiatan edukatif
+                                sekaligus santai. Pengunjung biasanya membutuhkan waktu setengah hari atau lebih untuk
+                                menjelajah, sehingga paling pas dijadwalkan setelah offroad pagi dan makan siang.</p>
+                            <p>Fasilitas umum yang tersedia di kawasan ini mencakup area makan dan toilet. Jam buka dan
+                                tiket sebaiknya dicek ke pengelola resmi karena dapat berubah pada hari libur.</p>
 
                             <h3 id="eco-active-park">Eco Active Park</h3>
-                            <p>Eco Active Park adalah tujuan wisata bernuansa petualangan dan permainan luar ruang di Kota Batu, dekat dengan lokasi offroad kami.</p>
-                            <p>Tempat ini cocok bagi tim kantor, komunitas, dan rombongan remaja yang masih bersemangat bergerak setelah offroad. Pengunjung umumnya menyisihkan beberapa jam untuk mencoba beragam aktivitas di luar ruang.</p>
-                            <p>Karena aktivitasnya terbuka, rombongan perlu menyesuaikan pakaian, alas kaki, dan kondisi cuaca. Jam buka, jenis permainan, dan tiket sebaiknya dikonfirmasi ke pengelola sebelum berangkat. Bagi rombongan yang menyukai suasana kompetitif, tempat ini dapat melengkapi sesi outbound team building yang kami sediakan dalam <a href="../paket/paket-offroad-outbound-paintball.html">paket offroad, outbound, dan paintball</a>.</p>
+                            <p>Eco Active Park adalah tujuan wisata bernuansa petualangan dan permainan luar ruang di
+                                Kota Batu, dekat dengan lokasi offroad kami.</p>
+                            <p>Tempat ini cocok bagi tim kantor, komunitas, dan rombongan remaja yang masih bersemangat
+                                bergerak setelah offroad. Pengunjung umumnya menyisihkan beberapa jam untuk mencoba
+                                beragam aktivitas di luar ruang.</p>
+                            <p>Karena aktivitasnya terbuka, rombongan perlu menyesuaikan pakaian, alas kaki, dan kondisi
+                                cuaca. Jam buka, jenis permainan, dan tiket sebaiknya dikonfirmasi ke pengelola sebelum
+                                berangkat. Bagi rombongan yang menyukai suasana kompetitif, tempat ini dapat melengkapi
+                                sesi outbound team building yang kami sediakan dalam <a
+                                    href="../paket/paket-offroad-outbound-paintball.html">paket offroad, outbound, dan
+                                    paintball</a>.</p>
 
                             <img src="../assets/img/wisata-dekat-coban-putri-2.webp"
-                                alt="Kawasan wisata Jatim Park 2 di Kota Batu"
-                                class="article-img-inline" width="800" height="450" loading="lazy" decoding="async">
-                            <p class="img-caption">Kawasan wisata favorit di Kota Batu yang dekat dengan rute offroad Coban Putri</p>
+                                alt="Kawasan wisata Jatim Park 2 di Kota Batu" class="article-img-inline" width="800"
+                                height="450" loading="lazy" decoding="async">
+                            <p class="img-caption">Kawasan wisata favorit di Kota Batu yang dekat dengan rute offroad
+                                Coban Putri</p>
 
                             <h3 id="coban-talun">Coban Talun</h3>
-                            <p>Coban Talun adalah air terjun di wilayah Batu yang menarik bagi pecinta wisata alam dan fotografi. Tempat ini cocok bagi keluarga, komunitas, dan rombongan yang ingin suasana hutan pinus dan udara sejuk.</p>
-                            <p>Pengunjung umumnya membutuhkan waktu sekitar setengah hari untuk menikmati jalur dan area sekitarnya, termasuk menyesuaikan dengan kondisi cuaca.</p>
-                            <p>Selain air terjun, ada <a href="aktivitas-di-sekitar-coban-talun.html">aktivitas seru di sekitar Coban Talun</a> seperti fun offroad, paintball, outbound, camping, dan trekking, dan rombongan bisa mempelajari <a href="wisata-coban-talun.html">wisata Coban Talun Batu</a> lebih jauh untuk menentukan waktu kunjungan.</p>
-                            <p>Fasilitas ringkas yang umum ditemukan berupa area parkir dan warung. Jam buka sebaiknya dikonfirmasi ke pengelola karena dapat berubah mengikuti musim.</p>
+                            <p>Coban Talun adalah air terjun di wilayah Batu yang menarik bagi pecinta wisata alam dan
+                                fotografi. Tempat ini cocok bagi keluarga, komunitas, dan rombongan yang ingin suasana
+                                hutan pinus dan udara sejuk.</p>
+                            <p>Pengunjung umumnya membutuhkan waktu sekitar setengah hari untuk menikmati jalur dan area
+                                sekitarnya, termasuk menyesuaikan dengan kondisi cuaca.</p>
+                            <p>Selain air terjun, ada <a href="aktivitas-di-sekitar-coban-talun.html">aktivitas seru di
+                                    sekitar Coban Talun</a> seperti fun offroad, paintball, outbound, camping, dan
+                                trekking, dan rombongan bisa mempelajari <a href="wisata-coban-talun.html">wisata Coban
+                                    Talun Batu</a> lebih jauh untuk menentukan waktu kunjungan.</p>
+                            <p>Fasilitas ringkas yang umum ditemukan berupa area parkir dan warung. Jam buka sebaiknya
+                                dikonfirmasi ke pengelola karena dapat berubah mengikuti musim.</p>
 
                             <h3 id="alun-alun">Alun-alun Kota Batu</h3>
-                            <p>Alun-alun Kota Batu adalah ruang publik di pusat Kota Batu yang cocok untuk bersantai dan berfoto. Tempat ini cocok bagi keluarga, anak-anak, dan rombongan yang ingin istirahat ringan setelah kegiatan outdoor.</p>
-                            <p>Durasi kunjungannya fleksibel, bisa singkat untuk jalan santai atau lebih panjang untuk menikmati suasana sore. Di sekitarnya, rombongan mudah menemukan tempat makan dan toko oleh-oleh.</p>
-                            <p>Karena merupakan ruang publik, tidak ada jam tutup seketat tempat wisata berbayar, tetapi keramaian meningkat pada akhir pekan dan musim liburan. Alun-alun juga menjadi titik awal yang mudah dikenali bagi tamu yang datang dari kota lain.</p>
+                            <p>Alun-alun Kota Batu adalah ruang publik di pusat Kota Batu yang cocok untuk bersantai dan
+                                berfoto. Tempat ini cocok bagi keluarga, anak-anak, dan rombongan yang ingin istirahat
+                                ringan setelah kegiatan outdoor.</p>
+                            <p>Durasi kunjungannya fleksibel, bisa singkat untuk jalan santai atau lebih panjang untuk
+                                menikmati suasana sore. Di sekitarnya, rombongan mudah menemukan tempat makan dan toko
+                                oleh-oleh.</p>
+                            <p>Karena merupakan ruang publik, tidak ada jam tutup seketat tempat wisata berbayar, tetapi
+                                keramaian meningkat pada akhir pekan dan musim liburan. Alun-alun juga menjadi titik
+                                awal yang mudah dikenali bagi tamu yang datang dari kota lain.</p>
 
                             <h3 id="bns">Batu Night Spectacular (BNS)</h3>
-                            <p>Batu Night Spectacular, sering disebut BNS, adalah tujuan wisata malam di Kota Batu dengan wahana dan lampu warna-warni. Tempat ini cocok bagi keluarga, pasangan, dan tim kantor yang ingin menutup hari dengan suasana hiburan.</p>
-                            <p>Karena buka pada sore dan malam, BNS cocok untuk rombongan yang menyelesaikan offroad pagi lalu beristirahat siang. Durasi kunjungan umumnya beberapa jam, tergantung jumlah wahana yang dicoba.</p>
-                            <p>Fasilitas umum mencakup area makan dan toilet. Jam operasional dapat berbeda pada hari biasa dan akhir pekan, jadi konfirmasikan ke pengelola resmi sebelum berangkat.</p>
+                            <p>Batu Night Spectacular, sering disebut BNS, adalah tujuan wisata malam di Kota Batu
+                                dengan wahana dan lampu warna-warni. Tempat ini cocok bagi keluarga, pasangan, dan tim
+                                kantor yang ingin menutup hari dengan suasana hiburan.</p>
+                            <p>Karena buka pada sore dan malam, BNS cocok untuk rombongan yang menyelesaikan offroad
+                                pagi lalu beristirahat siang. Durasi kunjungan umumnya beberapa jam, tergantung jumlah
+                                wahana yang dicoba.</p>
+                            <p>Fasilitas umum mencakup area makan dan toilet. Jam operasional dapat berbeda pada hari
+                                biasa dan akhir pekan, jadi konfirmasikan ke pengelola resmi sebelum berangkat.</p>
 
                             <h3 id="museum-angkut">Museum Angkut</h3>
-                            <p>Museum Angkut adalah museum transportasi di Kota Batu dengan koleksi kendaraan dari berbagai masa dan zona bertema. Tempat ini cocok bagi keluarga, sekolah, dan komunitas yang menyukai otomotif, sejarah, dan foto bertema.</p>
-                            <p>Karena area di dalam ruang, museum ini nyaman dijadikan pilihan ketika cuaca kurang bersahabat. Pengunjung umumnya membutuhkan beberapa jam untuk menjelajah semua zona.</p>
-                            <p>Bagi rombongan yang baru offroad dengan Land Rover, museum ini memberi kontras yang menarik karena menampilkan perkembangan kendaraan dari masa ke masa. Jam buka dan tiket sebaiknya dicek ke pengelola resmi sebelum berkunjung.</p>
+                            <p>Museum Angkut adalah museum transportasi di Kota Batu dengan koleksi kendaraan dari
+                                berbagai masa dan zona bertema. Tempat ini cocok bagi keluarga, sekolah, dan komunitas
+                                yang menyukai otomotif, sejarah, dan foto bertema.</p>
+                            <p>Karena area di dalam ruang, museum ini nyaman dijadikan pilihan ketika cuaca kurang
+                                bersahabat. Pengunjung umumnya membutuhkan beberapa jam untuk menjelajah semua zona.</p>
+                            <p>Bagi rombongan yang baru offroad dengan Land Rover, museum ini memberi kontras yang
+                                menarik karena menampilkan perkembangan kendaraan dari masa ke masa. Jam buka dan tiket
+                                sebaiknya dicek ke pengelola resmi sebelum berkunjung.</p>
 
                             <h2 id="tabel-perbandingan">Bagaimana Perbandingan Seluruh Destinasi</h2>
-                            <p>Perbandingan berikut membantu rombongan memilih destinasi sesuai kebutuhan, usia peserta, dan waktu yang tersedia. Informasi bersifat umum, sehingga jam buka perlu dikonfirmasi ke pengelola.</p>
+                            <p>Perbandingan berikut membantu rombongan memilih destinasi sesuai kebutuhan, usia peserta,
+                                dan waktu yang tersedia. Informasi bersifat umum, sehingga jam buka perlu dikonfirmasi
+                                ke pengelola.</p>
 
                             <div class="table-responsive">
                                 <table class="season-table">
@@ -1043,91 +1512,133 @@
                                 </table>
                             </div>
 
-                            <p>Untuk jarak dan waktu tempuh dari titik jemput rombongan Anda, tim kami dapat memberi arahan lewat WhatsApp karena bergantung pada lalu lintas dan musim.</p>
+                            <p>Untuk jarak dan waktu tempuh dari titik jemput rombongan Anda, tim kami dapat memberi
+                                arahan lewat WhatsApp karena bergantung pada lalu lintas dan musim.</p>
 
                             <h2 id="urutan-kunjungan">Bagaimana Usulan Dua Urutan Kunjungan Sehari</h2>
-                            <p>Dua urutan kunjungan yang kami sarankan adalah rute keluarga yang santai dan rute tim kantor yang aktif. Keduanya dimulai dengan offroad pagi lalu dilanjutkan ke wisata sekitar. Berikut dua usulan yang sering kami rekomendasikan (waktu yang tertera adalah perkiraan yang bisa disesuaikan):</p>
+                            <p>Dua urutan kunjungan yang kami sarankan adalah rute keluarga yang santai dan rute tim
+                                kantor yang aktif. Keduanya dimulai dengan offroad pagi lalu dilanjutkan ke wisata
+                                sekitar. Berikut dua usulan yang sering kami rekomendasikan (waktu yang tertera adalah
+                                perkiraan yang bisa disesuaikan):</p>
 
                             <div class="highlight-box">
                                 <h3>Urutan A untuk Keluarga</h3>
                                 <ol>
-                                    <li><strong>Pagi sekitar pukul 08.00:</strong> tiba di basecamp, briefing, lalu offroad bersama Land Rover.</li>
+                                    <li><strong>Pagi sekitar pukul 08.00:</strong> tiba di basecamp, briefing, lalu
+                                        offroad bersama Land Rover.</li>
                                     <li><strong>Siang:</strong> makan di kantin dan istirahat di pendopo.</li>
-                                    <li><strong>Setelah istirahat:</strong> lanjut ke Jatim Park 2 untuk wisata keluarga.</li>
-                                    <li><strong>Sore:</strong> mampir ke Alun-alun Kota Batu untuk bersantai sebelum pulang.</li>
+                                    <li><strong>Setelah istirahat:</strong> lanjut ke Jatim Park 2 untuk wisata
+                                        keluarga.</li>
+                                    <li><strong>Sore:</strong> mampir ke Alun-alun Kota Batu untuk bersantai sebelum
+                                        pulang.</li>
                                 </ol>
                             </div>
 
-                            <p>Urutan ini cocok bagi rombongan dengan anak-anak dan peserta yang lebih nyaman dengan ritme santai, dan polanya mirip dengan <a href="itinerary-coban-talun-1-hari.html">itinerary 1 hari Coban Talun dengan offroad dan kuliner Batu</a> yang menaruh offroad di pagi hari dan kuliner di sore hari.</p>
+                            <p>Urutan ini cocok bagi rombongan dengan anak-anak dan peserta yang lebih nyaman dengan
+                                ritme santai, dan polanya mirip dengan <a
+                                    href="itinerary-coban-talun-1-hari.html">itinerary 1 hari Coban Talun dengan offroad
+                                    dan kuliner Batu</a> yang menaruh offroad di pagi hari dan kuliner di sore hari.</p>
 
                             <div class="highlight-box">
                                 <h3>Urutan B untuk Tim Kantor</h3>
                                 <ol>
-                                    <li><strong>Pagi sekitar pukul 08.00:</strong> briefing, lalu sesi outbound team building.</li>
+                                    <li><strong>Pagi sekitar pukul 08.00:</strong> briefing, lalu sesi outbound team
+                                        building.</li>
                                     <li><strong>Menjelang siang:</strong> offroad bersama Land Rover.</li>
                                     <li><strong>Siang:</strong> makan dan istirahat.</li>
-                                    <li><strong>Setelah itu:</strong> kunjungi Eco Active Park untuk aktivitas lanjutan.</li>
+                                    <li><strong>Setelah itu:</strong> kunjungi Eco Active Park untuk aktivitas lanjutan.
+                                    </li>
                                     <li><strong>Sore hingga malam:</strong> tutup hari di Batu Night Spectacular.</li>
                                 </ol>
                             </div>
 
-                            <p>Urutan ini cocok untuk gathering yang menekankan kekompakan tim, dan panitia dapat mengembangkannya menjadi rundown lengkap seperti pada <a href="susunan-acara-gathering-kantor.html">susunan acara gathering kantor offroad di Batu</a>.</p>
+                            <p>Urutan ini cocok untuk gathering yang menekankan kekompakan tim, dan panitia dapat
+                                mengembangkannya menjadi rundown lengkap seperti pada <a
+                                    href="susunan-acara-gathering-kantor.html">susunan acara gathering kantor offroad di
+                                    Batu</a>.</p>
 
                             <h2 id="gabung-paket">Bagaimana Cara Menggabungkan dengan Paket Offroad Batu Offroad</h2>
-                            <p>Cara menggabungkan yang paling nyaman adalah menaruh kegiatan paling berat, yaitu offroad atau outbound, di pagi hari. Wisata santai ditaruh siang dan sore agar stamina rombongan terjaga.</p>
+                            <p>Cara menggabungkan yang paling nyaman adalah menaruh kegiatan paling berat, yaitu offroad
+                                atau outbound, di pagi hari. Wisata santai ditaruh siang dan sore agar stamina rombongan
+                                terjaga.</p>
                             <p>Beberapa pertimbangan agar gabungannya berjalan baik:</p>
                             <ul>
-                                <li><strong>Jam:</strong> mulai pagi supaya ada waktu longgar untuk makan siang dan perpindahan antar tempat.</li>
-                                <li><strong>Stamina:</strong> tempatkan kegiatan fisik lebih dulu, lalu pilih wisata yang lebih santai.</li>
-                                <li><strong>Rombongan:</strong> peserta lansia dan anak-anak membutuhkan jeda istirahat lebih sering.</li>
-                                <li><strong>Cuaca:</strong> siapkan alternatif tempat tertutup, misalnya museum, bila hujan.</li>
-                                <li><strong>Transportasi:</strong> pakai layanan shuttle transportasi kami untuk berpindah antar titik agar rombongan tidak terpencar.</li>
+                                <li><strong>Jam:</strong> mulai pagi supaya ada waktu longgar untuk makan siang dan
+                                    perpindahan antar tempat.</li>
+                                <li><strong>Stamina:</strong> tempatkan kegiatan fisik lebih dulu, lalu pilih wisata
+                                    yang lebih santai.</li>
+                                <li><strong>Rombongan:</strong> peserta lansia dan anak-anak membutuhkan jeda istirahat
+                                    lebih sering.</li>
+                                <li><strong>Cuaca:</strong> siapkan alternatif tempat tertutup, misalnya museum, bila
+                                    hujan.</li>
+                                <li><strong>Transportasi:</strong> pakai layanan shuttle transportasi kami untuk
+                                    berpindah antar titik agar rombongan tidak terpencar.</li>
                             </ul>
 
-                            <p>Berdasarkan data situs resmi Batu Offroad Adventure tahun 2026, kami telah menyelenggarakan lebih dari 180 event, sehingga kami terbiasa menyusun jadwal gabungan seperti ini.</p>
-                            <p>Rombongan keluarga biasanya memadukan wisata sekitar dengan <a href="../paket/paket-offroad-fungames.html">paket offroad dan fun games</a>, sedangkan yang menyukai aktivitas air sering menambahkan <a href="../paket/paket-offroad-rafting-fungames.html">paket offroad, rafting, dan fun games</a>.</p>
-                            <p>Karena basecamp kami berada di Temas, <a href="rute-ke-coban-putri.html">rute ke Coban Putri dari Batu, Malang, bandara, dan stasiun</a> menjadi dasar perhitungan waktu perpindahan antar titik, sementara <a href="fasilitas-coban-putri-batu.html">fasilitas Coban Putri untuk rombongan</a> seperti pendopo dan kantin membantu rombongan beristirahat di sela jadwal.</p>
+                            <p>Berdasarkan data situs resmi Batu Offroad Adventure tahun 2026, kami telah
+                                menyelenggarakan lebih dari 180 event, sehingga kami terbiasa menyusun jadwal gabungan
+                                seperti ini.</p>
+                            <p>Rombongan keluarga biasanya memadukan wisata sekitar dengan <a
+                                    href="../paket/paket-offroad-fungames.html">paket offroad dan fun games</a>,
+                                sedangkan yang menyukai aktivitas air sering menambahkan <a
+                                    href="../paket/paket-offroad-rafting-fungames.html">paket offroad, rafting, dan fun
+                                    games</a>.</p>
+                            <p>Karena basecamp kami berada di Temas, <a href="rute-ke-coban-putri.html">rute ke Coban
+                                    Putri dari Batu, Malang, bandara, dan stasiun</a> menjadi dasar perhitungan waktu
+                                perpindahan antar titik, sementara <a href="fasilitas-coban-putri-batu.html">fasilitas
+                                    Coban Putri untuk rombongan</a> seperti pendopo dan kantin membantu rombongan
+                                beristirahat di sela jadwal.</p>
 
                             <h2 id="faq" class="faq-title">FAQ</h2>
                             <ol class="faq-list">
                                 <li>
                                     <strong>Wisata apa yang paling dekat dengan Coban Putri?</strong><br>
-                                    Jatim Park 2 dan Eco Active Park adalah dua wisata terdekat yang paling mudah digabung. Keduanya berada dekat dengan lokasi offroad kami dan cocok untuk rombongan keluarga maupun kantor.
+                                    Jatim Park 2 dan Eco Active Park adalah dua wisata terdekat yang paling mudah
+                                    digabung. Keduanya berada dekat dengan lokasi offroad kami dan cocok untuk rombongan
+                                    keluarga maupun kantor.
                                 </li>
                                 <li>
                                     <strong>Apakah semua wisata ini bisa dikunjungi dalam satu hari?</strong><br>
-                                    Sebaiknya tidak semuanya. Pilih dua sampai tiga tujuan sesuai stamina dan jumlah peserta, lalu letakkan kegiatan paling aktif di pagi hari agar jadwal tidak terburu-buru.
+                                    Sebaiknya tidak semuanya. Pilih dua sampai tiga tujuan sesuai stamina dan jumlah
+                                    peserta, lalu letakkan kegiatan paling aktif di pagi hari agar jadwal tidak
+                                    terburu-buru.
                                 </li>
                                 <li>
                                     <strong>Apakah jam buka tempat wisata selalu sama?</strong><br>
-                                    Tidak selalu. Jam buka dapat berubah mengikuti musim, hari libur, dan kebijakan pengelola, sehingga rombongan sebaiknya mengecek informasi resmi sebelum berangkat.
+                                    Tidak selalu. Jam buka dapat berubah mengikuti musim, hari libur, dan kebijakan
+                                    pengelola, sehingga rombongan sebaiknya mengecek informasi resmi sebelum berangkat.
                                 </li>
                                 <li>
                                     <strong>Apakah cocok untuk rombongan dengan anak dan lansia?</strong><br>
-                                    Cocok dengan penyesuaian. Pilih tujuan yang lebih santai, beri jeda istirahat, dan pertimbangkan <a href="offroad-batu-untuk-lansia.html">persiapan offroad Batu untuk lansia</a> bila ada peserta usia lanjut.
+                                    Cocok dengan penyesuaian. Pilih tujuan yang lebih santai, beri jeda istirahat, dan
+                                    pertimbangkan <a href="offroad-batu-untuk-lansia.html">persiapan offroad Batu untuk
+                                        lansia</a> bila ada peserta usia lanjut.
                                 </li>
                                 <li>
                                     <strong>Bagaimana cara menyusun jadwal gabungan dengan Batu Offroad?</strong><br>
-                                    Kirim tanggal, jumlah peserta, dan tujuan rombongan lewat WhatsApp. Tim kami lalu menyarankan kombinasi offroad, outbound, dan wisata sekitar yang paling sesuai.
+                                    Kirim tanggal, jumlah peserta, dan tujuan rombongan lewat WhatsApp. Tim kami lalu
+                                    menyarankan kombinasi offroad, outbound, dan wisata sekitar yang paling sesuai.
                                 </li>
                             </ol>
 
                             <div class="conclusion-box">
                                 <h2 id="kesimpulan">Kesimpulan</h2>
-                                <p>Wisata dekat Coban Putri menawarkan banyak pilihan, dari Jatim Park 2 dan Eco Active Park hingga Coban Talun, Alun-alun Kota Batu, Batu Night Spectacular, dan Museum Angkut. Kuncinya adalah memilih sedikit tujuan dan mengatur urutannya dengan baik.</p>
-                                <p class="fw-bold mb-2">Takeaways:</p>
-                                <ul>
-                                    <li>Mulai dengan kegiatan fisik di pagi hari.</li>
-                                    <li>Pilih dua sampai tiga tujuan, bukan semuanya.</li>
-                                    <li>Konfirmasi jam buka ke pengelola sebelum berangkat.</li>
-                                    <li>Gunakan shuttle transportasi agar rombongan tetap kompak.</li>
-                                </ul>
-                                <p>Offroad Coban Putri cocok untuk keluarga, kantor, sekolah, maupun komunitas yang ingin satu hari penuh di Batu.</p>
-                                <p class="text-center mt-3 fw-bold">Kirim tanggal dan jumlah peserta ke WhatsApp <a href="https://wa.me/6281233989707" target="_blank">+62 812-3398-9707</a>, lalu tim Batu Offroad menyusun kegiatannya, dan rombongan yang ingin membandingkan kegiatan dapat menimbang <a href="../paket.html">paket Batu Offroad</a> terlebih dahulu.</p>
+                                <p>Wisata dekat Coban Putri menawarkan banyak pilihan, dari Jatim Park 2 dan Eco Active
+                                    Park hingga Coban Talun, Alun-alun Kota Batu, Batu Night Spectacular, dan Museum
+                                    Angkut. Kuncinya adalah memilih sedikit tujuan dan mengatur urutannya dengan baik.
+                                </p>
+                                <p>Offroad Coban Putri cocok untuk keluarga, kantor, sekolah, maupun komunitas yang
+                                    ingin satu hari penuh di Batu.</p>
+                                <p class="mt-3 fw-bold">Kirim tanggal dan jumlah peserta ke WhatsApp <a
+                                        href="https://wa.me/6281233989707" target="_blank">+62 812-3398-9707</a>, lalu
+                                    tim Batu Offroad menyusun kegiatannya, dan rombongan yang ingin membandingkan
+                                    kegiatan dapat menimbang <a href="../paket.html">paket Batu Offroad</a> terlebih
+                                    dahulu.</p>
                             </div>
 
                             <div class="share-buttons">
-                                <span style="color: var(--text-grey); font-weight: 600; display: flex; align-items: center; margin-right: 5px;">
+                                <span
+                                    style="color: var(--text-grey); font-weight: 600; display: flex; align-items: center; margin-right: 5px;">
                                     <i class="fas fa-share-alt me-2"></i> Bagikan:
                                 </span>
                                 <a href="https://wa.me/?text=Destinasi%20Wisata%20Dekat%20Coban%20Putri%20dari%20Jatim%20Park%202%20sampai%20Eco%20Active%20https://batuoffroad.web.id/blog/wisata-dekat-coban-putri.html"
@@ -1152,9 +1663,13 @@
                                             <img src="../assets/img/offroad-coban-putri-batu-1.webp"
                                                 alt="Offroad Coban Putri Batu" class="related-img" loading="lazy">
                                             <div class="related-body">
-                                                <h4 class="related-title"><a href="offroad-coban-putri-batu.html">Offroad Coban Putri Batu Land Rover dan Shuttle Siap Booking</a></h4>
-                                                <p class="related-excerpt">Panduan offroad Coban Putri dengan Land Rover 4x4, shuttle transportasi rombongan, dan outbound.</p>
-                                                <a href="offroad-coban-putri-batu.html" class="related-btn">BACA SELENGKAPNYA</a>
+                                                <h4 class="related-title"><a
+                                                        href="offroad-coban-putri-batu.html">Offroad Coban Putri Batu
+                                                        Land Rover dan Shuttle Siap Booking</a></h4>
+                                                <p class="related-excerpt">Panduan offroad Coban Putri dengan Land Rover
+                                                    4x4, shuttle transportasi rombongan, dan outbound.</p>
+                                                <a href="offroad-coban-putri-batu.html" class="related-btn">BACA
+                                                    SELENGKAPNYA</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1163,9 +1678,12 @@
                                             <img src="../assets/img/1-Rute-ke-Coban-Putri-Cerita-Perjalanan-Tim-Batu-Offroad.webp"
                                                 alt="Rute ke Coban Putri" class="related-img" loading="lazy">
                                             <div class="related-body">
-                                                <h4 class="related-title"><a href="rute-ke-coban-putri.html">Rute ke Coban Putri Cerita Perjalanan Tim Batu Offroad</a></h4>
-                                                <p class="related-excerpt">Catatan survei rute dari Alun-alun Batu, titik rawan di tanjakan, dan jam berangkat tepat.</p>
-                                                <a href="rute-ke-coban-putri.html" class="related-btn">BACA SELENGKAPNYA</a>
+                                                <h4 class="related-title"><a href="rute-ke-coban-putri.html">Rute ke
+                                                        Coban Putri Cerita Perjalanan Tim Batu Offroad</a></h4>
+                                                <p class="related-excerpt">Catatan survei rute dari Alun-alun Batu,
+                                                    titik rawan di tanjakan, dan jam berangkat tepat.</p>
+                                                <a href="rute-ke-coban-putri.html" class="related-btn">BACA
+                                                    SELENGKAPNYA</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1177,32 +1695,46 @@
 
                 <div class="col-lg-4">
                     <div class="sticky-sidebar">
-                        <div class="sidebar-widget" id="tocWidget">
+                        <div class="sidebar-widget d-none d-lg-block" id="tocWidget">
                             <div class="toc-header-toggle" id="tocToggleBtn">
-                                <h4 class="widget-title mb-0" style="border-bottom: none; padding-bottom: 0;">DAFTAR ISI</h4>
+                                <h4 class="widget-title mb-0" style="border-bottom: none; padding-bottom: 0;">DAFTAR ISI
+                                </h4>
                                 <i class="fas fa-chevron-down ms-2" id="tocToggleIcon" aria-hidden="true"></i>
                             </div>
                             <div class="toc-collapse-content mt-3" id="tocContent">
                                 <ul class="toc-list">
-                                    <li><a href="#destinasi-dekat"><i class="fas fa-chevron-right" aria-hidden="true"></i> Destinasi Dekat</a></li>
-                                    <li><a href="#jatim-park-2"><i class="fas fa-chevron-right" aria-hidden="true"></i> Jatim Park 2</a></li>
-                                    <li><a href="#eco-active-park"><i class="fas fa-chevron-right" aria-hidden="true"></i> Eco Active Park</a></li>
-                                    <li><a href="#coban-talun"><i class="fas fa-chevron-right" aria-hidden="true"></i> Coban Talun</a></li>
-                                    <li><a href="#alun-alun"><i class="fas fa-chevron-right" aria-hidden="true"></i> Alun-alun Batu</a></li>
-                                    <li><a href="#bns"><i class="fas fa-chevron-right" aria-hidden="true"></i> BNS</a></li>
-                                    <li><a href="#museum-angkut"><i class="fas fa-chevron-right" aria-hidden="true"></i> Museum Angkut</a></li>
-                                    <li><a href="#tabel-perbandingan"><i class="fas fa-chevron-right" aria-hidden="true"></i> Tabel Perbandingan</a></li>
-                                    <li><a href="#urutan-kunjungan"><i class="fas fa-chevron-right" aria-hidden="true"></i> Usulan Dua Urutan</a></li>
-                                    <li><a href="#gabung-paket"><i class="fas fa-chevron-right" aria-hidden="true"></i> Gabung Paket Offroad</a></li>
-                                    <li><a href="#faq"><i class="fas fa-chevron-right" aria-hidden="true"></i> FAQ</a></li>
-                                    <li><a href="#kesimpulan"><i class="fas fa-chevron-right" aria-hidden="true"></i> Kesimpulan</a></li>
+                                    <li><a href="#destinasi-dekat"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i> Destinasi Dekat</a></li>
+                                    <li><a href="#jatim-park-2"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Jatim Park 2</a></li>
+                                    <li><a href="#eco-active-park"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i> Eco Active Park</a></li>
+                                    <li><a href="#coban-talun"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Coban Talun</a></li>
+                                    <li><a href="#alun-alun"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Alun-alun Batu</a></li>
+                                    <li><a href="#bns"><i class="fas fa-chevron-right" aria-hidden="true"></i> BNS</a>
+                                    </li>
+                                    <li><a href="#museum-angkut"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Museum Angkut</a></li>
+                                    <li><a href="#tabel-perbandingan"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i> Tabel Perbandingan</a></li>
+                                    <li><a href="#urutan-kunjungan"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i> Usulan Dua Urutan</a></li>
+                                    <li><a href="#gabung-paket"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Gabung Paket Offroad</a></li>
+                                    <li><a href="#faq"><i class="fas fa-chevron-right" aria-hidden="true"></i> FAQ</a>
+                                    </li>
+                                    <li><a href="#kesimpulan"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Kesimpulan</a></li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="sidebar-widget cta-widget">
                             <h4 class="widget-title" style="text-align: center;">BOOKING SEKARANG</h4>
-                            <p style="font-size: 0.95rem;">Konsultasikan jadwal wisata gabungan dan ketersediaan armada offroad ke Coban Putri bersama kami.</p>
+                            <p style="font-size: 0.95rem;">Konsultasikan jadwal wisata gabungan dan ketersediaan armada
+                                offroad ke Coban Putri bersama kami.</p>
                             <a href="https://wa.me/6281233989707?text=Halo%20Batu%20Offroad%2C%20saya%20ingin%20konsultasi%20wisata%20dekat%20Coban%20Putri%20dan%20paket%20offroad.%20Bisa%20info%20lebih%20lanjut%3F"
                                 class="btn btn-primary-custom" target="_blank" aria-label="Booking WhatsApp">
                                 <i class="fab fa-whatsapp me-2" aria-hidden="true"></i>HUBUNGI ADMIN
@@ -1215,6 +1747,7 @@
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <div class="container">
             <div class="row">
@@ -1226,27 +1759,54 @@
                 <div class="col-lg-2 mb-4">
                     <h5 class="text-white mb-3 text-uppercase">Navigasi</h5>
                     <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="../index.html" class="text-dim footer-link-item"><i
-                                    class="fas fa-chevron-right me-2"></i>Beranda</a></li>
-                        <li class="mb-2"><a href="../about.html" class="text-dim footer-link-item"><i
-                                    class="fas fa-chevron-right me-2"></i>Tentang Kami</a></li>
-                        <li class="mb-2"><a href="../paket.html" class="text-dim footer-link-item"><i
-                                    class="fas fa-chevron-right me-2"></i>Paket</a></li>
-                        <li class="mb-2"><a href="../gallery.html" class="text-dim footer-link-item"><i
-                                    class="fas fa-chevron-right me-2"></i>Gallery</a></li>
-                        <li class="mb-2"><a href="../blog.html" class="text-dim footer-link-item"><i
-                                    class="fas fa-chevron-right me-2"></i>Blog</a></li>
+                        <li class="mb-2">
+                            <a href="../index.html" class="text-dim footer-link-item">
+                                <i class="fas fa-chevron-right me-2"></i>Beranda
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../about.html" class="text-dim footer-link-item">
+                                <i class="fas fa-chevron-right me-2"></i>Tentang Kami
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../paket.html" class="text-dim footer-link-item">
+                                <i class="fas fa-chevron-right me-2"></i>Paket
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../gallery.html" class="text-dim footer-link-item">
+                                <i class="fas fa-chevron-right me-2"></i>Gallery
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../blog.html" class="text-dim footer-link-item">
+                                <i class="fas fa-chevron-right me-2"></i>Blog
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-lg-2 mb-4">
                     <h5 class="text-white mb-3 text-uppercase">NETWORK</h5>
                     <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="https://batuoutbound.net/" class="text-dim footer-link-item"><i
-                                    class="fas fa-chevron-right me-2"></i>Batu Outbound Adventure</a></li>
-                        <li class="mb-2"><a href="https://katunoutboundadventure.com/" class="text-dim footer-link-item"><i
-                                    class="fas fa-chevron-right me-2"></i>Katun Outbound Adventure</a></li>
-                        <li class="mb-2"><a href="https://baturaftingadventure.com/" class="text-dim footer-link-item"><i
-                                    class="fas fa-chevron-right me-2"></i>Batu Rafting Adventure</a></li>
+                        <li class="mb-2">
+                            <a href="https://batuoutbound.net/" class="text-dim footer-link-item" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-chevron-right me-2"></i>Batu Outbound Adventure
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://katunoutboundadventure.com/" class="text-dim footer-link-item"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-chevron-right me-2"></i>Katun Outbound Adventure
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://baturaftingadventure.com/" class="text-dim footer-link-item"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-chevron-right me-2"></i>Batu Rafting Adventure
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-lg-4 mb-4">
@@ -1254,7 +1814,7 @@
                     <ul class="list-unstyled small">
                         <li class="mb-3 d-flex align-items-start text-dim">
                             <i class="fab fa-whatsapp footer-icon mt-1" aria-hidden="true"></i>
-                            <span><b>WhatsApp:</b><br>+62 812-3398-9707 (Booking)</span>
+                            <span><b>WhatsApp:</b><br>0812-3398-9707 (Booking)</span>
                         </li>
                         <li class="mb-3 d-flex align-items-start text-dim">
                             <i class="fas fa-map-marker-alt footer-icon mt-1" aria-hidden="true"></i>
@@ -1305,6 +1865,37 @@
                 tocToggleBtn.classList.toggle('collapsed', !isHidden);
             });
         }
+    
+        document.querySelectorAll('.toc-header-toggle').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const content = this.nextElementSibling;
+                if (content) {
+                    const isHidden = window.getComputedStyle(content).display === 'none';
+                    content.style.display = isHidden ? 'block' : 'none';
+                    const icon = this.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-chevron-down', !isHidden);
+                        icon.classList.toggle('fa-chevron-up', isHidden);
+                    }
+                }
+            });
+        });
+
+        document.querySelectorAll('.toc-list a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const offset = 90;
+                        const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                        window.scrollTo({ top: top, behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+
     </script>
 </body>
 

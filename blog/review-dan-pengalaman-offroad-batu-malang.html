@@ -905,6 +905,180 @@
                                     color: var(--accent-gold) !important;
                                 }
                             </style>
+    <style id="article-page-enhancements">
+        /* --- ARTICLE PAGE ENHANCEMENTS & RESPONSIVE FIXES --- */
+        .article-featured-img {
+            width: 100% !important;
+            height: auto !important;
+            aspect-ratio: 16 / 9 !important;
+            object-fit: cover !important;
+            display: block !important;
+            border-bottom: 1px solid var(--border-line, #834510) !important;
+        }
+
+        .article-img-inline {
+            width: 100% !important;
+            height: auto !important;
+            aspect-ratio: 16 / 9 !important;
+            object-fit: cover !important;
+            display: block !important;
+            border-radius: 10px !important;
+            margin: 25px 0 !important;
+            border: 1px solid var(--border-line, #834510) !important;
+        }
+
+        .related-card {
+            background: var(--bg-deep, #361b05) !important;
+            border: 1px solid var(--border-line, #834510) !important;
+            border-radius: 10px !important;
+            overflow: hidden !important;
+            display: flex !important;
+            flex-direction: column !important;
+            height: 100% !important;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+        }
+
+        .related-card:hover {
+            transform: translateY(-5px) !important;
+            border-color: var(--accent-blue, #E5890A) !important;
+            box-shadow: 0 10px 25px rgba(229, 137, 10, 0.25) !important;
+        }
+
+        .related-img {
+            width: 100% !important;
+            height: auto !important;
+            aspect-ratio: 16 / 9 !important;
+            object-fit: cover !important;
+            display: block !important;
+            border-bottom: 1px solid var(--border-line, #834510) !important;
+        }
+
+        .related-body {
+            padding: 1.5rem !important;
+            display: flex !important;
+            flex-direction: column !important;
+            flex-grow: 1 !important;
+        }
+
+        .related-title {
+            font-size: 1.2rem !important;
+            font-weight: 800 !important;
+            line-height: 1.35 !important;
+            margin-bottom: 0.75rem !important;
+        }
+
+        .related-title a {
+            color: var(--text-white, #f8fafc) !important;
+            text-decoration: none !important;
+            transition: color 0.3s ease !important;
+        }
+
+        .related-title a:hover {
+            color: var(--accent-blue, #E5890A) !important;
+        }
+
+        .related-excerpt {
+            color: var(--text-light, #ebd5c1) !important;
+            font-size: 0.95rem !important;
+            line-height: 1.6 !important;
+            margin-bottom: 1.5rem !important;
+            flex-grow: 1 !important;
+        }
+
+        .related-btn {
+            display: block !important;
+            width: 100% !important;
+            text-align: center !important;
+            background: var(--accent-blue, #E5890A) !important;
+            color: #ffffff !important;
+            padding: 0.75rem 1rem !important;
+            font-weight: 700 !important;
+            font-size: 0.9rem !important;
+            border-radius: 6px !important;
+            text-decoration: none !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
+            transition: background 0.3s ease, transform 0.3s ease !important;
+        }
+
+        .related-btn:hover {
+            background: #c47508 !important;
+            color: #ffffff !important;
+            transform: translateY(-2px) !important;
+        }
+
+        /* Footer styling alignment */
+        footer {
+            background: #241103 !important;
+            padding: 60px 0 30px !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+        }
+
+        .footer-icon {
+            color: var(--accent-blue, #E5890A) !important;
+            margin-right: 12px !important;
+            width: 20px !important;
+            text-align: center !important;
+            flex-shrink: 0 !important;
+        }
+
+        footer a {
+            color: #94A3B8 !important;
+            text-decoration: none !important;
+            transition: 0.3s !important;
+        }
+
+        footer a:hover {
+            color: var(--accent-blue, #E5890A) !important;
+        }
+
+        .footer-link-item {
+            display: flex !important;
+            align-items: center !important;
+        }
+
+        .footer-link-item i {
+            font-size: 0.65rem !important;
+            color: var(--accent-blue, #E5890A) !important;
+            width: 18px !important;
+            transition: 0.3s !important;
+            margin-right: 0.5rem !important;
+        }
+
+        .footer-link-item:hover i {
+            transform: translateX(3px) !important;
+            color: var(--accent-gold, #F59E0B) !important;
+        }
+
+        .text-dim {
+            color: #94A3B8 !important;
+        }
+
+        @media (max-width: 768px) {
+            .article-body {
+                padding: 25px 20px !important;
+            }
+
+            .article-title {
+                font-size: 1.6rem !important;
+                line-height: 1.3 !important;
+            }
+
+            .related-body {
+                padding: 1.25rem 1rem !important;
+            }
+
+            .article-featured-img,
+            .related-img,
+            .article-img-inline {
+                width: 100% !important;
+                height: auto !important;
+                aspect-ratio: 16 / 9 !important;
+                object-fit: cover !important;
+                display: block !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -919,6 +1093,7 @@
         </a>
     </div>
 
+        <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="../index.html" style="margin-right: 0;"><img
@@ -956,8 +1131,7 @@
                                     Outbound + Paintball</a></li>
                             <li><a class="dropdown-item" href="../paket/paket-bromo.html">Paket Bromo</a></li>
                             <li><a class="dropdown-item" href="../paket/paket-atv.html">Paket ATV</a></li>
-                            <li style="border-top: 1px solid var(--border-color);"><a class="dropdown-item"
-                                    href="../paket.html">Lihat Semua Paket</a></li>
+                            <li><a class="dropdown-item" href="../paket.html">Lihat Semua Paket</a></li>
                         </ul>
                     </li>
 
@@ -1006,6 +1180,32 @@
                             </div>
                             <h1 class="article-title">Review dan Pengalaman Offroad Batu Malang Pacu Adrenalin di Alam
                                 Bebas</h1>
+
+                            <!-- DAFTAR ISI (MOBILE ONLY) -->
+                            <div class="sidebar-widget toc-mobile d-lg-none">
+                                <div class="toc-header-toggle">
+                                    <h4 class="widget-title mb-0" style="border-bottom: none; padding-bottom: 0;">DAFTAR ISI</h4>
+                                    <i class="fas fa-chevron-down ms-2" aria-hidden="true"></i>
+                                </div>
+                                <div class="toc-collapse-content mt-3" style="display: none;">
+                                    <ul class="toc-list">
+                                        <li><a href="#sensasi"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Sensasi
+                                            Tak Terlupakan</a></li>
+                                    <li><a href="#pesona-alam"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Menikmati Pesona Alam</a></li>
+                                    <li><a href="#kebersamaan"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Momen
+                                            Kebersamaan</a></li>
+                                    <li><a href="#testimoni"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Testimoni Wisatawan</a></li>
+                                    <li><a href="#booking"><i class="fas fa-chevron-right" aria-hidden="true"></i> Siap
+                                            Mencoba?</a></li>
+                                    <li><a href="#faq"><i class="fas fa-chevron-right" aria-hidden="true"></i> FAQ</a>
+                                    </li>
+                                    </ul>
+                                </div>
+                            </div>
                             <p class="article-intro">Pengalaman offroad batu malang adalah kombinasi sempurna antara
                                 sensasi adrenalin tinggi, pesona alam yang memukau, dan momen berkesan yang tidak akan
                                 terlupakan selamanya, yang telah dibuktikan oleh ribuan peserta dari berbagai latar
@@ -1354,14 +1554,116 @@
                                     /* Darker accent */
                                     color: #ffffff;
                                 }
-                            </style>
+                            
+        /* MOBILE TOC STYLING */
+        .toc-mobile .toc-collapse-content {
+            display: none;
+        }
+
+        .toc-mobile {
+            background: rgba(54, 27, 5, 0.7) !important;
+            border: 1px solid var(--border-line) !important;
+            border-radius: 10px !important;
+            padding: 20px !important;
+            margin: 25px 0 !important;
+        }
+
+        .toc-mobile .widget-title {
+            font-size: 1.15rem !important;
+            color: var(--text-white) !important;
+            margin-bottom: 0 !important;
+        }
+
+        .toc-mobile .toc-list {
+            list-style: none !important;
+            padding-left: 0 !important;
+            margin-bottom: 0 !important;
+        }
+
+        .toc-mobile .toc-list li {
+            margin-bottom: 8px !important;
+        }
+
+        .toc-mobile .toc-list a {
+            color: var(--text-light) !important;
+            text-decoration: none !important;
+            font-size: 0.95rem !important;
+            display: flex !important;
+            align-items: center !important;
+            transition: color 0.2s ease !important;
+        }
+
+        .toc-mobile .toc-list a:hover {
+            color: var(--accent-blue, #E5890A) !important;
+        }
+
+        .toc-mobile .toc-list i {
+            color: var(--accent-blue, #E5890A) !important;
+            font-size: 0.75rem !important;
+            margin-right: 8px !important;
+        }
+
+        .toc-header-toggle {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* TABLE STYLING - THEME MATCHING & MOBILE RESPONSIVE SCROLL */
+        .table-responsive {
+            border-radius: 8px;
+            overflow-x: auto !important;
+            -webkit-overflow-scrolling: touch !important;
+            border: 1px solid var(--border-line);
+            margin: 25px 0;
+            display: block;
+            width: 100%;
+        }
+
+        .table-responsive .table {
+            margin-bottom: 0;
+            color: var(--text-light) !important;
+            border-color: var(--border-line) !important;
+            width: 100%;
+            min-width: 700px;
+        }
+
+        .table-responsive .table thead th {
+            background-color: var(--bg-panel) !important;
+            color: var(--accent-blue, #E5890A) !important;
+            border-color: var(--border-line) !important;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            padding: 12px 15px;
+            white-space: nowrap;
+        }
+
+        .table-responsive .table tbody td {
+            background-color: rgba(54, 27, 5, 0.7) !important;
+            color: var(--text-light) !important;
+            border-color: var(--border-line) !important;
+            padding: 12px 15px;
+            vertical-align: middle;
+            line-height: 1.6;
+        }
+
+        .table-responsive .table tbody td:first-child {
+            white-space: nowrap;
+        }
+
+        .table-responsive .table tbody td strong {
+            color: var(--accent-blue, #E5890A) !important;
+        }
+
+    </style>
                             <div class="related-articles mt-5 pt-4"
                                 style="border-top: 1px solid var(--border-color, rgba(255,255,255,0.1));">
                                 <h3 class="mb-4"
                                     style="font-size: 1.5rem; text-transform:uppercase; color: var(--text-color, #fff);">
                                     Artikel Terkait</h3>
                                 <div class="row g-4">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <div class="related-card">
                                             <img src="../assets/img/jeep-offroad-batu-malang.webp"
                                                 alt="Jeep 4x4 hardtop biru sedang melintasi jalur berlumpur offroad Batu Malang"
@@ -1379,7 +1681,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <div class="related-card">
                                             <img src="../assets/img/melintasi-jalur-offroad-dengan-penumpang-melambai.webp"
                                                 alt="jip-suzuki-jimny-hitam-berlumpur melintasi jalur offroad"
@@ -1397,24 +1699,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="related-card">
-                                            <img src="../assets/img/pria-berhelm-di-mobil-offroad-menerjang-air.webp"
-                                                alt="Checklist visual perlengkapan offroad yang ditata rapi"
-                                                class="related-img" loading="lazy">
-                                            <div class="related-body">
-                                                <h4 class="related-title">
-                                                    <a href="daftar-persiapan-offroad-batu-malang.html">Daftar Persiapan
-                                                        Offroad Batu Malang: Barang Bawaan dan Tips Aman</a>
-                                                </h4>
-                                                <p class="related-excerpt">Daftar lengkap persiapan offroad batu malang:
-                                                    pakaian yang pas, barang bawaan penting, dan tips keselamatan
-                                                    pre-trip.</p>
-                                                <a href="daftar-persiapan-offroad-batu-malang.html"
-                                                    class="related-btn">BACA SELENGKAPNYA</a>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1426,7 +1710,7 @@
                     <div class="sticky-sidebar">
 
                         <!-- Daftar Isi -->
-                        <div class="sidebar-widget" id="tocWidget">
+                        <div class="sidebar-widget d-none d-lg-block" id="tocWidget">
                             <div class="toc-header-toggle" id="tocToggleBtn">
                                 <h4 class="widget-title mb-0" style="border-bottom: none; padding-bottom: 0;">DAFTAR ISI
                                 </h4>
@@ -1470,6 +1754,7 @@
         </div>
     </section>
 
+        <!-- FOOTER -->
     <footer>
         <div class="container">
             <div class="row">
@@ -1512,17 +1797,17 @@
                     <h5 class="text-white mb-3 text-uppercase">NETWORK</h5>
                     <ul class="list-unstyled small">
                         <li class="mb-2">
-                            <a href="https://batuoutbound.net/" class="text-dim footer-link-item">
+                            <a href="https://batuoutbound.net/" class="text-dim footer-link-item" target="_blank" rel="noopener noreferrer">
                                 <i class="fas fa-chevron-right me-2"></i>Batu Outbound Adventure
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a href="https://katunoutboundadventure.com/" class="text-dim footer-link-item">
+                            <a href="https://katunoutboundadventure.com/" class="text-dim footer-link-item" target="_blank" rel="noopener noreferrer">
                                 <i class="fas fa-chevron-right me-2"></i>Katun Outbound Adventure
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a href="https://baturaftingadventure.com/" class="text-dim footer-link-item">
+                            <a href="https://baturaftingadventure.com/" class="text-dim footer-link-item" target="_blank" rel="noopener noreferrer">
                                 <i class="fas fa-chevron-right me-2"></i>Batu Rafting Adventure
                             </a>
                         </li>
@@ -1533,7 +1818,7 @@
                     <ul class="list-unstyled small">
                         <li class="mb-3 d-flex align-items-start text-dim">
                             <i class="fab fa-whatsapp footer-icon mt-1" aria-hidden="true"></i>
-                            <span><b>WhatsApp:</b><br>+62 812-3398-9707 (Booking)</span>
+                            <span><b>WhatsApp:</b><br>0812-3398-9707 (Booking)</span>
                         </li>
                         <li class="mb-3 d-flex align-items-start text-dim">
                             <i class="fas fa-map-marker-alt footer-icon mt-1" aria-hidden="true"></i>
@@ -1621,6 +1906,37 @@
 
         window.addEventListener('load', adjustTOCForMobile);
         window.addEventListener('resize', adjustTOCForMobile);
+    
+        document.querySelectorAll('.toc-header-toggle').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const content = this.nextElementSibling;
+                if (content) {
+                    const isHidden = window.getComputedStyle(content).display === 'none';
+                    content.style.display = isHidden ? 'block' : 'none';
+                    const icon = this.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-chevron-down', !isHidden);
+                        icon.classList.toggle('fa-chevron-up', isHidden);
+                    }
+                }
+            });
+        });
+
+        document.querySelectorAll('.toc-list a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const offset = 90;
+                        const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                        window.scrollTo({ top: top, behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+
     </script>
 </body>
 

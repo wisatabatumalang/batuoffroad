@@ -154,7 +154,8 @@
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
 
-    <link rel="preload" as="image" href="../assets/img/1-Rute-ke-Coban-Rondo-Langkah-demi-Langkah-untuk-Mobil-dan-Bus.webp">
+    <link rel="preload" as="image"
+        href="../assets/img/1-Rute-ke-Coban-Rondo-Langkah-demi-Langkah-untuk-Mobil-dan-Bus.webp">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
@@ -488,6 +489,7 @@
             border-collapse: collapse;
             margin: 20px 0 25px;
         }
+
         .season-table th,
         .season-table td {
             border: 1px solid var(--border-line);
@@ -495,6 +497,7 @@
             text-align: left;
             color: var(--text-light);
         }
+
         .season-table th {
             background: rgba(229, 137, 10, 0.15);
             color: var(--accent-blue);
@@ -503,6 +506,7 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
+
         .season-table tr:nth-child(even) {
             background: rgba(86, 43, 8, 0.3);
         }
@@ -773,7 +777,7 @@
                 font-size: 18px;
             }
         }
-    
+
         /* LINK & LIST STYLING (THEME ORANGE LIKE FASILITAS COBAN PUTRI) */
         .article-body a,
         .article-body p a,
@@ -840,8 +844,8 @@
         .table tbody td strong {
             color: var(--accent-blue, #E5890A) !important;
         }
-    
-    
+
+
         /* RELATED BUTTON WHITE TEXT OVERRIDE */
         .article-body .related-btn,
         .related-card .related-btn,
@@ -860,22 +864,289 @@
             color: #ffffff !important;
             text-decoration: none !important;
         }
+    
+        /* SECTION SHARE AS IN SCREENSHOT */
+        .share-buttons {
+            display: flex !important;
+            align-items: center !important;
+            gap: 12px !important;
+            flex-wrap: wrap !important;
+            margin-top: 30px !important;
+            padding-top: 25px !important;
+            border-top: 1px solid var(--border-line, #834510) !important;
+        }
 
+        .share-buttons span,
+        .share-buttons .share-label {
+            color: var(--text-light, #ebd5c1) !important;
+            font-family: 'Inter', sans-serif !important;
+            font-weight: 700 !important;
+            font-size: 1.05rem !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            margin-right: 6px !important;
+            letter-spacing: 0.2px !important;
+        }
+
+        .share-buttons span i,
+        .share-buttons .share-label i {
+            color: var(--text-light, #ebd5c1) !important;
+            margin-right: 8px !important;
+            font-size: 1.15rem !important;
+        }
+
+        .share-btn {
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            gap: 8px !important;
+            padding: 9px 18px !important;
+            border-radius: 8px !important;
+            font-family: 'Inter', sans-serif !important;
+            font-size: 0.95rem !important;
+            font-weight: 700 !important;
+            text-decoration: none !important;
+            color: #ffffff !important;
+            transition: transform 0.2s ease, filter 0.2s ease !important;
+            border: none !important;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
+            line-height: 1.2 !important;
+        }
+
+        .share-btn:hover {
+            transform: translateY(-2px) !important;
+            color: #ffffff !important;
+            filter: brightness(1.1) !important;
+        }
+
+        .share-btn i {
+            font-size: 1.15rem !important;
+            color: #ffffff !important;
+            margin-right: 2px !important;
+        }
+
+        .share-btn.wa {
+            background-color: #25D366 !important;
+        }
+
+        .share-btn.fb {
+            background-color: #1877F2 !important;
+        }
+
+        .share-btn.tw {
+            background-color: #1DA1F2 !important;
+        }
+
+        /* CONCLUSION BOX RATA KIRI */
+        .conclusion-box {
+            text-align: left !important;
+        }
+
+        .conclusion-box h2,
+        .conclusion-box h3,
+        .conclusion-box h4 {
+            text-align: left !important;
+            border-left: none !important;
+            padding-left: 0 !important;
+            margin-top: 0 !important;
+        }
+
+        .conclusion-box p,
+        .conclusion-box ul,
+        .conclusion-box ol,
+        .conclusion-box li {
+            text-align: left !important;
+        }
+
+    </style>
+    <style id="article-page-enhancements">
+        /* --- ARTICLE PAGE ENHANCEMENTS & RESPONSIVE FIXES --- */
+        .article-featured-img {
+            width: 100% !important;
+            height: auto !important;
+            aspect-ratio: 16 / 9 !important;
+            object-fit: cover !important;
+            display: block !important;
+            border-bottom: 1px solid var(--border-line, #834510) !important;
+        }
+
+        .article-img-inline {
+            width: 100% !important;
+            height: auto !important;
+            aspect-ratio: 16 / 9 !important;
+            object-fit: cover !important;
+            display: block !important;
+            border-radius: 10px !important;
+            margin: 25px 0 !important;
+            border: 1px solid var(--border-line, #834510) !important;
+        }
+
+        .related-card {
+            background: var(--bg-deep, #361b05) !important;
+            border: 1px solid var(--border-line, #834510) !important;
+            border-radius: 10px !important;
+            overflow: hidden !important;
+            display: flex !important;
+            flex-direction: column !important;
+            height: 100% !important;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+        }
+
+        .related-card:hover {
+            transform: translateY(-5px) !important;
+            border-color: var(--accent-blue, #E5890A) !important;
+            box-shadow: 0 10px 25px rgba(229, 137, 10, 0.25) !important;
+        }
+
+        .related-img {
+            width: 100% !important;
+            height: auto !important;
+            aspect-ratio: 16 / 9 !important;
+            object-fit: cover !important;
+            display: block !important;
+            border-bottom: 1px solid var(--border-line, #834510) !important;
+        }
+
+        .related-body {
+            padding: 1.5rem !important;
+            display: flex !important;
+            flex-direction: column !important;
+            flex-grow: 1 !important;
+        }
+
+        .related-title {
+            font-size: 1.2rem !important;
+            font-weight: 800 !important;
+            line-height: 1.35 !important;
+            margin-bottom: 0.75rem !important;
+        }
+
+        .related-title a {
+            color: var(--text-white, #f8fafc) !important;
+            text-decoration: none !important;
+            transition: color 0.3s ease !important;
+        }
+
+        .related-title a:hover {
+            color: var(--accent-blue, #E5890A) !important;
+        }
+
+        .related-excerpt {
+            color: var(--text-light, #ebd5c1) !important;
+            font-size: 0.95rem !important;
+            line-height: 1.6 !important;
+            margin-bottom: 1.5rem !important;
+            flex-grow: 1 !important;
+        }
+
+        .related-btn {
+            display: block !important;
+            width: 100% !important;
+            text-align: center !important;
+            background: var(--accent-blue, #E5890A) !important;
+            color: #ffffff !important;
+            padding: 0.75rem 1rem !important;
+            font-weight: 700 !important;
+            font-size: 0.9rem !important;
+            border-radius: 6px !important;
+            text-decoration: none !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
+            transition: background 0.3s ease, transform 0.3s ease !important;
+        }
+
+        .related-btn:hover {
+            background: #c47508 !important;
+            color: #ffffff !important;
+            transform: translateY(-2px) !important;
+        }
+
+        /* Footer styling alignment */
+        footer {
+            background: #241103 !important;
+            padding: 60px 0 30px !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+        }
+
+        .footer-icon {
+            color: var(--accent-blue, #E5890A) !important;
+            margin-right: 12px !important;
+            width: 20px !important;
+            text-align: center !important;
+            flex-shrink: 0 !important;
+        }
+
+        footer a {
+            color: #94A3B8 !important;
+            text-decoration: none !important;
+            transition: 0.3s !important;
+        }
+
+        footer a:hover {
+            color: var(--accent-blue, #E5890A) !important;
+        }
+
+        .footer-link-item {
+            display: flex !important;
+            align-items: center !important;
+        }
+
+        .footer-link-item i {
+            font-size: 0.65rem !important;
+            color: var(--accent-blue, #E5890A) !important;
+            width: 18px !important;
+            transition: 0.3s !important;
+            margin-right: 0.5rem !important;
+        }
+
+        .footer-link-item:hover i {
+            transform: translateX(3px) !important;
+            color: var(--accent-gold, #F59E0B) !important;
+        }
+
+        .text-dim {
+            color: #94A3B8 !important;
+        }
+
+        @media (max-width: 768px) {
+            .article-body {
+                padding: 25px 20px !important;
+            }
+
+            .article-title {
+                font-size: 1.6rem !important;
+                line-height: 1.3 !important;
+            }
+
+            .related-body {
+                padding: 1.25rem 1rem !important;
+            }
+
+            .article-featured-img,
+            .related-img,
+            .article-img-inline {
+                width: 100% !important;
+                height: auto !important;
+                aspect-ratio: 16 / 9 !important;
+                object-fit: cover !important;
+                display: block !important;
+            }
+        }
     </style>
 </head>
 
 <body>
 
     <!-- NAVBAR -->
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="../index.html" style="margin-right: 0;">
-                <img src="../assets/img/Logo/logo-batu-offroad.webp" alt="Batu Offroad Logo" class="me-2"
-                    style="height: 35px; width: auto; object-fit: contain;" loading="lazy" decoding="async">
-                <span class="ms-1"
+            <a class="navbar-brand d-flex align-items-center" href="../index.html" style="margin-right: 0;"><img
+                    src="../assets/img/Logo/logo-batu-offroad.webp" alt="Batu Offroad Logo" class="me-2"
+                    style="height: 35px; width: auto; object-fit: contain;" loading="lazy" decoding="async"><span
+                    class="ms-1"
                     style="color: #fff; font-weight: 800; font-size: 1.1rem; white-space: nowrap; font-style: normal;">BATU
-                    OFFROAD</span>
-            </a>
+                    OFFROAD</span></a>
             <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -905,8 +1176,7 @@
                                     Outbound + Paintball</a></li>
                             <li><a class="dropdown-item" href="../paket/paket-bromo.html">Paket Bromo</a></li>
                             <li><a class="dropdown-item" href="../paket/paket-atv.html">Paket ATV</a></li>
-                            <li style="border-top: 1px solid var(--border-line);"><a class="dropdown-item"
-                                    href="../paket.html">Lihat Semua Paket</a></li>
+                            <li><a class="dropdown-item" href="../paket.html">Lihat Semua Paket</a></li>
                         </ul>
                     </li>
 
@@ -929,13 +1199,17 @@
     <header class="page-header text-center position-relative">
         <div class="bg-grid"></div>
         <div class="container position-relative" style="z-index: 2;">
-            <h1 class="display-4 fw-bold text-white mb-2" style="font-family: 'Barlow Condensed', sans-serif; text-transform: none;">Rute ke Coban Rondo Langkah demi Langkah untuk Mobil dan Bus</h1>
-            <p class="lead text-dim mb-3">Catatan Perjalanan Survei Lapangan Tim Batu Offroad, Titik Rawan, & Akses Rombongan</p>
+            <h1 class="display-4 fw-bold text-white mb-2"
+                style="font-family: 'Barlow Condensed', sans-serif; text-transform: none;">Rute ke Coban Rondo Langkah
+                demi Langkah untuk Mobil dan Bus</h1>
+            <p class="lead text-dim mb-3">Catatan Perjalanan Survei Lapangan Tim Batu Offroad, Titik Rawan, & Akses
+                Rombongan</p>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
                     <li class="breadcrumb-item"><a href="../blog.html">Blog</a></li>
-                    <li class="breadcrumb-item active text-white" aria-current="page">Rute ke Coban Rondo Langkah demi Langkah untuk Mobil dan Bus</li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Rute ke Coban Rondo Langkah demi
+                        Langkah untuk Mobil dan Bus</li>
                 </ol>
             </nav>
         </div>
@@ -949,8 +1223,8 @@
                     <article class="article-container" id="article-rute-ke-coban-rondo">
 
                         <img src="../assets/img/1-Rute-ke-Coban-Rondo-Langkah-demi-Langkah-untuk-Mobil-dan-Bus.webp"
-                            alt="Pemandangan indah air terjun di Coban Rondo." class="article-featured-img"
-                            width="800" height="450" loading="eager" decoding="async">
+                            alt="Pemandangan indah air terjun di Coban Rondo." class="article-featured-img" width="800"
+                            height="450" loading="eager" decoding="async">
 
                         <div class="article-body">
 
@@ -961,41 +1235,110 @@
 
                             <h1 class="article-title">Rute ke Coban Rondo Langkah demi Langkah untuk Mobil dan Bus</h1>
 
-                            <p class="article-intro">Rute ke Coban Rondo dimulai dari jalur Batu menuju Pujon, lalu mengikuti petunjuk ke arah Coban Rondo setelah Pandesari. Waktu tempuh dari Kota Malang sekitar 45–60 menit, sedangkan dari Batu sekitar 30–45 menit. Akses bus tergolong luas. Panduan ini kami susun dari perjalanan survei tim Batu Offroad.</p>
+                            <!-- DAFTAR ISI (MOBILE ONLY) -->
+                            <div class="sidebar-widget toc-mobile d-lg-none">
+                                <div class="toc-header-toggle">
+                                    <h4 class="widget-title mb-0" style="border-bottom: none; padding-bottom: 0;">DAFTAR ISI</h4>
+                                    <i class="fas fa-chevron-down ms-2" aria-hidden="true"></i>
+                                </div>
+                                <div class="toc-collapse-content mt-3" style="display: none;">
+                                    <ul class="toc-list">
+                                        <li><a href="#sebelum-berangkat"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i> Sebelum Berangkat</a></li>
+                                    <li><a href="#langkah-demi-langkah"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i> Langkah demi Langkah</a></li>
+                                    <li><a href="#catatan-bus"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Catatan Khusus Bus</a></li>
+                                    <li><a href="#mobil-pribadi"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Untuk Mobil Pribadi</a></li>
+                                    <li><a href="#jam-musim"><i class="fas fa-chevron-right" aria-hidden="true"></i> Jam
+                                            Berangkat & Musim</a></li>
+                                    <li><a href="#faq"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Pertanyaan yang Sering Diajukan</a></li>
+                                    <li><a href="#paket-offroad"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Pilihan Paket Offroad</a></li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                            <p>Batu Offroad menyusun panduan ini dari sudut pandang tim kami saat survei lapangan. Panduan ini membantu sopir dan koordinator rombongan memahami jalur, titik yang perlu diwaspadai, dan jam berangkat yang disarankan. Jika Anda membawa rombongan, baca juga artikel utama kami tentang <a href="offroad-coban-rondo.html">Offroad Coban Rondo Jeep 4x4 untuk Rombongan Bus Besar</a>.</p>
+                            <p class="article-intro">Rute ke Coban Rondo dimulai dari jalur Batu menuju Pujon, lalu
+                                mengikuti petunjuk ke arah Coban Rondo setelah Pandesari. Waktu tempuh dari Kota Malang
+                                sekitar 45–60 menit, sedangkan dari Batu sekitar 30–45 menit. Akses bus tergolong luas.
+                                Panduan ini kami susun dari perjalanan survei tim Batu Offroad.</p>
+
+                            <p>Batu Offroad menyusun panduan ini dari sudut pandang tim kami saat survei lapangan.
+                                Panduan ini membantu sopir dan koordinator rombongan memahami jalur, titik yang perlu
+                                diwaspadai, dan jam berangkat yang disarankan. Jika Anda membawa rombongan, baca juga
+                                artikel utama kami tentang <a href="offroad-coban-rondo.html">Offroad Coban Rondo Jeep
+                                    4x4 untuk Rombongan Bus Besar</a>.</p>
 
                             <h2 id="sebelum-berangkat">Sebelum Berangkat</h2>
-                            <p>Pastikan koordinator sudah memegang titik kumpul, jumlah kendaraan, dan perkiraan jumlah peserta. Untuk rombongan bus, informasikan juga jumlah dan ukuran bus. Titik kumpul kami: titik kumpul disesuaikan dengan lokasi rombongan, umumnya di area Batu atau titik yang disepakati saat booking. Untuk mengatur jadwal bersama tim kami, hubungi WhatsApp <a href="https://wa.me/6281233989707" target="_blank">+62 812-3398-9707</a> sebelum hari keberangkatan.</p>
+                            <p>Pastikan koordinator sudah memegang titik kumpul, jumlah kendaraan, dan perkiraan jumlah
+                                peserta. Untuk rombongan bus, informasikan juga jumlah dan ukuran bus. Titik kumpul
+                                kami: titik kumpul disesuaikan dengan lokasi rombongan, umumnya di area Batu atau titik
+                                yang disepakati saat booking. Untuk mengatur jadwal bersama tim kami, hubungi WhatsApp
+                                <a href="https://wa.me/6281233989707" target="_blank">+62 812-3398-9707</a> sebelum hari
+                                keberangkatan.</p>
 
                             <h2 id="langkah-demi-langkah">Langkah demi Langkah dari Titik Kumpul</h2>
                             <ol>
-                                <li><strong>Mulai dari titik kumpul.</strong> Landmark pertama yang terlihat adalah jalan utama menuju Batu atau Pujon, sesuai titik berangkat rombongan.</li>
-                                <li><strong>Ikuti jalur utama dari Batu menuju Pujon.</strong> Jalur ini merupakan jalur utama yang juga digunakan bus Malang–Kediri, dengan kondisi jalan umumnya baik namun memiliki tanjakan dan tikungan di beberapa titik.</li>
-                                <li><strong>Di Pandesari, ikuti petunjuk ke arah Coban Rondo.</strong> Patokan pertigaan: Patung Sapi Pujon. Dari pertigaan ini, masuk ke jalan menuju Coban Rondo.</li>
-                                <li><strong>Sebelum masuk kawasan, perhatikan jalan masuk yang lebih sempit dibanding jalan utama.</strong> Bus besar sebaiknya melaju perlahan dan mengikuti arahan koordinator atau petugas setempat. Jarak dari Patung Sapi ke gerbang utama sekitar 4 km.</li>
-                                <li><strong>Tiba di kawasan Coban Rondo.</strong> Area parkir tersedia di kawasan wisata, dengan kapasitas yang tergolong luas dan mampu menampung kendaraan dalam jumlah besar.</li>
+                                <li><strong>Mulai dari titik kumpul.</strong> Landmark pertama yang terlihat adalah
+                                    jalan utama menuju Batu atau Pujon, sesuai titik berangkat rombongan.</li>
+                                <li><strong>Ikuti jalur utama dari Batu menuju Pujon.</strong> Jalur ini merupakan jalur
+                                    utama yang juga digunakan bus Malang–Kediri, dengan kondisi jalan umumnya baik namun
+                                    memiliki tanjakan dan tikungan di beberapa titik.</li>
+                                <li><strong>Di Pandesari, ikuti petunjuk ke arah Coban Rondo.</strong> Patokan
+                                    pertigaan: Patung Sapi Pujon. Dari pertigaan ini, masuk ke jalan menuju Coban Rondo.
+                                </li>
+                                <li><strong>Sebelum masuk kawasan, perhatikan jalan masuk yang lebih sempit dibanding
+                                        jalan utama.</strong> Bus besar sebaiknya melaju perlahan dan mengikuti arahan
+                                    koordinator atau petugas setempat. Jarak dari Patung Sapi ke gerbang utama sekitar 4
+                                    km.</li>
+                                <li><strong>Tiba di kawasan Coban Rondo.</strong> Area parkir tersedia di kawasan
+                                    wisata, dengan kapasitas yang tergolong luas dan mampu menampung kendaraan dalam
+                                    jumlah besar.</li>
                             </ol>
 
                             <img src="../assets/img/2-Rute-ke-Coban-Rondo-Langkah-demi-Langkah-untuk-Mobil-dan-Bus.webp"
                                 alt="Jeep offroad melintasi jalur menuju Coban Rondo." class="article-img-inline"
                                 width="800" height="450" loading="lazy" decoding="async">
-                            <p class="img-caption">Jeep offroad melintasi jalur kawasan hutan pinus menuju Coban Rondo</p>
+                            <p class="img-caption">Jeep offroad melintasi jalur kawasan hutan pinus menuju Coban Rondo
+                            </p>
 
                             <h2 id="catatan-bus">Catatan Khusus untuk Bus</h2>
-                            <p>Akses bus tergolong luas, tetapi rombongan bus tetap perlu memperhatikan titik rawan: tikungan dan tanjakan jalur Pujon serta jalan masuk menuju gerbang Coban Rondo. Kami menyarankan bus berangkat pukul 06.30–07.30 WIB agar terhindar dari kepadatan di jalur utama, terutama pada akhir pekan.</p>
+                            <p>Akses bus tergolong luas, tetapi rombongan bus tetap perlu memperhatikan titik rawan:
+                                tikungan dan tanjakan jalur Pujon serta jalan masuk menuju gerbang Coban Rondo. Kami
+                                menyarankan bus berangkat pukul 06.30–07.30 WIB agar terhindar dari kepadatan di jalur
+                                utama, terutama pada akhir pekan.</p>
 
                             <h2 id="mobil-pribadi">Untuk Mobil Pribadi</h2>
-                            <p>Rute yang sama berlaku untuk mobil pribadi. Kendaraan yang bisa masuk ke area kegiatan: mobil pribadi, minibus, dan bus sesuai ketentuan petugas kawasan. Kondisi parkir untuk mobil pribadi: area parkir tersedia di kawasan wisata dan umumnya cukup luas.</p>
+                            <p>Rute yang sama berlaku untuk mobil pribadi. Kendaraan yang bisa masuk ke area kegiatan:
+                                mobil pribadi, minibus, dan bus sesuai ketentuan petugas kawasan. Kondisi parkir untuk
+                                mobil pribadi: area parkir tersedia di kawasan wisata dan umumnya cukup luas.</p>
 
                             <h2 id="jam-musim">Jam Berangkat dan Musim</h2>
-                            <p>Berangkat pagi membuat perjalanan lebih nyaman dan jalur lebih sepi. Pada musim hujan, sekitar November sampai Maret, jalur dan area sekitar air terjun bisa licin, sehingga tambahkan waktu di perjalanan. Waktu berangkat yang disarankan: pukul 06.30–07.30 WIB untuk rombongan, atau pukul 07.00–08.00 WIB untuk keluarga dan perjalanan santai.</p>
+                            <p>Berangkat pagi membuat perjalanan lebih nyaman dan jalur lebih sepi. Pada musim hujan,
+                                sekitar November sampai Maret, jalur dan area sekitar air terjun bisa licin, sehingga
+                                tambahkan waktu di perjalanan. Waktu berangkat yang disarankan: pukul 06.30–07.30 WIB
+                                untuk rombongan, atau pukul 07.00–08.00 WIB untuk keluarga dan perjalanan santai.</p>
+
+                            <div class="conclusion-box">
+                                <h2 id="paket-offroad">Ingin Rombongan Anda Datang dengan Rute yang Sudah Kami Uji?</h2>
+                                <p>Pastikan jadwal keberangkatan terencana rapi agar kegiatan rombongan berjalan lancar
+                                    tanpa kendala macet di jalur pegunungan.</p>
+                                <p class="mt-3 fw-bold mb-0">Kirim tanggal dan jumlah peserta ke WhatsApp <a
+                                        href="https://wa.me/6281233989707" target="_blank">+62 812-3398-9707</a>. Lihat
+                                    juga <a href="../paket.html">paket layanan kami</a> serta panduan lengkap <a
+                                        href="offroad-coban-rondo.html">offroad Coban Rondo jeep 4x4 untuk
+                                        rombongan</a>.</p>
+                            </div>
 
                             <h2 id="faq" class="faq-title">Pertanyaan yang Sering Diajukan</h2>
                             <ol class="faq-list">
                                 <li>
                                     <strong>Berapa lama perjalanan dari titik kumpul ke Coban Rondo?</strong><br>
-                                    Waktu tempuh sekitar 45–60 menit dari Kota Malang atau 30–45 menit dari Batu, tergantung kondisi jalan dan jam keberangkatan.
+                                    Waktu tempuh sekitar 45–60 menit dari Kota Malang atau 30–45 menit dari Batu,
+                                    tergantung kondisi jalan dan jam keberangkatan.
                                 </li>
                                 <li>
                                     <strong>Apakah bus bisa masuk sampai area kegiatan?</strong><br>
@@ -1003,21 +1346,15 @@
                                 </li>
                                 <li>
                                     <strong>Apakah ada titik parkir khusus untuk bus?</strong><br>
-                                    Area parkir bus: area parkir kawasan Coban Rondo, dengan kapasitas yang tergolong luas.
+                                    Area parkir bus: area parkir kawasan Coban Rondo, dengan kapasitas yang tergolong
+                                    luas.
                                 </li>
                                 <li>
                                     <strong>Apakah rute ini bisa dipakai untuk mobil pribadi?</strong><br>
-                                    Bisa. Kendaraan yang masuk: mobil pribadi, minibus, dan bus sesuai ketentuan petugas kawasan.
+                                    Bisa. Kendaraan yang masuk: mobil pribadi, minibus, dan bus sesuai ketentuan petugas
+                                    kawasan.
                                 </li>
                             </ol>
-
-                            <div class="conclusion-box">
-                                <h2 id="paket-offroad">Ingin Rombongan Anda Datang dengan Rute yang Sudah Kami Uji?</h2>
-                                <p>Pastikan jadwal keberangkatan terencana rapi agar kegiatan rombongan berjalan lancar tanpa kendala macet di jalur pegunungan.</p>
-                                <p class="text-center mt-3 fw-bold mb-0">Kirim tanggal dan jumlah peserta ke WhatsApp <a
-                                        href="https://wa.me/6281233989707" target="_blank">+62 812-3398-9707</a>. Lihat juga <a
-                                        href="../paket.html">paket layanan kami</a> serta panduan lengkap <a href="offroad-coban-rondo.html">offroad Coban Rondo jeep 4x4 untuk rombongan</a>.</p>
-                            </div>
 
                             <div class="share-buttons">
                                 <span
@@ -1109,24 +1446,125 @@
                                     color: #ffffff !important;
                                     text-decoration: none !important;
                                 }
+
+                                /* RELATED BUTTON WHITE TEXT OVERRIDE */
+                                .article-body .related-btn,
+                                .related-card .related-btn,
+                                .related-card a.related-btn,
+                                a.related-btn {
+                                    background: var(--accent-blue, #E5890A) !important;
+                                    color: #ffffff !important;
+                                    text-decoration: none !important;
+                                }
+
+                                .article-body .related-btn:hover,
+                                .related-card .related-btn:hover,
+                                .related-card a.related-btn:hover,
+                                a.related-btn:hover {
+                                    background: #b46b08 !important;
+                                    color: #ffffff !important;
+                                    text-decoration: none !important;
+                                }
                             
-        /* RELATED BUTTON WHITE TEXT OVERRIDE */
-        .article-body .related-btn,
-        .related-card .related-btn,
-        .related-card a.related-btn,
-        a.related-btn {
-            background: var(--accent-blue, #E5890A) !important;
-            color: #ffffff !important;
-            text-decoration: none !important;
+        /* MOBILE TOC STYLING */
+        .toc-mobile .toc-collapse-content {
+            display: none;
         }
 
-        .article-body .related-btn:hover,
-        .related-card .related-btn:hover,
-        .related-card a.related-btn:hover,
-        a.related-btn:hover {
-            background: #b46b08 !important;
-            color: #ffffff !important;
+        .toc-mobile {
+            background: rgba(54, 27, 5, 0.7) !important;
+            border: 1px solid var(--border-line) !important;
+            border-radius: 10px !important;
+            padding: 20px !important;
+            margin: 25px 0 !important;
+        }
+
+        .toc-mobile .widget-title {
+            font-size: 1.15rem !important;
+            color: var(--text-white) !important;
+            margin-bottom: 0 !important;
+        }
+
+        .toc-mobile .toc-list {
+            list-style: none !important;
+            padding-left: 0 !important;
+            margin-bottom: 0 !important;
+        }
+
+        .toc-mobile .toc-list li {
+            margin-bottom: 8px !important;
+        }
+
+        .toc-mobile .toc-list a {
+            color: var(--text-light) !important;
             text-decoration: none !important;
+            font-size: 0.95rem !important;
+            display: flex !important;
+            align-items: center !important;
+            transition: color 0.2s ease !important;
+        }
+
+        .toc-mobile .toc-list a:hover {
+            color: var(--accent-blue, #E5890A) !important;
+        }
+
+        .toc-mobile .toc-list i {
+            color: var(--accent-blue, #E5890A) !important;
+            font-size: 0.75rem !important;
+            margin-right: 8px !important;
+        }
+
+        .toc-header-toggle {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* TABLE STYLING - THEME MATCHING & MOBILE RESPONSIVE SCROLL */
+        .table-responsive {
+            border-radius: 8px;
+            overflow-x: auto !important;
+            -webkit-overflow-scrolling: touch !important;
+            border: 1px solid var(--border-line);
+            margin: 25px 0;
+            display: block;
+            width: 100%;
+        }
+
+        .table-responsive .table {
+            margin-bottom: 0;
+            color: var(--text-light) !important;
+            border-color: var(--border-line) !important;
+            width: 100%;
+            min-width: 700px;
+        }
+
+        .table-responsive .table thead th {
+            background-color: var(--bg-panel) !important;
+            color: var(--accent-blue, #E5890A) !important;
+            border-color: var(--border-line) !important;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            padding: 12px 15px;
+            white-space: nowrap;
+        }
+
+        .table-responsive .table tbody td {
+            background-color: rgba(54, 27, 5, 0.7) !important;
+            color: var(--text-light) !important;
+            border-color: var(--border-line) !important;
+            padding: 12px 15px;
+            vertical-align: middle;
+            line-height: 1.6;
+        }
+
+        .table-responsive .table tbody td:first-child {
+            white-space: nowrap;
+        }
+
+        .table-responsive .table tbody td strong {
+            color: var(--accent-blue, #E5890A) !important;
         }
 
     </style>
@@ -1135,30 +1573,33 @@
                                 <h3 class="mb-4"
                                     style="font-size: 1.5rem; text-transform:uppercase; color: var(--text-color, #fff);">
                                     Artikel Terkait</h3>
-                                                                <div class="row g-4">
+                                <div class="row g-4">
                                     <div class="col-md-6">
                                         <div class="related-card">
                                             <img src="../assets/img/1-Offroad-Coban-Rondo-Jeep-4x4-untuk-Rombongan-Bus-Besar.webp"
                                                 alt="Jeep offroad di Coban Rondo" class="related-img" loading="lazy">
                                             <div class="related-body">
-                                                <h4 class="related-title"><a
-                                                        href="offroad-coban-rondo.html">Offroad Coban Rondo Jeep 4x4 untuk Rombongan Bus Besar</a></h4>
-                                                <p class="related-excerpt">Petualangan jelajah jeep 4x4 di Coban Rondo khusus rombongan bus besar dengan transit dan shuttle rapi.</p>
-                                                <a href="offroad-coban-rondo.html"
-                                                    class="related-btn" style="color: #ffffff !important; text-decoration: none !important;">BACA SELENGKAPNYA</a>
+                                                <h4 class="related-title"><a href="offroad-coban-rondo.html">Offroad
+                                                        Coban Rondo Jeep 4x4 untuk Rombongan Bus Besar</a></h4>
+                                                <p class="related-excerpt">Petualangan jelajah jeep 4x4 di Coban Rondo
+                                                    khusus rombongan bus besar dengan transit dan shuttle rapi.</p>
+                                                <a href="offroad-coban-rondo.html" class="related-btn"
+                                                    style="color: #ffffff !important; text-decoration: none !important;">BACA
+                                                    SELENGKAPNYA</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="related-card">
                                             <img src="../assets/img/1-Rute-ke-Coban-Putri-Cerita-Perjalanan-Tim-Batu-Offroad.webp"
-                                                alt="Rute perjalanan ke Coban Putri" class="related-img"
-                                                loading="lazy">
+                                                alt="Rute perjalanan ke Coban Putri" class="related-img" loading="lazy">
                                             <div class="related-body">
-                                                <h4 class="related-title"><a
-                                                        href="rute-ke-coban-putri.html">Rute ke Coban Putri Cerita Perjalanan Tim Batu Offroad</a></h4>
-                                                <p class="related-excerpt">Panduan rute perjalanan dari Alun-alun Batu, titik rawan tanjakan, dan jam berangkat terbaik.</p>
-                                                <a href="rute-ke-coban-putri.html" class="related-btn" style="color: #ffffff !important; text-decoration: none !important;">BACA
+                                                <h4 class="related-title"><a href="rute-ke-coban-putri.html">Rute ke
+                                                        Coban Putri Cerita Perjalanan Tim Batu Offroad</a></h4>
+                                                <p class="related-excerpt">Panduan rute perjalanan dari Alun-alun Batu,
+                                                    titik rawan tanjakan, dan jam berangkat terbaik.</p>
+                                                <a href="rute-ke-coban-putri.html" class="related-btn"
+                                                    style="color: #ffffff !important; text-decoration: none !important;">BACA
                                                     SELENGKAPNYA</a>
                                             </div>
                                         </div>
@@ -1171,7 +1612,7 @@
 
                 <div class="col-lg-4">
                     <div class="sticky-sidebar">
-                        <div class="sidebar-widget" id="tocWidget">
+                        <div class="sidebar-widget d-none d-lg-block" id="tocWidget">
                             <div class="toc-header-toggle" id="tocToggleBtn">
                                 <h4 class="widget-title mb-0" style="border-bottom: none; padding-bottom: 0;">DAFTAR ISI
                                 </h4>
@@ -1179,20 +1620,28 @@
                             </div>
                             <div class="toc-collapse-content mt-3" id="tocContent">
                                 <ul class="toc-list">
-                                    <li><a href="#sebelum-berangkat"><i class="fas fa-chevron-right" aria-hidden="true"></i> Sebelum Berangkat</a></li>
-                                    <li><a href="#langkah-demi-langkah"><i class="fas fa-chevron-right" aria-hidden="true"></i> Langkah demi Langkah</a></li>
-                                    <li><a href="#catatan-bus"><i class="fas fa-chevron-right" aria-hidden="true"></i> Catatan Khusus Bus</a></li>
-                                    <li><a href="#mobil-pribadi"><i class="fas fa-chevron-right" aria-hidden="true"></i> Untuk Mobil Pribadi</a></li>
-                                    <li><a href="#jam-musim"><i class="fas fa-chevron-right" aria-hidden="true"></i> Jam Berangkat & Musim</a></li>
-                                    <li><a href="#faq"><i class="fas fa-chevron-right" aria-hidden="true"></i> Pertanyaan yang Sering Diajukan</a></li>
-                                    <li><a href="#paket-offroad"><i class="fas fa-chevron-right" aria-hidden="true"></i> Pilihan Paket Offroad</a></li>
+                                    <li><a href="#sebelum-berangkat"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i> Sebelum Berangkat</a></li>
+                                    <li><a href="#langkah-demi-langkah"><i class="fas fa-chevron-right"
+                                                aria-hidden="true"></i> Langkah demi Langkah</a></li>
+                                    <li><a href="#catatan-bus"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Catatan Khusus Bus</a></li>
+                                    <li><a href="#mobil-pribadi"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Untuk Mobil Pribadi</a></li>
+                                    <li><a href="#jam-musim"><i class="fas fa-chevron-right" aria-hidden="true"></i> Jam
+                                            Berangkat & Musim</a></li>
+                                    <li><a href="#faq"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Pertanyaan yang Sering Diajukan</a></li>
+                                    <li><a href="#paket-offroad"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            Pilihan Paket Offroad</a></li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="sidebar-widget cta-widget">
                             <h4 class="widget-title" style="text-align: center;">KONSULTASI RUTE</h4>
-                            <p style="font-size: 0.95rem;">Hubungi tim kami untuk konsultasi jalur kedatangan bus dan penjemputan offroad rombongan.</p>
+                            <p style="font-size: 0.95rem;">Hubungi tim kami untuk konsultasi jalur kedatangan bus dan
+                                penjemputan offroad rombongan.</p>
                             <a href="https://wa.me/6281233989707?text=Halo%20Batu%20Offroad%2C%20saya%20ingin%20tanya%20rute%20dan%20paket%20ke%20Coban%20Rondo."
                                 class="btn btn-primary-custom" target="_blank" aria-label="Booking WhatsApp">
                                 <i class="fab fa-whatsapp me-2" aria-hidden="true"></i>HUBUNGI ADMIN
@@ -1205,6 +1654,7 @@
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <div class="container">
             <div class="row">
@@ -1216,29 +1666,54 @@
                 <div class="col-lg-2 mb-4">
                     <h5 class="text-white mb-3 text-uppercase">Navigasi</h5>
                     <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="../index.html" class="text-dim footer-link-item"><i
-                                    class="fas fa-chevron-right me-2"></i>Beranda</a></li>
-                        <li class="mb-2"><a href="../about.html" class="text-dim footer-link-item"><i
-                                    class="fas fa-chevron-right me-2"></i>Tentang Kami</a></li>
-                        <li class="mb-2"><a href="../paket.html" class="text-dim footer-link-item"><i
-                                    class="fas fa-chevron-right me-2"></i>Paket</a></li>
-                        <li class="mb-2"><a href="../gallery.html" class="text-dim footer-link-item"><i
-                                    class="fas fa-chevron-right me-2"></i>Gallery</a></li>
-                        <li class="mb-2"><a href="../blog.html" class="text-dim footer-link-item"><i
-                                    class="fas fa-chevron-right me-2"></i>Blog</a></li>
+                        <li class="mb-2">
+                            <a href="../index.html" class="text-dim footer-link-item">
+                                <i class="fas fa-chevron-right me-2"></i>Beranda
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../about.html" class="text-dim footer-link-item">
+                                <i class="fas fa-chevron-right me-2"></i>Tentang Kami
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../paket.html" class="text-dim footer-link-item">
+                                <i class="fas fa-chevron-right me-2"></i>Paket
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../gallery.html" class="text-dim footer-link-item">
+                                <i class="fas fa-chevron-right me-2"></i>Gallery
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../blog.html" class="text-dim footer-link-item">
+                                <i class="fas fa-chevron-right me-2"></i>Blog
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-lg-2 mb-4">
                     <h5 class="text-white mb-3 text-uppercase">NETWORK</h5>
                     <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="https://batuoutbound.net/" class="text-dim footer-link-item"><i
-                                    class="fas fa-chevron-right me-2"></i>Batu Outbound Adventure</a></li>
-                        <li class="mb-2"><a href="https://katunoutboundadventure.com/"
-                                class="text-dim footer-link-item"><i class="fas fa-chevron-right me-2"></i>Katun
-                                Outbound Adventure</a></li>
-                        <li class="mb-2"><a href="https://baturaftingadventure.com/"
-                                class="text-dim footer-link-item"><i class="fas fa-chevron-right me-2"></i>Batu Rafting
-                                Adventure</a></li>
+                        <li class="mb-2">
+                            <a href="https://batuoutbound.net/" class="text-dim footer-link-item" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-chevron-right me-2"></i>Batu Outbound Adventure
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://katunoutboundadventure.com/" class="text-dim footer-link-item"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-chevron-right me-2"></i>Katun Outbound Adventure
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://baturaftingadventure.com/" class="text-dim footer-link-item"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-chevron-right me-2"></i>Batu Rafting Adventure
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-lg-4 mb-4">
@@ -1246,7 +1721,7 @@
                     <ul class="list-unstyled small">
                         <li class="mb-3 d-flex align-items-start text-dim">
                             <i class="fab fa-whatsapp footer-icon mt-1" aria-hidden="true"></i>
-                            <span><b>WhatsApp:</b><br>+62 812-3398-9707 (Booking)</span>
+                            <span><b>WhatsApp:</b><br>0812-3398-9707 (Booking)</span>
                         </li>
                         <li class="mb-3 d-flex align-items-start text-dim">
                             <i class="fas fa-map-marker-alt footer-icon mt-1" aria-hidden="true"></i>
@@ -1297,6 +1772,37 @@
                 tocContent.style.display = isHidden ? 'block' : 'none';
             });
         }
+    
+        document.querySelectorAll('.toc-header-toggle').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const content = this.nextElementSibling;
+                if (content) {
+                    const isHidden = window.getComputedStyle(content).display === 'none';
+                    content.style.display = isHidden ? 'block' : 'none';
+                    const icon = this.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-chevron-down', !isHidden);
+                        icon.classList.toggle('fa-chevron-up', isHidden);
+                    }
+                }
+            });
+        });
+
+        document.querySelectorAll('.toc-list a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const offset = 90;
+                        const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                        window.scrollTo({ top: top, behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+
     </script>
 </body>
 

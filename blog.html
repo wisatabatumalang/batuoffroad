@@ -9,7 +9,7 @@
     <meta name="description"
         content="Baca artikel terbaru seputar dunia offroad di Batu! Tips berpetualang, rute offroad, dan informasi gathering perusahaan di Batu Offroad.">
     <meta name="keywords"
-        content="blog offroad, tips berpetualang, perlengkapan offroad batu, review armada, berita batuoffroad, edukasi wisata alam, team building info">
+        content="blog offroad, tips berpetualang bersama batu offroad adventure, perlengkapan offroad batu, review armada, berita batuoffroad, edukasi wisata alam, team building info">
     <meta name="author" content="Batu Offroad Adventure">
 
     <!-- SEO, AEO & GEO Optimization -->
@@ -701,7 +701,17 @@
         /* RESPONSIVE BLOG */
         @media (max-width: 768px) {
             .blog-thumb {
-                height: 260px;
+                width: 100%;
+                height: auto;
+                aspect-ratio: 16 / 9;
+                object-fit: cover;
+                display: block;
+                border-top-left-radius: 11px;
+                border-top-right-radius: 11px;
+            }
+
+            .blog-card:hover .blog-thumb {
+                transform: none;
             }
 
             .blog-title {
@@ -715,7 +725,13 @@
 
         @media (max-width: 480px) {
             .blog-thumb {
-                height: 220px;
+                width: 100%;
+                height: auto;
+                aspect-ratio: 16 / 9;
+                object-fit: cover;
+                display: block;
+                border-top-left-radius: 11px;
+                border-top-right-radius: 11px;
             }
         }
 
@@ -932,21 +948,44 @@
                 <div class="col-12">
 
                     <div id="blogContainer">
-                        <!-- ARTIKEL: ATV Payung Pinus Batu: Seru untuk Keluarga & Rombongan -->
+                        <!-- ARTIKEL: Rute dan Paket Jeep Offroad Coban Talun Batu -->
                         <div class="blog-card"
-                            data-title="atv payung pinus batu seru untuk keluarga rombongan offroad atv hutan pinus tanah berlumpur kota batu paket fasilitas briefing instruktur">
-                            <img src="assets/img/offroad-atv-payung-pinus-1.webp"
-                                alt="Peserta mengendarai ATV di jalur hutan pinus Batu bersama instruktur" class="blog-thumb" width="800"
-                                height="420" loading="lazy" decoding="async">
+                            data-title="offroad coban talun batu panduan rute dan paket jeep wisata jeep 4x4 coban talun short medium long trip keluarga pemula booking">
+                            <img src="assets/img/1-Rute-dan-Paket-Jeep-Offroad-Coban-Talun-Batu.webp"
+                                alt="Rombongan jeep offroad bersiap jelajahi rute Coban Talun."
+                                class="blog-thumb" width="800" height="420" loading="lazy" decoding="async">
                             <div class="blog-content">
                                 <div class="blog-meta">
                                     <span><i class="fas fa-calendar-alt"></i> 12 November 2026</span>
                                     <span><i class="fas fa-folder"></i> Wisata Offroad</span>
                                 </div>
                                 <h2 class="blog-title">
-                                    <a href="blog/offroad-atv-payung-pinus.html">ATV Payung Pinus Batu: Seru untuk Keluarga & Rombongan</a>
+                                    <a href="blog/offroad-coban-talun-batu-panduan-rute-dan-paket-jeep.html">Rute dan Paket Jeep Offroad Coban Talun Batu</a>
                                 </h2>
-                                <p class="blog-excerpt">Offroad ATV Payung Pinus Batu seru untuk keluarga, kantor, sekolah, dan komunitas. Cek paket, fasilitas, dan jadwal, lalu booking via WhatsApp Batu Offroad.</p>
+                                <p class="blog-excerpt">Panduan offroad Coban Talun di Batu: pilihan rute Jeep, cocok untuk siapa, persiapan, dan cara pesan lewat WhatsApp Batu Offroad.</p>
+                                <a href="blog/offroad-coban-talun-batu-panduan-rute-dan-paket-jeep.html" class="btn-read-more">BACA SELENGKAPNYA <i
+                                        class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- ARTIKEL: ATV Payung Pinus Batu: Seru untuk Keluarga & Rombongan -->
+                        <div class="blog-card"
+                            data-title="atv payung pinus batu seru untuk keluarga rombongan offroad atv hutan pinus tanah berlumpur kota batu paket fasilitas briefing instruktur">
+                            <img src="assets/img/offroad-atv-payung-pinus-1.webp"
+                                alt="Peserta mengendarai ATV di jalur hutan pinus Batu bersama instruktur"
+                                class="blog-thumb" width="800" height="420" loading="lazy" decoding="async">
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> 12 November 2026</span>
+                                    <span><i class="fas fa-folder"></i> Wisata Offroad</span>
+                                </div>
+                                <h2 class="blog-title">
+                                    <a href="blog/offroad-atv-payung-pinus.html">ATV Payung Pinus Batu, Seru untuk
+                                        Keluarga & Rombongan</a>
+                                </h2>
+                                <p class="blog-excerpt">Offroad ATV Payung Pinus Batu seru untuk keluarga, kantor,
+                                    sekolah, dan komunitas. Cek paket, fasilitas, dan jadwal, lalu booking via WhatsApp
+                                    Batu Offroad.</p>
                                 <a href="blog/offroad-atv-payung-pinus.html" class="btn-read-more">BACA SELENGKAPNYA <i
                                         class="fas fa-arrow-right ms-1"></i></a>
                             </div>
@@ -964,50 +1003,13 @@
                                     <span><i class="fas fa-folder"></i> Wisata Alam</span>
                                 </div>
                                 <h2 class="blog-title">
-                                    <a href="blog/wisata-dekat-coban-rais.html">Wisata Dekat Coban Rais, Satu Kawasan dengan Coban Kaca dan Area Barat</a>
+                                    <a href="blog/wisata-dekat-coban-rais.html">Wisata Dekat Coban Rais, Satu Kawasan
+                                        dengan Coban Kaca dan Area Barat</a>
                                 </h2>
-                                <p class="blog-excerpt">Wisata dekat Coban Rais: Batu Flower Garden, Coban Rondo, hingga area barat Batu. Susun rutenya, lalu kirim tanggal dan jumlah orang ke WhatsApp Batu Offroad.</p>
+                                <p class="blog-excerpt">Wisata dekat Coban Rais: Batu Flower Garden, Coban Rondo, hingga
+                                    area barat Batu. Susun rutenya, lalu kirim tanggal dan jumlah orang ke WhatsApp Batu
+                                    Offroad.</p>
                                 <a href="blog/wisata-dekat-coban-rais.html" class="btn-read-more">BACA SELENGKAPNYA <i
-                                        class="fas fa-arrow-right ms-1"></i></a>
-                            </div>
-                        </div>
-
-                        <!-- ARTIKEL: Rute ke Coban Rais dan Jawaban Soal Akses Bus -->
-                        <div class="blog-card"
-                            data-title="rute ke coban rais dan jawaban soal akses bus panduan jalur dari batu malang surabaya rombongan bus pariwisata">
-                            <img src="assets/img/rute-ke-coban-rais-1.webp"
-                                alt="Jalan menuju Coban Rais melewati kawasan Oro-oro Ombo Batu" class="blog-thumb" width="800"
-                                height="420" loading="lazy" decoding="async">
-                            <div class="blog-content">
-                                <div class="blog-meta">
-                                    <span><i class="fas fa-calendar-alt"></i> 11 November 2026</span>
-                                    <span><i class="fas fa-folder"></i> Rute & Panduan</span>
-                                </div>
-                                <h2 class="blog-title">
-                                    <a href="blog/rute-ke-coban-rais.html">Rute ke Coban Rais dan Jawaban Soal Akses Bus</a>
-                                </h2>
-                                <p class="blog-excerpt">Simak rute ke Coban Rais dari Batu, Malang, dan Surabaya plus jawaban soal akses bus. Cek jadwal offroad bersama Batu Offroad lewat WhatsApp hari ini juga.</p>
-                                <a href="blog/rute-ke-coban-rais.html" class="btn-read-more">BACA SELENGKAPNYA <i
-                                        class="fas fa-arrow-right ms-1"></i></a>
-                            </div>
-                        </div>
-
-                        <!-- ARTIKEL: Fasilitas Apa Saja yang Ada di Coban Rais, Toilet Bersih dan Fakta Lapangan -->
-                        <div class="blog-card"
-                            data-title="fasilitas apa saja yang ada di coban rais toilet bersih dan fakta lapangan parkir musala tiket basecamp rombongan">
-                            <img src="assets/img/fasilitas-coban-rais-1.webp"
-                                alt="Area parkir di kawasan wisata Coban Rais Batu" class="blog-thumb" width="800"
-                                height="420" loading="lazy" decoding="async">
-                            <div class="blog-content">
-                                <div class="blog-meta">
-                                    <span><i class="fas fa-calendar-alt"></i> 11 November 2026</span>
-                                    <span><i class="fas fa-folder"></i> Fasilitas & Tips</span>
-                                </div>
-                                <h2 class="blog-title">
-                                    <a href="blog/fasilitas-coban-rais.html">Fasilitas Apa Saja yang Ada di Coban Rais, Toilet Bersih dan Fakta Lapangan</a>
-                                </h2>
-                                <p class="blog-excerpt">Fasilitas Coban Rais mencakup parkir, toilet, musala, dan warung makan. Lihat fakta lapangan terbaru, lalu kirim tanggal kunjungan ke WhatsApp Batu Offroad.</p>
-                                <a href="blog/fasilitas-coban-rais.html" class="btn-read-more">BACA SELENGKAPNYA <i
                                         class="fas fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
@@ -1024,30 +1026,80 @@
                                     <span><i class="fas fa-folder"></i> Fasilitas & Tips</span>
                                 </div>
                                 <h2 class="blog-title">
-                                    <a href="blog/fasilitas-coban-rondo.html">Fasilitas Coban Rondo Tur Area demi Area Sebelum Datang</a>
+                                    <a href="blog/fasilitas-coban-rondo.html">Fasilitas Coban Rondo Tur Area demi Area
+                                        Sebelum Datang</a>
                                 </h2>
-                                <p class="blog-excerpt">Fasilitas coban rondo yang kami cek langsung, dari toilet sampai parkir. Booking WA +62 812-3398-9707.</p>
+                                <p class="blog-excerpt">Fasilitas coban rondo yang kami cek langsung, dari toilet sampai
+                                    parkir. Booking WA +62 812-3398-9707.</p>
                                 <a href="blog/fasilitas-coban-rondo.html" class="btn-read-more">BACA SELENGKAPNYA <i
                                         class="fas fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
 
+                        <!-- ARTIKEL: Fasilitas Apa Saja yang Ada di Coban Rais, Toilet Bersih dan Fakta Lapangan -->
+                        <div class="blog-card"
+                            data-title="fasilitas apa saja yang ada di coban rais toilet bersih dan fakta lapangan parkir musala tiket basecamp rombongan">
+                            <img src="assets/img/fasilitas-coban-rais-1.webp"
+                                alt="Area parkir di kawasan wisata Coban Rais Batu" class="blog-thumb" width="800"
+                                height="420" loading="lazy" decoding="async">
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> 11 November 2026</span>
+                                    <span><i class="fas fa-folder"></i> Fasilitas & Tips</span>
+                                </div>
+                                <h2 class="blog-title">
+                                    <a href="blog/fasilitas-coban-rais.html">Fasilitas Apa Saja yang Ada di Coban Rais,
+                                        Toilet Bersih dan Fakta Lapangan</a>
+                                </h2>
+                                <p class="blog-excerpt">Fasilitas Coban Rais mencakup parkir, toilet, musala, dan warung
+                                    makan. Lihat fakta lapangan terbaru, lalu kirim tanggal kunjungan ke WhatsApp Batu
+                                    Offroad.</p>
+                                <a href="blog/fasilitas-coban-rais.html" class="btn-read-more">BACA SELENGKAPNYA <i
+                                        class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- ARTIKEL: Rute ke Coban Rais dan Jawaban Soal Akses Bus -->
+                        <div class="blog-card"
+                            data-title="rute ke coban rais dan jawaban soal akses bus panduan jalur dari batu malang surabaya rombongan bus pariwisata">
+                            <img src="assets/img/rute-ke-coban-rais-1.webp"
+                                alt="Jalan menuju Coban Rais melewati kawasan Oro-oro Ombo Batu" class="blog-thumb"
+                                width="800" height="420" loading="lazy" decoding="async">
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> 11 November 2026</span>
+                                    <span><i class="fas fa-folder"></i> Rute & Panduan</span>
+                                </div>
+                                <h2 class="blog-title">
+                                    <a href="blog/rute-ke-coban-rais.html">Rute ke Coban Rais dan Jawaban Soal Akses
+                                        Bus</a>
+                                </h2>
+                                <p class="blog-excerpt">Simak rute ke Coban Rais dari Batu, Malang, dan Surabaya plus
+                                    jawaban soal akses bus. Cek jadwal offroad bersama Batu Offroad lewat WhatsApp hari
+                                    ini juga.</p>
+                                <a href="blog/rute-ke-coban-rais.html" class="btn-read-more">BACA SELENGKAPNYA <i
+                                        class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
 
                         <!-- ARTIKEL: Offroad Coban Rais Tanpa Ribet, Shuttle Bus Langsung Masuk -->
                         <div class="blog-card"
                             data-title="offroad coban rais tanpa ribet shuttle bus langsung masuk lereng panderman keluarga kantor sekolah komunitas booking batu offroad">
                             <img src="assets/img/offroad-coban-rais-1.webp"
-                                alt="Rombongan wisatawan naik jeep offroad di kawasan Coban Rais Batu" class="blog-thumb" width="800"
-                                height="420" loading="lazy" decoding="async">
+                                alt="Rombongan wisatawan naik jeep offroad di kawasan Coban Rais Batu"
+                                class="blog-thumb" width="800" height="420" loading="lazy" decoding="async">
                             <div class="blog-content">
                                 <div class="blog-meta">
                                     <span><i class="fas fa-calendar-alt"></i> 10 November 2026</span>
                                     <span><i class="fas fa-folder"></i> Wisata Offroad</span>
                                 </div>
                                 <h2 class="blog-title">
-                                    <a href="blog/offroad-coban-rais.html">Offroad Coban Rais Tanpa Ribet, Shuttle Bus Langsung Masuk</a>
+                                    <a href="blog/offroad-coban-rais.html">Offroad Coban Rais Tanpa Ribet, Shuttle Bus
+                                        Langsung Masuk</a>
                                 </h2>
-                                <p class="blog-excerpt">Offroad Coban Rais untuk rombongan keluarga, kantor, sekolah, komunitas. Cek alur, akses bus, dan keamanannya, lalu booking via WhatsApp Batu Offroad.</p>
+                                <p class="blog-excerpt">Offroad Coban Rais untuk rombongan keluarga, kantor, sekolah,
+                                    komunitas. Cek alur, akses bus, dan keamanannya, lalu booking via WhatsApp Batu
+                                    Offroad.</p>
                                 <a href="blog/offroad-coban-rais.html" class="btn-read-more">BACA SELENGKAPNYA <i
                                         class="fas fa-arrow-right ms-1"></i></a>
                             </div>
@@ -1065,9 +1117,11 @@
                                     <span><i class="fas fa-folder"></i> Rute & Panduan</span>
                                 </div>
                                 <h2 class="blog-title">
-                                    <a href="blog/rute-ke-coban-rondo.html">Rute ke Coban Rondo Langkah demi Langkah untuk Mobil dan Bus</a>
+                                    <a href="blog/rute-ke-coban-rondo.html">Rute ke Coban Rondo Langkah demi Langkah
+                                        untuk Mobil dan Bus</a>
                                 </h2>
-                                <p class="blog-excerpt">Rute ke coban rondo dari catatan perjalanan tim Batu Offroad, lengkap dengan waktu tempuh. Booking WA +62 812-3398-9707.</p>
+                                <p class="blog-excerpt">Rute ke coban rondo dari catatan perjalanan tim Batu Offroad,
+                                    lengkap dengan waktu tempuh. Booking WA +62 812-3398-9707.</p>
                                 <a href="blog/rute-ke-coban-rondo.html" class="btn-read-more">BACA SELENGKAPNYA <i
                                         class="fas fa-arrow-right ms-1"></i></a>
                             </div>
@@ -1077,17 +1131,20 @@
                         <div class="blog-card"
                             data-title="offroad coban rondo jeep 4x4 untuk rombongan bus besar transit shuttle rundown rapi fun offroad labirin rafting outbound gathering">
                             <img src="assets/img/1-Offroad-Coban-Rondo-Jeep-4x4-untuk-Rombongan-Bus-Besar.webp"
-                                alt="Pemandangan megah air terjun di kawasan Coban Rondo." class="blog-thumb" width="800"
-                                height="420" loading="lazy" decoding="async">
+                                alt="Pemandangan megah air terjun di kawasan Coban Rondo." class="blog-thumb"
+                                width="800" height="420" loading="lazy" decoding="async">
                             <div class="blog-content">
                                 <div class="blog-meta">
                                     <span><i class="fas fa-calendar-alt"></i> 9 November 2026</span>
                                     <span><i class="fas fa-folder"></i> Wisata Offroad</span>
                                 </div>
                                 <h2 class="blog-title">
-                                    <a href="blog/offroad-coban-rondo.html">Offroad Coban Rondo Jeep 4x4 untuk Rombongan Bus Besar</a>
+                                    <a href="blog/offroad-coban-rondo.html">Offroad Coban Rondo Jeep 4x4 untuk Rombongan
+                                        Bus Besar</a>
                                 </h2>
-                                <p class="blog-excerpt">Offroad coban rondo bersama Batu Offroad. Kegiatan jelajah jeep 4x4, transit bus besar, rute pinus dan air terjun, serta fasilitas lengkap untuk rombongan.</p>
+                                <p class="blog-excerpt">Offroad coban rondo bersama Batu Offroad. Kegiatan jelajah jeep
+                                    4x4, transit bus besar, rute pinus dan air terjun, serta fasilitas lengkap untuk
+                                    rombongan.</p>
                                 <a href="blog/offroad-coban-rondo.html" class="btn-read-more">BACA SELENGKAPNYA <i
                                         class="fas fa-arrow-right ms-1"></i></a>
                             </div>
@@ -1105,9 +1162,12 @@
                                     <span><i class="fas fa-folder"></i> Wisata & Destinasi</span>
                                 </div>
                                 <h2 class="blog-title">
-                                    <a href="blog/wisata-dekat-coban-putri.html">Wisata Dekat Coban Putri dari Jatim Park 2 sampai Eco Active</a>
+                                    <a href="blog/wisata-dekat-coban-putri.html">Wisata Dekat Coban Putri dari Jatim
+                                        Park 2 sampai Eco Active</a>
                                 </h2>
-                                <p class="blog-excerpt">Wisata dekat Coban Putri dari Jatim Park 2 sampai Eco Active Park, lengkap dengan jam buka dan urutan kunjungan. Susun jadwal via WA +62 812-3398-9707.</p>
+                                <p class="blog-excerpt">Wisata dekat Coban Putri dari Jatim Park 2 sampai Eco Active
+                                    Park, lengkap dengan jam buka dan urutan kunjungan. Susun jadwal via WA +62
+                                    812-3398-9707.</p>
                                 <a href="blog/wisata-dekat-coban-putri.html" class="btn-read-more">BACA SELENGKAPNYA <i
                                         class="fas fa-arrow-right ms-1"></i></a>
                             </div>
@@ -1117,37 +1177,42 @@
                         <div class="blog-card"
                             data-title="apa saja fasilitas coban putri yang ada untuk rombongan parkir bus toilet musholla kantin pendopo shuttle transportasi outbound">
                             <img src="assets/img/fasilitas-coban-putri-1.webp"
-                                alt="Fasilitas basecamp Batu Offroad untuk rombongan wisata Coban Putri" class="blog-thumb" width="800"
-                                height="420" loading="lazy" decoding="async">
+                                alt="Fasilitas basecamp Batu Offroad untuk rombongan wisata Coban Putri"
+                                class="blog-thumb" width="800" height="420" loading="lazy" decoding="async">
                             <div class="blog-content">
                                 <div class="blog-meta">
                                     <span><i class="fas fa-calendar-alt"></i> 6 November 2026</span>
                                     <span><i class="fas fa-folder"></i> Fasilitas & Destinasi</span>
                                 </div>
                                 <h2 class="blog-title">
-                                    <a href="blog/fasilitas-coban-putri-batu.html">Apa Saja Fasilitas Coban Putri yang Ada untuk Rombongan</a>
+                                    <a href="blog/fasilitas-coban-putri-batu.html">Apa Saja Fasilitas Coban Putri yang
+                                        Ada untuk Rombongan</a>
                                 </h2>
-                                <p class="blog-excerpt">Fasilitas Coban Putri untuk rombongan: parkir bus, toilet, musholla, kantin, pendopo, dan shuttle. Konsultasikan kegiatan Anda lewat WhatsApp kami sekarang.</p>
-                                <a href="blog/fasilitas-coban-putri-batu.html" class="btn-read-more">BACA SELENGKAPNYA <i
-                                        class="fas fa-arrow-right ms-1"></i></a>
+                                <p class="blog-excerpt">Fasilitas Coban Putri untuk rombongan: parkir bus, toilet,
+                                    musholla, kantin, pendopo, dan shuttle. Konsultasikan kegiatan Anda lewat WhatsApp
+                                    kami sekarang.</p>
+                                <a href="blog/fasilitas-coban-putri-batu.html" class="btn-read-more">BACA SELENGKAPNYA
+                                    <i class="fas fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
 
                         <!-- ARTIKEL: Rute ke Coban Putri dari Alun-alun Batu, Bandara, dan Stasiun Malang -->
                         <div class="blog-card"
                             data-title="rute ke coban putri dari alun-alun batu bandara dan stasiun malang kondisi jalan jam berangkat titik rawan bus kendaraan">
-                            <img src="assets/img/rute-ke-coban-putri-batu-1.webp"
-                                alt="Area land rover Coban Putri" class="blog-thumb" width="800"
-                                height="420" loading="lazy" decoding="async">
+                            <img src="assets/img/rute-ke-coban-putri-batu-1.webp" alt="Area land rover Coban Putri"
+                                class="blog-thumb" width="800" height="420" loading="lazy" decoding="async">
                             <div class="blog-content">
                                 <div class="blog-meta">
                                     <span><i class="fas fa-calendar-alt"></i> 5 November 2026</span>
                                     <span><i class="fas fa-folder"></i> Rute & Transportasi</span>
                                 </div>
                                 <h2 class="blog-title">
-                                    <a href="blog/rute-ke-coban-putri-batu.html">Rute ke Coban Putri dari Alun-alun Batu, Bandara, dan Stasiun Malang</a>
+                                    <a href="blog/rute-ke-coban-putri-batu.html">Rute ke Coban Putri dari Alun-alun
+                                        Batu, Bandara, dan Stasiun Malang</a>
                                 </h2>
-                                <p class="blog-excerpt">Rute ke Coban Putri dari Alun-alun Batu, Malang, bandara, dan stasiun, lengkap kondisi jalan dan jam berangkat. Hubungi kami via WhatsApp untuk booking.</p>
+                                <p class="blog-excerpt">Rute ke Coban Putri dari Alun-alun Batu, Malang, bandara, dan
+                                    stasiun, lengkap kondisi jalan dan jam berangkat. Hubungi kami via WhatsApp untuk
+                                    booking.</p>
                                 <a href="blog/rute-ke-coban-putri-batu.html" class="btn-read-more">BACA SELENGKAPNYA <i
                                         class="fas fa-arrow-right ms-1"></i></a>
                             </div>
