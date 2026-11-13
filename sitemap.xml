@@ -380,7 +380,13 @@
         <loc>https://batuoffroad.web.id/blog/offroad-coban-rondo</loc>
         <lastmod>2026-11-09</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/offroad-coban-rais</loc>
+        <lastmod>2026-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/blog/rute-ke-coban-rondo</loc>
@@ -388,35 +394,31 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-    <url>
-        <loc>https://batuoffroad.web.id/blog/offroad-coban-rais</loc>
-        <lastmod>2026-11-10</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
+
     <url>
         <loc>https://batuoffroad.web.id/blog/rute-ke-coban-rais</loc>
         <lastmod>2026-11-11</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/blog/fasilitas-coban-rais</loc>
         <lastmod>2026-11-11</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/blog/fasilitas-coban-rondo</loc>
         <lastmod>2026-11-11</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
+
     <url>
         <loc>https://batuoffroad.web.id/blog/wisata-dekat-coban-rais</loc>
         <lastmod>2026-11-12</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://batuoffroad.web.id/blog/offroad-atv-payung-pinus</loc>
@@ -424,9 +426,22 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
     <url>
-        <loc>https://batuoffroad.web.id/blog/offroad-coban-talun-batu-panduan-rute-dan-paket-jeep</loc>
-        <lastmod>2026-11-12</lastmod>
+        <loc>https://batuoffroad.web.id/blog/rute-offroad-batu</loc>
+        <lastmod>2026-11-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/rute-ke-payung-pinus</loc>
+        <lastmod>2026-11-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/fasilitas-payung-pinus</loc>
+        <lastmod>2026-11-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
