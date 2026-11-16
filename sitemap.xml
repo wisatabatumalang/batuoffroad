@@ -27,7 +27,7 @@
     </url>
     <url>
         <loc>https://batuoffroad.web.id/blog</loc>
-        <lastmod>2026-10-01</lastmod>
+        <lastmod>2026-11-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -453,6 +453,25 @@
     <url>
         <loc>https://batuoffroad.web.id/blog/rekomendasi-offroad-batu-ramah-anak-keluarga</loc>
         <lastmod>2026-11-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://batuoffroad.web.id/blog/checklist-perlengkapan-offroad-keluarga-bawa-anak</loc>
+        <lastmod>2026-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/itinerary-offroad-keluarga-batu-setengah-hari</loc>
+        <lastmod>2026-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/meeting-point-offroad-batu</loc>
+        <lastmod>2026-11-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
