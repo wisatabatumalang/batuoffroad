@@ -420,7 +420,18 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-
+    <url>
+        <loc>https://batuoffroad.web.id/blog/rute-ke-payung-pinus</loc>
+        <lastmod>2026-11-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/fasilitas-payung-pinus</loc>
+        <lastmod>2026-11-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
     <url>
         <loc>https://batuoffroad.web.id/blog/rute-offroad-batu</loc>
         <lastmod>2026-11-13</lastmod>
@@ -428,14 +439,20 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://batuoffroad.web.id/blog/rute-ke-payung-pinus</loc>
-        <lastmod>2026-11-13</lastmod>
+        <loc>https://batuoffroad.web.id/blog/wisata-dekat-payung-pinus</loc>
+        <lastmod>2026-11-14</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://batuoffroad.web.id/blog/fasilitas-payung-pinus</loc>
-        <lastmod>2026-11-13</lastmod>
+        <loc>https://batuoffroad.web.id/blog/tingkat-kesulitan-jalur-offroad</loc>
+        <lastmod>2026-11-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://batuoffroad.web.id/blog/rekomendasi-offroad-batu-ramah-anak-keluarga</loc>
+        <lastmod>2026-11-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
